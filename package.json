@@ -21,5 +21,10 @@
   "dependencies": {
     "sqlite": "^5.1.1",
     "sqlite3": "^6.0.1"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^1.0.14",
+    "typescript": "^5.9.3",
+    "vite": "^8.0.1"
   }
 }
