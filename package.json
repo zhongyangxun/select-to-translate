@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/zhongyangxun/select-to-translate/issues"
   },
-  "homepage": "https://github.com/zhongyangxun/select-to-translate#readme"
+  "homepage": "https://github.com/zhongyangxun/select-to-translate#readme",
+  "dependencies": {
+    "sqlite3": "^6.0.1"
+  }
 }
