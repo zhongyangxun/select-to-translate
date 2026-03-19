@@ -1,0 +1,21 @@
+{
+  "name": "select-to-translate",
+  "version": "1.0.0",
+  "description": "A Chrome extention for translating selected text.",
+  "main": "content.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhongyangxun/select-to-translate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/zhongyangxun/select-to-translate/issues"
+  },
+  "homepage": "https://github.com/zhongyangxun/select-to-translate#readme"
+}
