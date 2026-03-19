@@ -46,6 +46,16 @@ class Panel {
 
 const panel = new Panel();
 
+const shouldTranslate = (text) => {
+  const trimedText = text.trim();
+
+  if (trimedText.length < 2 || trimedText.length > 5000) return false;
+
+  const singleWordRegex = /^[a-zA-Z]+(?:['’-][a-zA-Z]+)?$/;
+
+  return singleWordRegex.test(trimedText);
+};
+
 document.addEventListener('mouseup', (e) => {
   if (panel.el.contains(e.target)) {
     return;
@@ -54,13 +64,14 @@ document.addEventListener('mouseup', (e) => {
   const selection = document.getSelection();
   const text = selection.toString().trim();
 
-  if (text) {
-    // TODO 需要检测 text 是否为英文，排除标点符号
-    const range = selection.getRangeAt(0);
-    const rect = range.getBoundingClientRect();
-
-    panel.show().setPosition(rect.left, rect.top - 100);
+  if (!shouldTranslate(text)) {
+    return;
   }
+
+  const range = selection.getRangeAt(0);
+  const rect = range.getBoundingClientRect();
+
+  panel.show().setPosition(rect.left, rect.top - 100);
 });
 
 document.addEventListener('mousedown', (e) => {
