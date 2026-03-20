@@ -1,4 +1,4 @@
-console.log('content script loaded');
+console.log('content script loadedaa');
 
 class Panel {
   static #instance = null;
@@ -17,6 +17,9 @@ class Panel {
     div.style.width = '200px';
     div.style.height = '100px';
     div.style.backgroundColor = 'lightblue';
+
+    this.hide();
+
     document.body.appendChild(div);
 
     Panel.#instance = this;
@@ -57,6 +60,7 @@ const shouldTranslate = (text) => {
 };
 
 document.addEventListener('mouseup', (e) => {
+  console.log('mouseup');
   if (panel.el.contains(e.target)) {
     return;
   }
