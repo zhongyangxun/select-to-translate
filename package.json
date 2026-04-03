@@ -18,9 +18,6 @@
     "url": "https://github.com/zhongyangxun/select-to-translate/issues"
   },
   "homepage": "https://github.com/zhongyangxun/select-to-translate#readme",
-  "dependencies": {
-    "sqlite3": "^6.0.1"
-  },
   "devDependencies": {
     "csv-parse": "^6.2.1"
   }
