@@ -21,5 +21,8 @@
   "dependencies": {
     "sqlite": "^5.1.1",
     "sqlite3": "^6.0.1"
+  },
+  "devDependencies": {
+    "csv-parse": "^6.2.1"
   }
 }
