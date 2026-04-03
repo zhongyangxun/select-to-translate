@@ -204,7 +204,7 @@ document.addEventListener('mouseup', async (e) => {
     text,
   });
 
-  panel.setContent(text, response?.detail);
+  panel.setContent(text, response?.definition);
 });
 
 document.addEventListener('mousedown', (e) => {

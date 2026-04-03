@@ -27,11 +27,11 @@ chrome.runtime.onMessage.addListener(async (message, sender, sendResponse) => {
   if (message.type === 'translate') {
     const { text } = message;
     const dict = await loadDict();
-    const detail = dict[text];
+    const definition = dict[text];
 
-    if (detail) {
+    if (definition) {
       sendResponse({
-        detail,
+        definition,
       });
     }
   }
