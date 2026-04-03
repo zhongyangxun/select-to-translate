@@ -59,18 +59,25 @@ const shouldTranslate = (text) => {
   return singleWordRegex.test(trimedText);
 };
 
-document.addEventListener('mouseup', (e) => {
+document.addEventListener('mouseup', async (e) => {
   console.log('mouseup');
   if (panel.el.contains(e.target)) {
     return;
   }
 
   const selection = document.getSelection();
-  const text = selection.toString().trim();
+  const text = selection.toString().trim().toLocaleLowerCase();
 
   if (!shouldTranslate(text)) {
     return;
   }
+
+  const response = await chrome.runtime.sendMessage({
+    type: 'translate',
+    text,
+  });
+
+  console.log('response', response);
 
   const range = selection.getRangeAt(0);
   const rect = range.getBoundingClientRect();

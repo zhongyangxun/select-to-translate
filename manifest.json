@@ -7,10 +7,21 @@
     "default_popup": "popup.html"
   },
 
+  "background": {
+    "service_worker": "background.js"
+  },
+
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
       "js": ["content.js"]
+    }
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": ["data/high_freq_words.json"],
+      "matches": ["<all_urls>"]
     }
   ]
 }
