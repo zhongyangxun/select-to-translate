@@ -10,7 +10,9 @@
 
 ## 词根数据
 
-[root.json](./roots.json)
+CSV 数据：[roots](./roots/)
+
+JSON 数据：[root.json](./roots.json)
 
 数据来源：[Wikipedia: List of Greek and Latin roots in English](https://en.wikipedia.org/wiki/List_of_Greek_and_Latin_roots_in_English)
 
