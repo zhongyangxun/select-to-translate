@@ -4,9 +4,20 @@ import { parse } from 'csv-parse/sync';
 const CSV_DIR = './data/roots';
 const OUTPUT_FILE = './data/roots.json';
 
-const roots = {};
-
+const entries = {};
+const index = {};
 const files = readdirSync(CSV_DIR).filter((f) => f.endsWith('.csv'));
+
+function pickPrimaryKey(variants, entries) {
+  for (const v of variants) {
+    if (!entries[v]) return v;
+  }
+  const base = variants[0];
+  for (let i = 2; ; i++) {
+    const key = `${base}${i}`;
+    if (!entries[key]) return key;
+  }
+}
 
 for (const file of files) {
   const csv = readFileSync(`${CSV_DIR}/${file}`, 'utf-8');
@@ -20,16 +31,10 @@ for (const file of files) {
     const rawRoot = row['Root'];
     if (!rawRoot) continue;
 
-    // 拆分多个变体，如 "ab-, a-, abs-"
     const variants = rawRoot
-      .replace(/\s*\([^)]*\)\s*/g, '') // 去括号注释，如 (ΑΕΡ)
+      .replace(/\s*\([^)]*\)\s*/g, '')
       .split(/,\s*/)
-      .map((r) =>
-        r
-          .replace(/^-+|-+$/g, '')
-          .trim()
-          .toLowerCase(),
-      )
+      .map((r) => r.replace(/^-+|-+$/g, '').trim().toLowerCase())
       .filter(Boolean);
 
     const meaning = (row['Meaning in English'] || '').trim();
@@ -39,23 +44,22 @@ for (const file of files) {
       .map((e) => e.trim().toLowerCase())
       .filter(Boolean);
 
-    if (!meaning) continue;
+    if (!meaning || variants.length === 0) continue;
 
-    const entry = { meaning, origin, examples };
+    const primaryKey = pickPrimaryKey(variants, entries);
+    entries[primaryKey] = { variants, meaning, origin, examples };
 
-    for (const variant of variants) {
-      // 若已存在，合并 examples 去重
-      if (roots[variant]) {
-        const existing = roots[variant];
-        existing.examples = [...new Set([...existing.examples, ...examples])];
-      } else {
-        roots[variant] = { ...entry, examples: [...examples] };
+    for (const v of variants) {
+      if (!index[v]) index[v] = [];
+      if (!index[v].includes(primaryKey)) {
+        index[v].push(primaryKey);
       }
     }
   }
 }
 
-writeFileSync(OUTPUT_FILE, JSON.stringify(roots, null, 2), 'utf-8');
-console.log(
-  `✅ 合并完成，共 ${Object.keys(roots).length} 条词根 → ${OUTPUT_FILE}`,
-);
+const output = { entries, index };
+writeFileSync(OUTPUT_FILE, JSON.stringify(output, null, 2), 'utf-8');
+const entryCount = Object.keys(entries).length;
+const indexCount = Object.keys(index).length;
+console.log(`✅ 合并完成，${entryCount} 条词根，${indexCount} 个变体索引 → ${OUTPUT_FILE}`);
