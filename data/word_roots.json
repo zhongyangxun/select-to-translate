@@ -1,0 +1,7001 @@
+{
+  "_meta": {
+    "description": "高频词词根词缀标注",
+    "version": "2.0.0",
+    "totalWords": 1000,
+    "annotatedWords": 424
+  },
+  "words": {
+    "the": {
+      "roots": []
+    },
+    "be": {
+      "roots": []
+    },
+    "of": {
+      "roots": []
+    },
+    "and": {
+      "roots": []
+    },
+    "a": {
+      "roots": []
+    },
+    "in": {
+      "roots": []
+    },
+    "to": {
+      "roots": []
+    },
+    "have": {
+      "roots": []
+    },
+    "it": {
+      "roots": []
+    },
+    "he": {
+      "roots": []
+    },
+    "for": {
+      "roots": []
+    },
+    "not": {
+      "roots": []
+    },
+    "that": {
+      "roots": []
+    },
+    "you": {
+      "roots": []
+    },
+    "with": {
+      "roots": []
+    },
+    "on": {
+      "roots": []
+    },
+    "they": {
+      "roots": []
+    },
+    "do": {
+      "roots": []
+    },
+    "by": {
+      "roots": []
+    },
+    "she": {
+      "roots": []
+    },
+    "at": {
+      "roots": []
+    },
+    "this": {
+      "roots": []
+    },
+    "but": {
+      "roots": []
+    },
+    "his": {
+      "roots": []
+    },
+    "we": {
+      "roots": []
+    },
+    "from": {
+      "roots": []
+    },
+    "which": {
+      "roots": []
+    },
+    "or": {
+      "roots": []
+    },
+    "an": {
+      "roots": []
+    },
+    "will": {
+      "roots": []
+    },
+    "say": {
+      "roots": []
+    },
+    "as": {
+      "roots": []
+    },
+    "would": {
+      "roots": []
+    },
+    "can": {
+      "roots": []
+    },
+    "their": {
+      "roots": []
+    },
+    "there": {
+      "roots": []
+    },
+    "what": {
+      "roots": []
+    },
+    "all": {
+      "roots": []
+    },
+    "if": {
+      "roots": []
+    },
+    "get": {
+      "roots": []
+    },
+    "her": {
+      "roots": []
+    },
+    "make": {
+      "roots": []
+    },
+    "go": {
+      "roots": []
+    },
+    "who": {
+      "roots": []
+    },
+    "one": {
+      "roots": []
+    },
+    "see": {
+      "roots": []
+    },
+    "so": {
+      "roots": []
+    },
+    "know": {
+      "roots": []
+    },
+    "time": {
+      "roots": []
+    },
+    "take": {
+      "roots": []
+    },
+    "up": {
+      "roots": []
+    },
+    "some": {
+      "roots": []
+    },
+    "when": {
+      "roots": []
+    },
+    "could": {
+      "roots": []
+    },
+    "year": {
+      "roots": []
+    },
+    "into": {
+      "roots": []
+    },
+    "its": {
+      "roots": []
+    },
+    "then": {
+      "roots": []
+    },
+    "two": {
+      "roots": []
+    },
+    "my": {
+      "roots": []
+    },
+    "out": {
+      "roots": []
+    },
+    "about": {
+      "roots": []
+    },
+    "think": {
+      "roots": []
+    },
+    "come": {
+      "roots": []
+    },
+    "your": {
+      "roots": []
+    },
+    "now": {
+      "roots": []
+    },
+    "no": {
+      "roots": []
+    },
+    "other": {
+      "roots": []
+    },
+    "only": {
+      "roots": []
+    },
+    "give": {
+      "roots": []
+    },
+    "just": {
+      "roots": [
+        {
+          "root": "just",
+          "meaning": "公正"
+        }
+      ],
+      "composition": "just（公正，拉丁语 jūstus）→ 恰好、公正的"
+    },
+    "good": {
+      "roots": []
+    },
+    "more": {
+      "roots": []
+    },
+    "people": {
+      "roots": [
+        {
+          "root": "popul",
+          "meaning": "人民"
+        }
+      ],
+      "composition": "popul（人民）→ 经古法语 peuple 演变 → people（人们）"
+    },
+    "these": {
+      "roots": []
+    },
+    "also": {
+      "roots": []
+    },
+    "any": {
+      "roots": []
+    },
+    "first": {
+      "roots": []
+    },
+    "very": {
+      "roots": [
+        {
+          "root": "ver",
+          "meaning": "真实"
+        }
+      ],
+      "composition": "ver（真实）→ 原义「真正地」，后引申为「非常」"
+    },
+    "new": {
+      "roots": []
+    },
+    "look": {
+      "roots": []
+    },
+    "may": {
+      "roots": []
+    },
+    "well": {
+      "roots": []
+    },
+    "should": {
+      "roots": []
+    },
+    "way": {
+      "roots": []
+    },
+    "use": {
+      "roots": [
+        {
+          "root": "us",
+          "meaning": "使用"
+        }
+      ]
+    },
+    "like": {
+      "roots": []
+    },
+    "than": {
+      "roots": []
+    },
+    "how": {
+      "roots": []
+    },
+    "man": {
+      "roots": []
+    },
+    "find": {
+      "roots": []
+    },
+    "our": {
+      "roots": []
+    },
+    "want": {
+      "roots": []
+    },
+    "day": {
+      "roots": []
+    },
+    "after": {
+      "roots": []
+    },
+    "between": {
+      "roots": []
+    },
+    "many": {
+      "roots": []
+    },
+    "Er": {
+      "roots": []
+    },
+    "those": {
+      "roots": []
+    },
+    "because": {
+      "roots": [
+        {
+          "root": "be-",
+          "meaning": "由于（=by）"
+        },
+        {
+          "root": "caus",
+          "meaning": "原因"
+        }
+      ],
+      "composition": "be-（由于）+ cause（原因，拉丁语 causa）→ 因为"
+    },
+    "down": {
+      "roots": []
+    },
+    "yeah": {
+      "roots": []
+    },
+    "three": {
+      "roots": []
+    },
+    "back": {
+      "roots": []
+    },
+    "thing": {
+      "roots": []
+    },
+    "tell": {
+      "roots": []
+    },
+    "such": {
+      "roots": []
+    },
+    "through": {
+      "roots": []
+    },
+    "over": {
+      "roots": []
+    },
+    "must": {
+      "roots": []
+    },
+    "still": {
+      "roots": []
+    },
+    "even": {
+      "roots": []
+    },
+    "child": {
+      "roots": []
+    },
+    "too": {
+      "roots": []
+    },
+    "put": {
+      "roots": []
+    },
+    "here": {
+      "roots": []
+    },
+    "own": {
+      "roots": []
+    },
+    "last": {
+      "roots": []
+    },
+    "oh": {
+      "roots": []
+    },
+    "mean": {
+      "roots": []
+    },
+    "become": {
+      "roots": []
+    },
+    "Mr": {
+      "roots": []
+    },
+    "government": {
+      "roots": [
+        {
+          "root": "govern",
+          "meaning": "统治、掌舵"
+        },
+        {
+          "root": "-ment",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "govern（统治，源自拉丁语 gubernare「掌舵」）+ -ment → 政府"
+    },
+    "work": {
+      "roots": []
+    },
+    "old": {
+      "roots": []
+    },
+    "leave": {
+      "roots": []
+    },
+    "life": {
+      "roots": []
+    },
+    "great": {
+      "roots": []
+    },
+    "woman": {
+      "roots": []
+    },
+    "where": {
+      "roots": []
+    },
+    "need": {
+      "roots": []
+    },
+    "erm": {
+      "roots": []
+    },
+    "seem": {
+      "roots": []
+    },
+    "feel": {
+      "roots": []
+    },
+    "system": {
+      "roots": [
+        {
+          "root": "sy-",
+          "meaning": "共同（=syn-）"
+        },
+        {
+          "root": "stem",
+          "meaning": "组成、建立"
+        }
+      ],
+      "composition": "sy-（共同）+ stem（组成，源自希腊语 histanai「使站立」）→ 组合在一起的整体 → 系统"
+    },
+    "same": {
+      "roots": []
+    },
+    "might": {
+      "roots": []
+    },
+    "case": {
+      "roots": [
+        {
+          "root": "cas",
+          "meaning": "降落、发生"
+        }
+      ],
+      "composition": "cas（降落，拉丁语 casus「降临之事」）→ 情况、案例"
+    },
+    "part": {
+      "roots": [
+        {
+          "root": "part",
+          "meaning": "部分"
+        }
+      ]
+    },
+    "ask": {
+      "roots": []
+    },
+    "group": {
+      "roots": []
+    },
+    "number": {
+      "roots": [
+        {
+          "root": "numer",
+          "meaning": "数"
+        }
+      ],
+      "composition": "numer（数，拉丁语 numerus）→ number（数字）"
+    },
+    "yes": {
+      "roots": []
+    },
+    "however": {
+      "roots": []
+    },
+    "world": {
+      "roots": []
+    },
+    "show": {
+      "roots": []
+    },
+    "house": {
+      "roots": []
+    },
+    "area": {
+      "roots": []
+    },
+    "another": {
+      "roots": []
+    },
+    "company": {
+      "roots": [
+        {
+          "root": "com-",
+          "meaning": "共同"
+        },
+        {
+          "root": "pan",
+          "meaning": "面包"
+        }
+      ],
+      "composition": "com-（共同）+ pan（面包）→ 分享面包的人 → 同伴 → 公司"
+    },
+    "high": {
+      "roots": []
+    },
+    "most": {
+      "roots": []
+    },
+    "problem": {
+      "roots": [
+        {
+          "root": "pro-",
+          "meaning": "向前"
+        },
+        {
+          "root": "blem",
+          "meaning": "投掷"
+        }
+      ],
+      "composition": "pro-（向前）+ blem（投掷，希腊语 ballein）→ 摆在面前的障碍 → 问题"
+    },
+    "against": {
+      "roots": []
+    },
+    "again": {
+      "roots": []
+    },
+    "never": {
+      "roots": []
+    },
+    "under": {
+      "roots": []
+    },
+    "try": {
+      "roots": []
+    },
+    "service": {
+      "roots": [
+        {
+          "root": "serv",
+          "meaning": "服务"
+        },
+        {
+          "root": "-ice",
+          "meaning": "名词后缀"
+        }
+      ]
+    },
+    "call": {
+      "roots": []
+    },
+    "place": {
+      "roots": [
+        {
+          "root": "plat",
+          "meaning": "宽阔、平坦"
+        }
+      ],
+      "composition": "plat（宽阔，希腊语 plateia「宽街」）→ place（地方）"
+    },
+    "hand": {
+      "roots": []
+    },
+    "much": {
+      "roots": []
+    },
+    "school": {
+      "roots": [
+        {
+          "root": "schol",
+          "meaning": "闲暇、学问"
+        }
+      ],
+      "composition": "schol（闲暇，希腊语 scholē「闲暇用于学习」）→ 学校"
+    },
+    "party": {
+      "roots": [
+        {
+          "root": "part",
+          "meaning": "部分"
+        }
+      ],
+      "composition": "part（部分）→ 经法语 partie → 一方、聚会、政党"
+    },
+    "something": {
+      "roots": []
+    },
+    "small": {
+      "roots": []
+    },
+    "why": {
+      "roots": []
+    },
+    "each": {
+      "roots": []
+    },
+    "keep": {
+      "roots": []
+    },
+    "provide": {
+      "roots": [
+        {
+          "root": "pro-",
+          "meaning": "向前、预先"
+        },
+        {
+          "root": "vid",
+          "meaning": "看"
+        }
+      ],
+      "composition": "pro-（预先）+ vid（看）→ 预先看到并准备 → 提供"
+    },
+    "while": {
+      "roots": []
+    },
+    "off": {
+      "roots": []
+    },
+    "country": {
+      "roots": [
+        {
+          "root": "contr",
+          "meaning": "对面"
+        }
+      ],
+      "composition": "contr（对面，拉丁语 contra）→ 面前的土地 → 国家、乡村"
+    },
+    "point": {
+      "roots": [
+        {
+          "root": "punct",
+          "meaning": "刺、点"
+        }
+      ],
+      "composition": "punct（刺，拉丁语 pungere）→ point（点）"
+    },
+    "different": {
+      "roots": [
+        {
+          "root": "dif-",
+          "meaning": "分开"
+        },
+        {
+          "root": "fer",
+          "meaning": "带、运"
+        },
+        {
+          "root": "-ent",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "dif-（分开）+ fer（带走）+ -ent → 被带向不同方向的 → 不同的"
+    },
+    "hold": {
+      "roots": []
+    },
+    "really": {
+      "roots": [
+        {
+          "root": "real",
+          "meaning": "真实的"
+        },
+        {
+          "root": "-ly",
+          "meaning": "副词后缀"
+        }
+      ],
+      "composition": "real（真实的，源自拉丁语 res「事物」）+ -ly → 真实地"
+    },
+    "week": {
+      "roots": []
+    },
+    "large": {
+      "roots": [
+        {
+          "root": "larg",
+          "meaning": "丰富、慷慨"
+        }
+      ]
+    },
+    "member": {
+      "roots": [
+        {
+          "root": "membr",
+          "meaning": "肢体、组成部分"
+        }
+      ]
+    },
+    "turn": {
+      "roots": [
+        {
+          "root": "torn",
+          "meaning": "旋转"
+        }
+      ],
+      "composition": "torn（旋转，拉丁语 tornare「车床旋转」）→ turn（转动）"
+    },
+    "four": {
+      "roots": []
+    },
+    "always": {
+      "roots": []
+    },
+    "follow": {
+      "roots": []
+    },
+    "end": {
+      "roots": []
+    },
+    "without": {
+      "roots": []
+    },
+    "few": {
+      "roots": []
+    },
+    "within": {
+      "roots": []
+    },
+    "local": {
+      "roots": [
+        {
+          "root": "loc",
+          "meaning": "地方"
+        },
+        {
+          "root": "-al",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "loc（地方，拉丁语 locus）+ -al → 当地的"
+    },
+    "during": {
+      "roots": [
+        {
+          "root": "dur",
+          "meaning": "持续"
+        }
+      ],
+      "composition": "dur（持续，拉丁语 durare「持久」）→ during（在...期间）"
+    },
+    "begin": {
+      "roots": []
+    },
+    "state": {
+      "roots": [
+        {
+          "root": "stat",
+          "meaning": "站立"
+        }
+      ],
+      "composition": "stat（站立，拉丁语 stare）→ 固定的状态 → 状态、国家"
+    },
+    "bring": {
+      "roots": []
+    },
+    "word": {
+      "roots": []
+    },
+    "although": {
+      "roots": []
+    },
+    "before": {
+      "roots": []
+    },
+    "next": {
+      "roots": []
+    },
+    "family": {
+      "roots": [
+        {
+          "root": "famil",
+          "meaning": "家庭"
+        }
+      ],
+      "composition": "famil（家族，拉丁语 familia，源自 famulus「仆人」）→ 家庭"
+    },
+    "fact": {
+      "roots": [
+        {
+          "root": "fact",
+          "meaning": "做、制造"
+        }
+      ],
+      "composition": "fact（做，拉丁语 facere）→ 已做之事 → 事实"
+    },
+    "social": {
+      "roots": [
+        {
+          "root": "soci",
+          "meaning": "同伴"
+        },
+        {
+          "root": "-al",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "soci（同伴，拉丁语 socius）+ -al → 社会的"
+    },
+    "going": {
+      "roots": []
+    },
+    "help": {
+      "roots": []
+    },
+    "start": {
+      "roots": []
+    },
+    "quite": {
+      "roots": []
+    },
+    "five": {
+      "roots": []
+    },
+    "run": {
+      "roots": []
+    },
+    "head": {
+      "roots": []
+    },
+    "every": {
+      "roots": []
+    },
+    "write": {
+      "roots": []
+    },
+    "side": {
+      "roots": []
+    },
+    "set": {
+      "roots": []
+    },
+    "month": {
+      "roots": []
+    },
+    "business": {
+      "roots": []
+    },
+    "night": {
+      "roots": []
+    },
+    "long": {
+      "roots": []
+    },
+    "important": {
+      "roots": [
+        {
+          "root": "im-",
+          "meaning": "进入"
+        },
+        {
+          "root": "port",
+          "meaning": "搬运"
+        },
+        {
+          "root": "-ant",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "im-（进入）+ port（搬运，拉丁语 portare）+ -ant → 被带入的、有分量的 → 重要的"
+    },
+    "eye": {
+      "roots": []
+    },
+    "move": {
+      "roots": [
+        {
+          "root": "mov",
+          "meaning": "运动"
+        }
+      ]
+    },
+    "question": {
+      "roots": [
+        {
+          "root": "quest",
+          "meaning": "寻求"
+        },
+        {
+          "root": "-ion",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "quest（寻求，拉丁语 quaerere）+ -ion → 寻求答案 → 问题"
+    },
+    "home": {
+      "roots": []
+    },
+    "information": {
+      "roots": [
+        {
+          "root": "in-",
+          "meaning": "进入"
+        },
+        {
+          "root": "form",
+          "meaning": "形式"
+        },
+        {
+          "root": "-ation",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "in-（进入）+ form（形式）+ -ation → 赋予形式 → 告知 → 信息"
+    },
+    "play": {
+      "roots": []
+    },
+    "power": {
+      "roots": [
+        {
+          "root": "pot",
+          "meaning": "能够"
+        }
+      ],
+      "composition": "pot（能够，拉丁语 potere）→ 经古法语 poer → power（力量、权力）"
+    },
+    "change": {
+      "roots": []
+    },
+    "pay": {
+      "roots": [
+        {
+          "root": "pac",
+          "meaning": "和平、满足"
+        }
+      ],
+      "composition": "pac（和平，拉丁语 pacare「使满意」）→ 使债主满意 → 支付"
+    },
+    "young": {
+      "roots": []
+    },
+    "both": {
+      "roots": []
+    },
+    "often": {
+      "roots": []
+    },
+    "interest": {
+      "roots": [
+        {
+          "root": "inter-",
+          "meaning": "在...之间"
+        },
+        {
+          "root": "est",
+          "meaning": "存在"
+        }
+      ],
+      "composition": "inter-（之间）+ est（存在，拉丁语 esse）→ 与之相关 → 兴趣、利益"
+    },
+    "national": {
+      "roots": [
+        {
+          "root": "nat",
+          "meaning": "出生"
+        },
+        {
+          "root": "-ion",
+          "meaning": "名词后缀"
+        },
+        {
+          "root": "-al",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "nat（出生，拉丁语 natus）+ -ion（→ nation 民族）+ -al → 国家的"
+    },
+    "money": {
+      "roots": [
+        {
+          "root": "monet",
+          "meaning": "铸币"
+        }
+      ],
+      "composition": "monet（铸币，拉丁语 moneta「铸币厂」）→ money（钱）"
+    },
+    "development": {
+      "roots": [
+        {
+          "root": "de-",
+          "meaning": "去除"
+        },
+        {
+          "root": "velop",
+          "meaning": "包裹"
+        },
+        {
+          "root": "-ment",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "de-（去除）+ velop（包裹）+ -ment → 展开 → 发展"
+    },
+    "book": {
+      "roots": []
+    },
+    "water": {
+      "roots": []
+    },
+    "away": {
+      "roots": []
+    },
+    "hear": {
+      "roots": []
+    },
+    "form": {
+      "roots": [
+        {
+          "root": "form",
+          "meaning": "形式、形状"
+        }
+      ]
+    },
+    "room": {
+      "roots": []
+    },
+    "level": {
+      "roots": [
+        {
+          "root": "libr",
+          "meaning": "天平、平衡"
+        }
+      ],
+      "composition": "libr（天平，拉丁语 libra）→ libella（水准器）→ level（水平）"
+    },
+    "second": {
+      "roots": [
+        {
+          "root": "sequ",
+          "meaning": "跟随"
+        }
+      ],
+      "composition": "sequ（跟随，拉丁语 sequi）→ secundus（紧随其后的）→ second（第二）"
+    },
+    "right": {
+      "roots": []
+    },
+    "early": {
+      "roots": []
+    },
+    "include": {
+      "roots": [
+        {
+          "root": "in-",
+          "meaning": "进入"
+        },
+        {
+          "root": "clud",
+          "meaning": "关闭"
+        }
+      ],
+      "composition": "in-（进入）+ clud（关闭，拉丁语 claudere）→ 关在里面 → 包含"
+    },
+    "car": {
+      "roots": []
+    },
+    "London": {
+      "roots": []
+    },
+    "perhaps": {
+      "roots": []
+    },
+    "policy": {
+      "roots": [
+        {
+          "root": "poli",
+          "meaning": "城市"
+        }
+      ],
+      "composition": "poli（城市，希腊语 polis）→ politeia（城邦治理）→ policy（政策）"
+    },
+    "council": {
+      "roots": []
+    },
+    "believe": {
+      "roots": []
+    },
+    "market": {
+      "roots": [
+        {
+          "root": "merc",
+          "meaning": "交易"
+        }
+      ],
+      "composition": "merc（交易，拉丁语 mercatus）→ market（市场）"
+    },
+    "court": {
+      "roots": [
+        {
+          "root": "co-",
+          "meaning": "共同"
+        },
+        {
+          "root": "hort",
+          "meaning": "围场"
+        }
+      ],
+      "composition": "co-（共同）+ hort（围场，拉丁语 cohors）→ 围起来的庭院 → 宫廷、法庭"
+    },
+    "already": {
+      "roots": []
+    },
+    "possible": {
+      "roots": [
+        {
+          "root": "poss",
+          "meaning": "能够"
+        },
+        {
+          "root": "-ible",
+          "meaning": "能...的"
+        }
+      ],
+      "composition": "poss（能够，拉丁语 posse）+ -ible → 可能的"
+    },
+    "allow": {
+      "roots": []
+    },
+    "nothing": {
+      "roots": []
+    },
+    "meet": {
+      "roots": []
+    },
+    "big": {
+      "roots": []
+    },
+    "yet": {
+      "roots": []
+    },
+    "effect": {
+      "roots": [
+        {
+          "root": "ef-",
+          "meaning": "出（=ex-）"
+        },
+        {
+          "root": "fect",
+          "meaning": "做"
+        }
+      ],
+      "composition": "ef-（出）+ fect（做，拉丁语 facere）→ 做出来的结果 → 效果"
+    },
+    "lead": {
+      "roots": []
+    },
+    "result": {
+      "roots": [
+        {
+          "root": "re-",
+          "meaning": "回"
+        },
+        {
+          "root": "sult",
+          "meaning": "跳"
+        }
+      ],
+      "composition": "re-（回）+ sult（跳，拉丁语 saltare）→ 弹回 → 结果"
+    },
+    "whether": {
+      "roots": []
+    },
+    "mm": {
+      "roots": []
+    },
+    "live": {
+      "roots": []
+    },
+    "idea": {
+      "roots": [
+        {
+          "root": "ide",
+          "meaning": "形式、外观"
+        }
+      ],
+      "composition": "ide（形式，希腊语 idea「外观、形式」）→ 理念、想法"
+    },
+    "john": {
+      "roots": []
+    },
+    "study": {
+      "roots": [
+        {
+          "root": "stud",
+          "meaning": "热心、专注"
+        }
+      ],
+      "composition": "stud（热心，拉丁语 studium「热情、学习」）→ study（学习）"
+    },
+    "name": {
+      "roots": []
+    },
+    "job": {
+      "roots": []
+    },
+    "stand": {
+      "roots": []
+    },
+    "body": {
+      "roots": []
+    },
+    "happen": {
+      "roots": []
+    },
+    "report": {
+      "roots": [
+        {
+          "root": "re-",
+          "meaning": "回"
+        },
+        {
+          "root": "port",
+          "meaning": "搬运"
+        }
+      ],
+      "composition": "re-（回）+ port（搬运）→ 带回消息 → 报告"
+    },
+    "line": {
+      "roots": [
+        {
+          "root": "lin",
+          "meaning": "线"
+        }
+      ],
+      "composition": "lin（线，拉丁语 linea「亚麻线」）→ line（线）"
+    },
+    "law": {
+      "roots": []
+    },
+    "later": {
+      "roots": []
+    },
+    "almost": {
+      "roots": []
+    },
+    "friend": {
+      "roots": []
+    },
+    "face": {
+      "roots": [
+        {
+          "root": "fac",
+          "meaning": "面貌、外表"
+        }
+      ],
+      "composition": "fac（外表，拉丁语 facies）→ face（脸）"
+    },
+    "carry": {
+      "roots": [
+        {
+          "root": "carr",
+          "meaning": "车"
+        }
+      ],
+      "composition": "carr（车，拉丁语 carrus）→ 用车运 → carry（搬运）"
+    },
+    "road": {
+      "roots": []
+    },
+    "authority": {
+      "roots": [
+        {
+          "root": "auct",
+          "meaning": "增长、创始"
+        },
+        {
+          "root": "-ity",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "auct（创始，拉丁语 auctor「创始人」）+ -ity → 权威"
+    },
+    "himself": {
+      "roots": []
+    },
+    "far": {
+      "roots": []
+    },
+    "together": {
+      "roots": []
+    },
+    "talk": {
+      "roots": []
+    },
+    "appear": {
+      "roots": [
+        {
+          "root": "ap-",
+          "meaning": "向（=ad-）"
+        },
+        {
+          "root": "par",
+          "meaning": "出现、可见"
+        }
+      ],
+      "composition": "ap-（向）+ par（出现，拉丁语 parere）→ 显现 → 出现"
+    },
+    "little": {
+      "roots": []
+    },
+    "political": {
+      "roots": [
+        {
+          "root": "poli",
+          "meaning": "城市"
+        },
+        {
+          "root": "-tic",
+          "meaning": "与...有关的"
+        },
+        {
+          "root": "-al",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "poli（城市，希腊语 polis）+ -tical → 城邦事务的 → 政治的"
+    },
+    "six": {
+      "roots": []
+    },
+    "minister": {
+      "roots": [
+        {
+          "root": "mini",
+          "meaning": "小、少"
+        },
+        {
+          "root": "-ster",
+          "meaning": "人"
+        }
+      ],
+      "composition": "mini（小，拉丁语 minus「较小的」）+ -ster → 侍从、仆人 → 部长"
+    },
+    "able": {
+      "roots": [
+        {
+          "root": "habil",
+          "meaning": "灵巧、能够"
+        }
+      ],
+      "composition": "habil（灵巧，拉丁语 habilis，源自 habere「持有」）→ able（能够的）"
+    },
+    "produce": {
+      "roots": [
+        {
+          "root": "pro-",
+          "meaning": "向前"
+        },
+        {
+          "root": "duc",
+          "meaning": "引导"
+        }
+      ],
+      "composition": "pro-（向前）+ duc（引导，拉丁语 ducere）→ 引领出来 → 生产"
+    },
+    "rate": {
+      "roots": [
+        {
+          "root": "rat",
+          "meaning": "计算"
+        }
+      ],
+      "composition": "rat（计算，拉丁语 rata「已算定的」）→ rate（比率）"
+    },
+    "late": {
+      "roots": []
+    },
+    "hour": {
+      "roots": [
+        {
+          "root": "hor",
+          "meaning": "时间"
+        }
+      ],
+      "composition": "hor（时间，希腊语 hōra「季节、时辰」）→ hour（小时）"
+    },
+    "door": {
+      "roots": []
+    },
+    "general": {
+      "roots": [
+        {
+          "root": "gen",
+          "meaning": "出生、种类"
+        },
+        {
+          "root": "-eral",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "gen（种类，拉丁语 genus）+ -eral → 涵盖全种类的 → 一般的、将军"
+    },
+    "sit": {
+      "roots": []
+    },
+    "office": {
+      "roots": [
+        {
+          "root": "op-",
+          "meaning": "工作"
+        },
+        {
+          "root": "fic",
+          "meaning": "做"
+        }
+      ],
+      "composition": "op-（工作，拉丁语 opus）+ fic（做）→ 履行职责的地方 → 办公室"
+    },
+    "war": {
+      "roots": []
+    },
+    "since": {
+      "roots": []
+    },
+    "mother": {
+      "roots": []
+    },
+    "offer": {
+      "roots": [
+        {
+          "root": "of-",
+          "meaning": "向（=ob-）"
+        },
+        {
+          "root": "fer",
+          "meaning": "搬运"
+        }
+      ],
+      "composition": "of-（向）+ fer（搬运，拉丁语 ferre）→ 递上 → 提供"
+    },
+    "person": {
+      "roots": [
+        {
+          "root": "person",
+          "meaning": "面具、角色"
+        }
+      ],
+      "composition": "person（面具，拉丁语 persona「戏剧面具」）→ 角色 → 人"
+    },
+    "full": {
+      "roots": []
+    },
+    "reason": {
+      "roots": [
+        {
+          "root": "rat",
+          "meaning": "计算、思考"
+        }
+      ],
+      "composition": "rat（计算，拉丁语 ratio）→ reason（理由、理性）"
+    },
+    "view": {
+      "roots": [
+        {
+          "root": "vid",
+          "meaning": "看"
+        }
+      ],
+      "composition": "vid（看，拉丁语 videre）→ 经古法语 veue → view（观点、景色）"
+    },
+    "consider": {
+      "roots": [
+        {
+          "root": "con-",
+          "meaning": "一起"
+        },
+        {
+          "root": "sider",
+          "meaning": "星星"
+        }
+      ],
+      "composition": "con-（一起）+ sider（星星，拉丁语 sidus）→ 一起观星占卜 → 仔细考虑"
+    },
+    "expect": {
+      "roots": [
+        {
+          "root": "ex-",
+          "meaning": "出、向外"
+        },
+        {
+          "root": "spect",
+          "meaning": "看"
+        }
+      ],
+      "composition": "ex-（向外）+ spect（看，拉丁语 spectare）→ 向外张望 → 期待"
+    },
+    "suggest": {
+      "roots": [
+        {
+          "root": "sug-",
+          "meaning": "在下（=sub-）"
+        },
+        {
+          "root": "gest",
+          "meaning": "搬运"
+        }
+      ],
+      "composition": "sug-（在下）+ gest（搬运，拉丁语 gerere）→ 从下面递上 → 建议"
+    },
+    "anything": {
+      "roots": []
+    },
+    "term": {
+      "roots": [
+        {
+          "root": "termin",
+          "meaning": "界限"
+        }
+      ],
+      "composition": "termin（界限，拉丁语 terminus）→ term（术语、期限）"
+    },
+    "towards": {
+      "roots": []
+    },
+    "low": {
+      "roots": []
+    },
+    "public": {
+      "roots": [
+        {
+          "root": "publ",
+          "meaning": "人民"
+        }
+      ],
+      "composition": "publ（人民，拉丁语 publicus，源自 populus）→ public（公共的）"
+    },
+    "let": {
+      "roots": []
+    },
+    "require": {
+      "roots": [
+        {
+          "root": "re-",
+          "meaning": "再三"
+        },
+        {
+          "root": "quir",
+          "meaning": "寻求"
+        }
+      ],
+      "composition": "re-（再三）+ quir（寻求，拉丁语 quaerere）→ 反复要求 → 需要"
+    },
+    "read": {
+      "roots": []
+    },
+    "continue": {
+      "roots": [
+        {
+          "root": "con-",
+          "meaning": "一起"
+        },
+        {
+          "root": "tinu",
+          "meaning": "持续、保持"
+        }
+      ],
+      "composition": "con-（一起）+ tinu（持续，拉丁语 tenere「保持」）→ 继续"
+    },
+    "period": {
+      "roots": [
+        {
+          "root": "peri-",
+          "meaning": "周围"
+        },
+        {
+          "root": "od",
+          "meaning": "路"
+        }
+      ],
+      "composition": "peri-（周围）+ od（路，希腊语 hodos）→ 绕一圈的路程 → 周期、时期"
+    },
+    "figure": {
+      "roots": [
+        {
+          "root": "fig",
+          "meaning": "形状、塑造"
+        }
+      ],
+      "composition": "fig（形状，拉丁语 figura，源自 fingere「塑造」）→ 图形、人物"
+    },
+    "society": {
+      "roots": [
+        {
+          "root": "soci",
+          "meaning": "同伴"
+        },
+        {
+          "root": "-ety",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "soci（同伴，拉丁语 socius）+ -ety → 同伴的集合 → 社会"
+    },
+    "centre": {
+      "roots": [
+        {
+          "root": "centr",
+          "meaning": "中心"
+        }
+      ],
+      "composition": "centr（中心，希腊语 kentron「圆规尖」）→ centre（中心）"
+    },
+    "police": {
+      "roots": [
+        {
+          "root": "poli",
+          "meaning": "城市"
+        }
+      ],
+      "composition": "poli（城市，希腊语 polis）→ politeia（城邦管理）→ police（警察）"
+    },
+    "lose": {
+      "roots": []
+    },
+    "add": {
+      "roots": [
+        {
+          "root": "ad-",
+          "meaning": "向"
+        },
+        {
+          "root": "dare",
+          "meaning": "给"
+        }
+      ],
+      "composition": "ad-（向）+ dare（给，拉丁语）→ 添给 → 增加"
+    },
+    "city": {
+      "roots": [
+        {
+          "root": "civ",
+          "meaning": "公民"
+        }
+      ],
+      "composition": "civ（公民，拉丁语 civis）→ civitas → city（城市）"
+    },
+    "fall": {
+      "roots": []
+    },
+    "probably": {
+      "roots": [
+        {
+          "root": "prob",
+          "meaning": "证明、检验"
+        },
+        {
+          "root": "-able",
+          "meaning": "能...的"
+        },
+        {
+          "root": "-ly",
+          "meaning": "副词后缀"
+        }
+      ],
+      "composition": "prob（证明）+ -ably → 可证明的 → 很可能"
+    },
+    "available": {
+      "roots": [
+        {
+          "root": "a-",
+          "meaning": "向"
+        },
+        {
+          "root": "vail",
+          "meaning": "有力"
+        },
+        {
+          "root": "-able",
+          "meaning": "能...的"
+        }
+      ],
+      "composition": "a-（向）+ vail（有力，拉丁语 valere）+ -able → 可利用的"
+    },
+    "community": {
+      "roots": [
+        {
+          "root": "com-",
+          "meaning": "共同"
+        },
+        {
+          "root": "mun",
+          "meaning": "服务、义务"
+        },
+        {
+          "root": "-ity",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "com-（共同）+ mun（服务）+ -ity → 共同服务的群体 → 社区"
+    },
+    "million": {
+      "roots": [
+        {
+          "root": "mill",
+          "meaning": "千"
+        },
+        {
+          "root": "-ion",
+          "meaning": "大"
+        }
+      ],
+      "composition": "mill（千，拉丁语 mille）+ -ion（放大）→ 百万"
+    },
+    "kind": {
+      "roots": []
+    },
+    "price": {
+      "roots": [
+        {
+          "root": "preti",
+          "meaning": "价值"
+        }
+      ],
+      "composition": "preti（价值，拉丁语 pretium）→ price（价格）"
+    },
+    "control": {
+      "roots": [
+        {
+          "root": "contr-",
+          "meaning": "对照"
+        },
+        {
+          "root": "rol",
+          "meaning": "卷册"
+        }
+      ],
+      "composition": "contr-（对照）+ rol（卷册，拉丁语 rotulus）→ 对照账册核查 → 控制"
+    },
+    "action": {
+      "roots": [
+        {
+          "root": "act",
+          "meaning": "做、驱动"
+        },
+        {
+          "root": "-ion",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "act（做）+ -ion → 做的过程 → 行动"
+    },
+    "issue": {
+      "roots": [
+        {
+          "root": "ex-",
+          "meaning": "出"
+        },
+        {
+          "root": "ire",
+          "meaning": "走"
+        }
+      ],
+      "composition": "ex-（出）+ ire（走，拉丁语）→ 走出来 → 结果、议题、发行"
+    },
+    "cost": {
+      "roots": [
+        {
+          "root": "con-",
+          "meaning": "一起"
+        },
+        {
+          "root": "sta",
+          "meaning": "站立"
+        }
+      ],
+      "composition": "con-（一起）+ sta（站立，拉丁语 stare）→ 固定在某个价格 → 花费"
+    },
+    "process": {
+      "roots": [
+        {
+          "root": "pro-",
+          "meaning": "向前"
+        },
+        {
+          "root": "cess",
+          "meaning": "走"
+        }
+      ],
+      "composition": "pro-（向前）+ cess（走，拉丁语 cedere）→ 向前推进 → 过程"
+    },
+    "remain": {
+      "roots": [
+        {
+          "root": "re-",
+          "meaning": "回、留"
+        },
+        {
+          "root": "man",
+          "meaning": "停留"
+        }
+      ],
+      "composition": "re-（留）+ man（停留，拉丁语 manere）→ 留下"
+    },
+    "position": {
+      "roots": [
+        {
+          "root": "pos",
+          "meaning": "放置"
+        },
+        {
+          "root": "-ition",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "pos（放置，拉丁语 ponere）+ -ition → 放置的地方 → 位置"
+    },
+    "remember": {
+      "roots": [
+        {
+          "root": "re-",
+          "meaning": "再次"
+        },
+        {
+          "root": "membr",
+          "meaning": "想起"
+        }
+      ],
+      "composition": "re-（再次）+ membr（记忆，拉丁语 memor「记得的」）→ 记住"
+    },
+    "course": {
+      "roots": [
+        {
+          "root": "curs",
+          "meaning": "跑"
+        }
+      ],
+      "composition": "curs（跑，拉丁语 cursus「奔跑」）→ course（路线、课程）"
+    },
+    "minute": {
+      "roots": [
+        {
+          "root": "minut",
+          "meaning": "缩小"
+        }
+      ],
+      "composition": "minut（缩小，拉丁语 minutus「很小的」）→ 把小时细分 → 分钟"
+    },
+    "bad": {
+      "roots": []
+    },
+    "today": {
+      "roots": []
+    },
+    "buy": {
+      "roots": []
+    },
+    "speak": {
+      "roots": []
+    },
+    "education": {
+      "roots": [
+        {
+          "root": "e-",
+          "meaning": "出"
+        },
+        {
+          "root": "duc",
+          "meaning": "引导"
+        },
+        {
+          "root": "-ation",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "e-（出）+ duc（引导）+ -ation → 引导出才能 → 教育"
+    },
+    "actually": {
+      "roots": [
+        {
+          "root": "act",
+          "meaning": "做"
+        },
+        {
+          "root": "-ual",
+          "meaning": "形容词后缀"
+        },
+        {
+          "root": "-ly",
+          "meaning": "副词后缀"
+        }
+      ],
+      "composition": "act（做）+ -ual + -ly → 实际上"
+    },
+    "ever": {
+      "roots": []
+    },
+    "type": {
+      "roots": [
+        {
+          "root": "typ",
+          "meaning": "印记、打击"
+        }
+      ],
+      "composition": "typ（印记，希腊语 typos「打击留下的印记」）→ 类型"
+    },
+    "research": {
+      "roots": [
+        {
+          "root": "re-",
+          "meaning": "再次"
+        },
+        {
+          "root": "search",
+          "meaning": "搜寻"
+        }
+      ],
+      "composition": "re-（再次）+ search（搜寻，源自拉丁语 circare「环绕搜索」）→ 深入探索 → 研究"
+    },
+    "subject": {
+      "roots": [
+        {
+          "root": "sub-",
+          "meaning": "在下"
+        },
+        {
+          "root": "ject",
+          "meaning": "投掷"
+        }
+      ],
+      "composition": "sub-（在下）+ ject（投掷，拉丁语 jacere）→ 置于之下 → 主题、使服从"
+    },
+    "stop": {
+      "roots": []
+    },
+    "programme": {
+      "roots": [
+        {
+          "root": "pro-",
+          "meaning": "在前"
+        },
+        {
+          "root": "gram",
+          "meaning": "写"
+        }
+      ],
+      "composition": "pro-（在前）+ gram（写，希腊语 graphein）→ 预先写好的安排 → 节目、程序"
+    },
+    "moment": {
+      "roots": [
+        {
+          "root": "mov",
+          "meaning": "运动"
+        }
+      ],
+      "composition": "mov（运动，拉丁语 movēre）→ momentum（运动的一瞬）→ moment（片刻）"
+    },
+    "girl": {
+      "roots": []
+    },
+    "age": {
+      "roots": [
+        {
+          "root": "aev",
+          "meaning": "时代、一生"
+        }
+      ],
+      "composition": "aev（时代，拉丁语 aevum）→ aetas → age（年龄、时代）"
+    },
+    "father": {
+      "roots": []
+    },
+    "Britain": {
+      "roots": []
+    },
+    "send": {
+      "roots": []
+    },
+    "value": {
+      "roots": [
+        {
+          "root": "val",
+          "meaning": "强壮、有价值"
+        }
+      ],
+      "composition": "val（强壮，拉丁语 valere「有力量」）→ value（价值）"
+    },
+    "order": {
+      "roots": [
+        {
+          "root": "ord",
+          "meaning": "次序"
+        }
+      ],
+      "composition": "ord（次序，拉丁语 ordo）→ order（秩序、命令）"
+    },
+    "force": {
+      "roots": [
+        {
+          "root": "fort",
+          "meaning": "强壮"
+        }
+      ],
+      "composition": "fort（强壮，拉丁语 fortis）→ force（力量）"
+    },
+    "matter": {
+      "roots": [
+        {
+          "root": "mater",
+          "meaning": "物质、木材"
+        }
+      ],
+      "composition": "mater（物质，拉丁语 materia）→ matter（物质、事情）"
+    },
+    "act": {
+      "roots": [
+        {
+          "root": "act",
+          "meaning": "做、驱动"
+        }
+      ],
+      "composition": "act（做，拉丁语 agere）→ 行为"
+    },
+    "receive": {
+      "roots": [
+        {
+          "root": "re-",
+          "meaning": "回"
+        },
+        {
+          "root": "ceiv",
+          "meaning": "取"
+        }
+      ],
+      "composition": "re-（回）+ ceiv（取，拉丁语 capere）→ 取回 → 接收"
+    },
+    "health": {
+      "roots": []
+    },
+    "lot": {
+      "roots": []
+    },
+    "decide": {
+      "roots": [
+        {
+          "root": "de-",
+          "meaning": "离开"
+        },
+        {
+          "root": "cid",
+          "meaning": "切"
+        }
+      ],
+      "composition": "de-（离开）+ cid（切，拉丁语 caedere）→ 切断犹豫 → 决定"
+    },
+    "main": {
+      "roots": []
+    },
+    "though": {
+      "roots": []
+    },
+    "enough": {
+      "roots": []
+    },
+    "less": {
+      "roots": []
+    },
+    "street": {
+      "roots": [
+        {
+          "root": "strat",
+          "meaning": "铺设的路"
+        }
+      ],
+      "composition": "strat（铺设的路，拉丁语 strata via）→ street（街道）"
+    },
+    "decision": {
+      "roots": [
+        {
+          "root": "de-",
+          "meaning": "离开"
+        },
+        {
+          "root": "cis",
+          "meaning": "切"
+        },
+        {
+          "root": "-ion",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "de-（离开）+ cis（切）+ -ion → 切断犹豫 → 决定"
+    },
+    "until": {
+      "roots": []
+    },
+    "industry": {
+      "roots": [
+        {
+          "root": "indu-",
+          "meaning": "内部"
+        },
+        {
+          "root": "stru",
+          "meaning": "建造"
+        }
+      ],
+      "composition": "indu-（内部）+ stru（建造，拉丁语 struere）→ 内在的勤奋 → 工业"
+    },
+    "patient": {
+      "roots": [
+        {
+          "root": "pat",
+          "meaning": "忍受"
+        },
+        {
+          "root": "-ient",
+          "meaning": "形容词/名词后缀"
+        }
+      ],
+      "composition": "pat（忍受，拉丁语 pati）+ -ient → 忍受的人 → 病人、耐心的"
+    },
+    "mind": {
+      "roots": []
+    },
+    "sure": {
+      "roots": [
+        {
+          "root": "secur",
+          "meaning": "安全"
+        }
+      ],
+      "composition": "secur（安全，拉丁语 securus）→ 经法语简化 → sure（确信的）"
+    },
+    "class": {
+      "roots": [
+        {
+          "root": "class",
+          "meaning": "等级、召集"
+        }
+      ],
+      "composition": "class（等级，拉丁语 classis「等级、舰队」）→ 阶级、班级"
+    },
+    "win": {
+      "roots": []
+    },
+    "several": {
+      "roots": [
+        {
+          "root": "sever",
+          "meaning": "分开"
+        }
+      ],
+      "composition": "sever（分开，拉丁语 separare）→ 各自分开的 → 几个"
+    },
+    "clear": {
+      "roots": [
+        {
+          "root": "clar",
+          "meaning": "清晰、明亮"
+        }
+      ],
+      "composition": "clar（清晰，拉丁语 clarus）→ clear（清楚的）"
+    },
+    "understand": {
+      "roots": []
+    },
+    "major": {
+      "roots": [
+        {
+          "root": "maj",
+          "meaning": "较大"
+        }
+      ],
+      "composition": "maj（较大，拉丁语 major「更大的」）→ major（主要的）"
+    },
+    "church": {
+      "roots": [
+        {
+          "root": "kyri",
+          "meaning": "主、主人"
+        }
+      ],
+      "composition": "kyri（主人，希腊语 kyrios）→ kyriakē（主的殿堂）→ church（教堂）"
+    },
+    "themselves": {
+      "roots": []
+    },
+    "paper": {
+      "roots": [
+        {
+          "root": "papyr",
+          "meaning": "纸莎草"
+        }
+      ],
+      "composition": "papyr（纸莎草，希腊语 papyros）→ paper（纸）"
+    },
+    "itself": {
+      "roots": []
+    },
+    "around": {
+      "roots": []
+    },
+    "describe": {
+      "roots": [
+        {
+          "root": "de-",
+          "meaning": "向下"
+        },
+        {
+          "root": "scrib",
+          "meaning": "写"
+        }
+      ],
+      "composition": "de-（向下）+ scrib（写，拉丁语 scribere）→ 写下来 → 描述"
+    },
+    "condition": {
+      "roots": [
+        {
+          "root": "con-",
+          "meaning": "共同"
+        },
+        {
+          "root": "dit",
+          "meaning": "给"
+        },
+        {
+          "root": "-ion",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "con-（共同）+ dit（给，拉丁语 dare）+ -ion → 共同约定 → 条件"
+    },
+    "develop": {
+      "roots": [
+        {
+          "root": "de-",
+          "meaning": "去除"
+        },
+        {
+          "root": "velop",
+          "meaning": "包裹"
+        }
+      ],
+      "composition": "de-（去除）+ velop（包裹，古法语 voloper）→ 展开 → 发展"
+    },
+    "agree": {
+      "roots": [
+        {
+          "root": "a-",
+          "meaning": "向（=ad-）"
+        },
+        {
+          "root": "gre",
+          "meaning": "令人愉快"
+        }
+      ],
+      "composition": "a-（向）+ gre（愉快，拉丁语 gratum）→ 使满意 → 同意"
+    },
+    "economic": {
+      "roots": [
+        {
+          "root": "eco",
+          "meaning": "家"
+        },
+        {
+          "root": "nom",
+          "meaning": "法则、管理"
+        },
+        {
+          "root": "-ic",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "eco（家，希腊语 oikos）+ nom（管理）+ -ic → 管家之道 → 经济的"
+    },
+    "open": {
+      "roots": []
+    },
+    "reach": {
+      "roots": []
+    },
+    "upon": {
+      "roots": []
+    },
+    "bank": {
+      "roots": []
+    },
+    "century": {
+      "roots": [
+        {
+          "root": "cent",
+          "meaning": "百"
+        }
+      ],
+      "composition": "cent（百，拉丁语 centum）→ century（世纪，即一百年）"
+    },
+    "therefore": {
+      "roots": []
+    },
+    "section": {
+      "roots": [
+        {
+          "root": "sect",
+          "meaning": "切"
+        },
+        {
+          "root": "-ion",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "sect（切，拉丁语 secare）+ -ion → 切下的部分 → 部分"
+    },
+    "table": {
+      "roots": [
+        {
+          "root": "tabul",
+          "meaning": "板"
+        }
+      ],
+      "composition": "tabul（板，拉丁语 tabula「木板」）→ table（桌子）"
+    },
+    "England": {
+      "roots": []
+    },
+    "activity": {
+      "roots": [
+        {
+          "root": "act",
+          "meaning": "做"
+        },
+        {
+          "root": "-iv",
+          "meaning": "形容词后缀"
+        },
+        {
+          "root": "-ity",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "act（做）+ -ive + -ity → 行动的状态 → 活动"
+    },
+    "hundred": {
+      "roots": []
+    },
+    "death": {
+      "roots": []
+    },
+    "build": {
+      "roots": []
+    },
+    "including": {
+      "roots": []
+    },
+    "sense": {
+      "roots": [
+        {
+          "root": "sens",
+          "meaning": "感觉"
+        }
+      ],
+      "composition": "sens（感觉，拉丁语 sentire「感知」）→ sense（感觉、意义）"
+    },
+    "among": {
+      "roots": []
+    },
+    "involve": {
+      "roots": [
+        {
+          "root": "in-",
+          "meaning": "内"
+        },
+        {
+          "root": "volv",
+          "meaning": "卷"
+        }
+      ],
+      "composition": "in-（内）+ volv（卷，拉丁语 volvere）→ 卷入 → 涉及"
+    },
+    "building": {
+      "roots": []
+    },
+    "sort": {
+      "roots": [
+        {
+          "root": "sort",
+          "meaning": "命运、种类"
+        }
+      ],
+      "composition": "sort（命运，拉丁语 sors「抽签、命运」）→ 种类"
+    },
+    "likely": {
+      "roots": []
+    },
+    "staff": {
+      "roots": []
+    },
+    "spend": {
+      "roots": [
+        {
+          "root": "pend",
+          "meaning": "称量、支付"
+        }
+      ],
+      "composition": "spend 源自拉丁语 expendere → ex-（出）+ pend（称量）→ 花费"
+    },
+    "real": {
+      "roots": [
+        {
+          "root": "re",
+          "meaning": "事物"
+        },
+        {
+          "root": "-al",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "re（事物，拉丁语 res）+ -al → 事物的、真实的"
+    },
+    "black": {
+      "roots": []
+    },
+    "team": {
+      "roots": []
+    },
+    "return": {
+      "roots": [
+        {
+          "root": "re-",
+          "meaning": "回"
+        },
+        {
+          "root": "turn",
+          "meaning": "旋转"
+        }
+      ],
+      "composition": "re-（回）+ turn（旋转）→ 转回 → 返回"
+    },
+    "draw": {
+      "roots": []
+    },
+    "experience": {
+      "roots": [
+        {
+          "root": "ex-",
+          "meaning": "出、彻底"
+        },
+        {
+          "root": "peri",
+          "meaning": "尝试"
+        },
+        {
+          "root": "-ence",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "ex-（彻底）+ peri（尝试，拉丁语 periri）+ -ence → 亲身尝试 → 经验"
+    },
+    "particular": {
+      "roots": [
+        {
+          "root": "part",
+          "meaning": "部分"
+        },
+        {
+          "root": "-cul",
+          "meaning": "小"
+        },
+        {
+          "root": "-ar",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "part（部分）+ -cul（小）+ -ar → 极小的部分 → 特定的"
+    },
+    "student": {
+      "roots": [
+        {
+          "root": "stud",
+          "meaning": "学习、热心"
+        },
+        {
+          "root": "-ent",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "stud（学习，拉丁语 studere）+ -ent → 学习的人 → 学生"
+    },
+    "town": {
+      "roots": []
+    },
+    "Mrs": {
+      "roots": []
+    },
+    "international": {
+      "roots": [
+        {
+          "root": "inter-",
+          "meaning": "在...之间"
+        },
+        {
+          "root": "nat",
+          "meaning": "出生"
+        },
+        {
+          "root": "-ion",
+          "meaning": "名词后缀"
+        },
+        {
+          "root": "-al",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "inter-（之间）+ nation（民族）+ -al → 国际的"
+    },
+    "language": {
+      "roots": [
+        {
+          "root": "lingu",
+          "meaning": "舌头"
+        }
+      ],
+      "composition": "lingu（舌头，拉丁语 lingua）→ language（语言）"
+    },
+    "either": {
+      "roots": []
+    },
+    "special": {
+      "roots": [
+        {
+          "root": "spec",
+          "meaning": "看"
+        },
+        {
+          "root": "-ial",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "spec（看，拉丁语 specere）→ species（外观、种类）→ special（特殊的）"
+    },
+    "difficult": {
+      "roots": [
+        {
+          "root": "dif-",
+          "meaning": "不（=dis-）"
+        },
+        {
+          "root": "fic",
+          "meaning": "做"
+        },
+        {
+          "root": "-ult",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "dif-（不）+ fic（做）+ -ult → 不容易做的 → 困难的"
+    },
+    "certain": {
+      "roots": [
+        {
+          "root": "cert",
+          "meaning": "确定"
+        }
+      ],
+      "composition": "cert（确定，拉丁语 certus「已决定的」）→ certain（确定的）"
+    },
+    "particularly": {
+      "roots": [
+        {
+          "root": "part",
+          "meaning": "部分"
+        },
+        {
+          "root": "-cul",
+          "meaning": "小"
+        },
+        {
+          "root": "-ar",
+          "meaning": "形容词后缀"
+        },
+        {
+          "root": "-ly",
+          "meaning": "副词后缀"
+        }
+      ],
+      "composition": "particular + -ly → 特别地"
+    },
+    "plan": {
+      "roots": [
+        {
+          "root": "plan",
+          "meaning": "平面"
+        }
+      ],
+      "composition": "plan（平面，拉丁语 planus「平的」）→ 平面图 → 计划"
+    },
+    "die": {
+      "roots": []
+    },
+    "hope": {
+      "roots": []
+    },
+    "morning": {
+      "roots": []
+    },
+    "management": {
+      "roots": [
+        {
+          "root": "man",
+          "meaning": "手"
+        },
+        {
+          "root": "-age",
+          "meaning": "名词后缀"
+        },
+        {
+          "root": "-ment",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "man（手，拉丁语 manus）+ -age + -ment → 用手操控 → 管理"
+    },
+    "department": {
+      "roots": [
+        {
+          "root": "de-",
+          "meaning": "分开"
+        },
+        {
+          "root": "part",
+          "meaning": "部分"
+        },
+        {
+          "root": "-ment",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "de-（分开）+ part（部分）+ -ment → 分出来的部分 → 部门"
+    },
+    "across": {
+      "roots": [
+        {
+          "root": "a-",
+          "meaning": "在"
+        },
+        {
+          "root": "cross",
+          "meaning": "十字"
+        }
+      ],
+      "composition": "a-（在）+ cross（十字，拉丁语 crux）→ 横穿"
+    },
+    "create": {
+      "roots": [
+        {
+          "root": "cre",
+          "meaning": "创造、生长"
+        }
+      ],
+      "composition": "cre（创造，拉丁语 creare）→ create（创造）"
+    },
+    "committee": {
+      "roots": [
+        {
+          "root": "com-",
+          "meaning": "共同"
+        },
+        {
+          "root": "mit",
+          "meaning": "送"
+        },
+        {
+          "root": "-ee",
+          "meaning": "被...的人"
+        }
+      ],
+      "composition": "com-（共同）+ mit（送，拉丁语 mittere）+ -ee → 被委托的人们 → 委员会"
+    },
+    "product": {
+      "roots": [
+        {
+          "root": "pro-",
+          "meaning": "向前"
+        },
+        {
+          "root": "duct",
+          "meaning": "引导"
+        }
+      ],
+      "composition": "pro-（向前）+ duct（引导，拉丁语 ducere）→ 引出来的东西 → 产品"
+    },
+    "whole": {
+      "roots": []
+    },
+    "practice": {
+      "roots": [
+        {
+          "root": "pract",
+          "meaning": "做、实践"
+        }
+      ],
+      "composition": "pract（做，希腊语 prattein）→ practice（实践）"
+    },
+    "letter": {
+      "roots": [
+        {
+          "root": "liter",
+          "meaning": "字母"
+        }
+      ],
+      "composition": "liter（字母，拉丁语 littera）→ letter（字母、信件）"
+    },
+    "ground": {
+      "roots": []
+    },
+    "evidence": {
+      "roots": [
+        {
+          "root": "e-",
+          "meaning": "出"
+        },
+        {
+          "root": "vid",
+          "meaning": "看"
+        },
+        {
+          "root": "-ence",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "e-（出）+ vid（看，拉丁语 videre）+ -ence → 看得出来的东西 → 证据"
+    },
+    "meeting": {
+      "roots": []
+    },
+    "walk": {
+      "roots": []
+    },
+    "foot": {
+      "roots": []
+    },
+    "rather": {
+      "roots": []
+    },
+    "sell": {
+      "roots": []
+    },
+    "boy": {
+      "roots": []
+    },
+    "wait": {
+      "roots": []
+    },
+    "game": {
+      "roots": []
+    },
+    "third": {
+      "roots": []
+    },
+    "food": {
+      "roots": []
+    },
+    "union": {
+      "roots": [
+        {
+          "root": "un",
+          "meaning": "一"
+        },
+        {
+          "root": "-ion",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "un（一，拉丁语 unus）+ -ion → 合为一体 → 联盟"
+    },
+    "role": {
+      "roots": [
+        {
+          "root": "rot",
+          "meaning": "轮子、卷轴"
+        }
+      ],
+      "composition": "rot（卷轴，拉丁语 rotula「小轮」）→ 演员台词卷轴 → 角色"
+    },
+    "ten": {
+      "roots": []
+    },
+    "half": {
+      "roots": []
+    },
+    "else": {
+      "roots": []
+    },
+    "land": {
+      "roots": []
+    },
+    "event": {
+      "roots": [
+        {
+          "root": "e-",
+          "meaning": "出"
+        },
+        {
+          "root": "vent",
+          "meaning": "来"
+        }
+      ],
+      "composition": "e-（出）+ vent（来，拉丁语 venire）→ 出来的事 → 事件"
+    },
+    "shall": {
+      "roots": []
+    },
+    "white": {
+      "roots": []
+    },
+    "cause": {
+      "roots": [
+        {
+          "root": "caus",
+          "meaning": "原因"
+        }
+      ],
+      "composition": "caus（原因，拉丁语 causa）→ cause（原因、引起）"
+    },
+    "art": {
+      "roots": [
+        {
+          "root": "art",
+          "meaning": "技艺"
+        }
+      ],
+      "composition": "art（技艺，拉丁语 ars）→ art（艺术）"
+    },
+    "sometimes": {
+      "roots": []
+    },
+    "thus": {
+      "roots": []
+    },
+    "pass": {
+      "roots": [
+        {
+          "root": "pass",
+          "meaning": "步"
+        }
+      ],
+      "composition": "pass（步，拉丁语 passus「一步」）→ 经过"
+    },
+    "support": {
+      "roots": [
+        {
+          "root": "sub-",
+          "meaning": "在下"
+        },
+        {
+          "root": "port",
+          "meaning": "搬运"
+        }
+      ],
+      "composition": "sub-（在下）+ port（搬运）→ 从下面托住 → 支持"
+    },
+    "stage": {
+      "roots": [
+        {
+          "root": "sta",
+          "meaning": "站立"
+        }
+      ],
+      "composition": "sta（站立，拉丁语 stare）→ 经古法语 estage → stage（舞台、阶段）"
+    },
+    "lie": {
+      "roots": []
+    },
+    "range": {
+      "roots": []
+    },
+    "trade": {
+      "roots": []
+    },
+    "teacher": {
+      "roots": []
+    },
+    "voice": {
+      "roots": [
+        {
+          "root": "voc",
+          "meaning": "声音、叫"
+        }
+      ],
+      "composition": "voc（声音，拉丁语 vox）→ voice（声音）"
+    },
+    "accept": {
+      "roots": [
+        {
+          "root": "ac-",
+          "meaning": "向（=ad-）"
+        },
+        {
+          "root": "cept",
+          "meaning": "取"
+        }
+      ],
+      "composition": "ac-（向）+ cept（取，拉丁语 capere）→ 接取 → 接受"
+    },
+    "behind": {
+      "roots": []
+    },
+    "watch": {
+      "roots": []
+    },
+    "arm": {
+      "roots": []
+    },
+    "God": {
+      "roots": []
+    },
+    "club": {
+      "roots": []
+    },
+    "parent": {
+      "roots": [
+        {
+          "root": "par",
+          "meaning": "生育"
+        },
+        {
+          "root": "-ent",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "par（生育，拉丁语 parere）+ -ent → 生育者 → 父母"
+    },
+    "field": {
+      "roots": []
+    },
+    "history": {
+      "roots": [
+        {
+          "root": "histor",
+          "meaning": "探究、知识"
+        }
+      ],
+      "composition": "histor（探究，希腊语 historia「通过探究获得的知识」）→ 历史"
+    },
+    "free": {
+      "roots": []
+    },
+    "account": {
+      "roots": [
+        {
+          "root": "ac-",
+          "meaning": "向（=ad-）"
+        },
+        {
+          "root": "count",
+          "meaning": "计算"
+        }
+      ],
+      "composition": "ac-（向）+ count（计算，拉丁语 computare）→ 算账 → 账户"
+    },
+    "material": {
+      "roots": [
+        {
+          "root": "mater",
+          "meaning": "物质"
+        },
+        {
+          "root": "-ial",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "mater（物质，拉丁语 materia）+ -ial → 物质的、材料"
+    },
+    "short": {
+      "roots": []
+    },
+    "whose": {
+      "roots": []
+    },
+    "easy": {
+      "roots": []
+    },
+    "situation": {
+      "roots": [
+        {
+          "root": "situ",
+          "meaning": "位置"
+        },
+        {
+          "root": "-ation",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "situ（位置，拉丁语 situs）+ -ation → 所处位置 → 情况"
+    },
+    "ago": {
+      "roots": []
+    },
+    "care": {
+      "roots": [
+        {
+          "root": "cur",
+          "meaning": "关心"
+        }
+      ],
+      "composition": "cur（关心，拉丁语 cura）→ care（关心、护理）"
+    },
+    "strong": {
+      "roots": []
+    },
+    "record": {
+      "roots": [
+        {
+          "root": "re-",
+          "meaning": "再次"
+        },
+        {
+          "root": "cord",
+          "meaning": "心"
+        }
+      ],
+      "composition": "re-（再次）+ cord（心，拉丁语 cor）→ 再次记在心里 → 记录"
+    },
+    "manager": {
+      "roots": [
+        {
+          "root": "man",
+          "meaning": "手"
+        },
+        {
+          "root": "-age",
+          "meaning": "名词后缀"
+        },
+        {
+          "root": "-er",
+          "meaning": "人"
+        }
+      ],
+      "composition": "man（手）+ -ager → 操控的人 → 经理"
+    },
+    "project": {
+      "roots": [
+        {
+          "root": "pro-",
+          "meaning": "向前"
+        },
+        {
+          "root": "ject",
+          "meaning": "投掷"
+        }
+      ],
+      "composition": "pro-（向前）+ ject（投掷，拉丁语 jacere）→ 投射出去的计划 → 项目"
+    },
+    "raise": {
+      "roots": []
+    },
+    "example": {
+      "roots": [
+        {
+          "root": "ex-",
+          "meaning": "出"
+        },
+        {
+          "root": "ampl",
+          "meaning": "取"
+        }
+      ],
+      "composition": "ex-（出）+ ampl（取，拉丁语 eximere「取出」）→ 取出来作示范 → 例子"
+    },
+    "European": {
+      "roots": []
+    },
+    "yesterday": {
+      "roots": []
+    },
+    "base": {
+      "roots": [
+        {
+          "root": "bas",
+          "meaning": "底部"
+        }
+      ],
+      "composition": "bas（底部，希腊语 basis「台阶、基础」）→ base（基础）"
+    },
+    "training": {
+      "roots": [
+        {
+          "root": "tract",
+          "meaning": "拖、拉"
+        }
+      ],
+      "composition": "tract（拖，拉丁语 trahere）→ 经法语 trainer「拉、牵引」→ 训练"
+    },
+    "window": {
+      "roots": []
+    },
+    "explain": {
+      "roots": [
+        {
+          "root": "ex-",
+          "meaning": "出"
+        },
+        {
+          "root": "plain",
+          "meaning": "平坦"
+        }
+      ],
+      "composition": "ex-（出）+ plain（平坦，拉丁语 planus）→ 铺平、说清楚 → 解释"
+    },
+    "break": {
+      "roots": []
+    },
+    "learn": {
+      "roots": []
+    },
+    "central": {
+      "roots": [
+        {
+          "root": "centr",
+          "meaning": "中心"
+        },
+        {
+          "root": "-al",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "centr（中心）+ -al → 中央的"
+    },
+    "apply": {
+      "roots": [
+        {
+          "root": "ap-",
+          "meaning": "向（=ad-）"
+        },
+        {
+          "root": "ply",
+          "meaning": "折叠"
+        }
+      ],
+      "composition": "ap-（向）+ ply（折叠，拉丁语 plicare）→ 贴合 → 应用、申请"
+    },
+    "increase": {
+      "roots": [
+        {
+          "root": "in-",
+          "meaning": "进入"
+        },
+        {
+          "root": "cre",
+          "meaning": "生长"
+        }
+      ],
+      "composition": "in-（进入）+ cre（生长，拉丁语 crescere）→ 增长"
+    },
+    "grow": {
+      "roots": []
+    },
+    "cover": {
+      "roots": []
+    },
+    "usually": {
+      "roots": [
+        {
+          "root": "us",
+          "meaning": "使用"
+        },
+        {
+          "root": "-ual",
+          "meaning": "形容词后缀"
+        },
+        {
+          "root": "-ly",
+          "meaning": "副词后缀"
+        }
+      ],
+      "composition": "us（使用）+ -ual + -ly → 按惯例地 → 通常"
+    },
+    "air": {
+      "roots": []
+    },
+    "difference": {
+      "roots": [
+        {
+          "root": "dif-",
+          "meaning": "分开"
+        },
+        {
+          "root": "fer",
+          "meaning": "带、运"
+        },
+        {
+          "root": "-ence",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "dif-（分开）+ fer（带走）+ -ence → 差异"
+    },
+    "light": {
+      "roots": []
+    },
+    "university": {
+      "roots": [
+        {
+          "root": "uni",
+          "meaning": "一"
+        },
+        {
+          "root": "vers",
+          "meaning": "转"
+        },
+        {
+          "root": "-ity",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "uni（一）+ vers（转）+ -ity → 转为一体的学者共同体 → 大学"
+    },
+    "wife": {
+      "roots": []
+    },
+    "relationship": {
+      "roots": [
+        {
+          "root": "re-",
+          "meaning": "回"
+        },
+        {
+          "root": "lat",
+          "meaning": "带、运"
+        },
+        {
+          "root": "-tion",
+          "meaning": "名词后缀"
+        },
+        {
+          "root": "-ship",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "relate（关联，re- + lat 带回）+ -ionship → 关系"
+    },
+    "claim": {
+      "roots": [
+        {
+          "root": "clam",
+          "meaning": "呼喊"
+        }
+      ],
+      "composition": "clam（呼喊，拉丁语 clamare）→ 大声宣称 → 声称、索赔"
+    },
+    "sir": {
+      "roots": []
+    },
+    "indeed": {
+      "roots": []
+    },
+    "quality": {
+      "roots": [
+        {
+          "root": "qual",
+          "meaning": "什么样的"
+        },
+        {
+          "root": "-ity",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "qual（什么样的，拉丁语 qualis）+ -ity → 质量、品质"
+    },
+    "someone": {
+      "roots": []
+    },
+    "everything": {
+      "roots": []
+    },
+    "rule": {
+      "roots": [
+        {
+          "root": "regul",
+          "meaning": "规则、引导"
+        }
+      ],
+      "composition": "regul（引导，拉丁语 regula「直尺」）→ rule（规则）"
+    },
+    "certainly": {
+      "roots": []
+    },
+    "cut": {
+      "roots": []
+    },
+    "story": {
+      "roots": []
+    },
+    "similar": {
+      "roots": [
+        {
+          "root": "simil",
+          "meaning": "相像"
+        },
+        {
+          "root": "-ar",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "simil（相像，拉丁语 similis）+ -ar → 相似的"
+    },
+    "worker": {
+      "roots": []
+    },
+    "tax": {
+      "roots": [
+        {
+          "root": "tax",
+          "meaning": "评估"
+        }
+      ],
+      "composition": "tax（评估，拉丁语 taxare「评估」）→ tax（税）"
+    },
+    "pound": {
+      "roots": []
+    },
+    "true": {
+      "roots": []
+    },
+    "once": {
+      "roots": []
+    },
+    "stay": {
+      "roots": []
+    },
+    "human": {
+      "roots": [
+        {
+          "root": "human",
+          "meaning": "人"
+        }
+      ],
+      "composition": "human（人，拉丁语 humanus，源自 humus「土地」）→ 人类的"
+    },
+    "model": {
+      "roots": [
+        {
+          "root": "mod",
+          "meaning": "尺度、方式"
+        }
+      ],
+      "composition": "mod（尺度，拉丁语 modulus「小尺度」）→ model（模型）"
+    },
+    "data": {
+      "roots": [
+        {
+          "root": "dat",
+          "meaning": "给"
+        }
+      ],
+      "composition": "dat（给，拉丁语 dare）→ data（datum 的复数，「已给出的事实」）→ 数据"
+    },
+    "nature": {
+      "roots": [
+        {
+          "root": "nat",
+          "meaning": "出生"
+        },
+        {
+          "root": "-ure",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "nat（出生，拉丁语 natus）+ -ure → 天生的本性 → 自然"
+    },
+    "common": {
+      "roots": [
+        {
+          "root": "com-",
+          "meaning": "共同"
+        },
+        {
+          "root": "mun",
+          "meaning": "服务、义务"
+        }
+      ],
+      "composition": "com-（共同）+ mun（义务，拉丁语 munis）→ 共同分担的 → 普通的、共同的"
+    },
+    "necessary": {
+      "roots": [
+        {
+          "root": "ne-",
+          "meaning": "不"
+        },
+        {
+          "root": "cess",
+          "meaning": "让步、走"
+        },
+        {
+          "root": "-ary",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "ne-（不）+ cess（让步，拉丁语 cedere）+ -ary → 不可让步的 → 必要的"
+    },
+    "officer": {
+      "roots": [
+        {
+          "root": "offic",
+          "meaning": "职责"
+        },
+        {
+          "root": "-er",
+          "meaning": "人"
+        }
+      ],
+      "composition": "offic（职责，拉丁语 officium）+ -er → 履行职责的人 → 官员"
+    },
+    "structure": {
+      "roots": [
+        {
+          "root": "struct",
+          "meaning": "建造"
+        },
+        {
+          "root": "-ure",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "struct（建造，拉丁语 struere）+ -ure → 建造物 → 结构"
+    },
+    "Europe": {
+      "roots": []
+    },
+    "contain": {
+      "roots": [
+        {
+          "root": "con-",
+          "meaning": "一起"
+        },
+        {
+          "root": "tain",
+          "meaning": "持有"
+        }
+      ],
+      "composition": "con-（一起）+ tain（持有，拉丁语 tenere）→ 容纳"
+    },
+    "unit": {
+      "roots": [
+        {
+          "root": "un",
+          "meaning": "一"
+        }
+      ],
+      "composition": "un（一，拉丁语 unus）→ unit（单位）"
+    },
+    "method": {
+      "roots": [
+        {
+          "root": "meta-",
+          "meaning": "追随"
+        },
+        {
+          "root": "od",
+          "meaning": "路"
+        }
+      ],
+      "composition": "meta-（追随）+ od（路，希腊语 hodos）→ 沿着路走 → 方法"
+    },
+    "hospital": {
+      "roots": [
+        {
+          "root": "hospit",
+          "meaning": "客人、主人"
+        },
+        {
+          "root": "-al",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "hospit（款待客人，拉丁语 hospes）+ -al → 招待所 → 医院"
+    },
+    "bed": {
+      "roots": []
+    },
+    "movement": {
+      "roots": [
+        {
+          "root": "mov",
+          "meaning": "运动"
+        },
+        {
+          "root": "-ment",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "mov（运动）+ -ment → 运动"
+    },
+    "detail": {
+      "roots": [
+        {
+          "root": "de-",
+          "meaning": "完全"
+        },
+        {
+          "root": "tail",
+          "meaning": "切"
+        }
+      ],
+      "composition": "de-（完全）+ tail（切，法语 tailler「切割」）→ 切细 → 细节"
+    },
+    "reduce": {
+      "roots": [
+        {
+          "root": "re-",
+          "meaning": "回"
+        },
+        {
+          "root": "duc",
+          "meaning": "引导"
+        }
+      ],
+      "composition": "re-（回）+ duc（引导，拉丁语 ducere）→ 引回、缩减 → 减少"
+    },
+    "simply": {
+      "roots": [
+        {
+          "root": "simpl",
+          "meaning": "单一"
+        },
+        {
+          "root": "-ly",
+          "meaning": "副词后缀"
+        }
+      ],
+      "composition": "simpl（单一，拉丁语 simplex「一重的」）+ -ly → 简单地"
+    },
+    "single": {
+      "roots": [
+        {
+          "root": "singl",
+          "meaning": "一个"
+        }
+      ],
+      "composition": "singl（一个，拉丁语 singulus）→ 单一的"
+    },
+    "especially": {
+      "roots": [
+        {
+          "root": "spec",
+          "meaning": "看"
+        },
+        {
+          "root": "-ial",
+          "meaning": "形容词后缀"
+        },
+        {
+          "root": "-ly",
+          "meaning": "副词后缀"
+        }
+      ],
+      "composition": "spec（看）→ special（特殊的）+ -ly → 特别地"
+    },
+    "date": {
+      "roots": []
+    },
+    "UK": {
+      "roots": []
+    },
+    "hard": {
+      "roots": []
+    },
+    "personal": {
+      "roots": [
+        {
+          "root": "person",
+          "meaning": "面具、角色"
+        },
+        {
+          "root": "-al",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "person（人）+ -al → 个人的"
+    },
+    "seven": {
+      "roots": []
+    },
+    "establish": {
+      "roots": [
+        {
+          "root": "stabil",
+          "meaning": "稳固"
+        }
+      ],
+      "composition": "stabil（稳固，拉丁语 stabilis）→ 经法语 establir → establish（建立）"
+    },
+    "wall": {
+      "roots": []
+    },
+    "join": {
+      "roots": []
+    },
+    "eight": {
+      "roots": []
+    },
+    "computer": {
+      "roots": [
+        {
+          "root": "com-",
+          "meaning": "一起"
+        },
+        {
+          "root": "put",
+          "meaning": "思考、计算"
+        },
+        {
+          "root": "-er",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "com-（一起）+ put（计算，拉丁语 putare）+ -er → 计算器 → 计算机"
+    },
+    "private": {
+      "roots": [
+        {
+          "root": "priv",
+          "meaning": "个人、单独"
+        }
+      ],
+      "composition": "priv（个人，拉丁语 privatus「与公事分离的」）→ private（私人的）"
+    },
+    "herself": {
+      "roots": []
+    },
+    "approach": {
+      "roots": [
+        {
+          "root": "ap-",
+          "meaning": "向（=ad-）"
+        },
+        {
+          "root": "proach",
+          "meaning": "接近"
+        }
+      ],
+      "composition": "ap-（向）+ proach（接近，拉丁语 prope「近」）→ 接近、方法"
+    },
+    "amount": {
+      "roots": [
+        {
+          "root": "a-",
+          "meaning": "向"
+        },
+        {
+          "root": "mount",
+          "meaning": "山"
+        }
+      ],
+      "composition": "a-（向）+ mount（山，拉丁语 mons）→ 向上堆积 → 总量"
+    },
+    "bit": {
+      "roots": []
+    },
+    "wish": {
+      "roots": []
+    },
+    "scheme": {
+      "roots": []
+    },
+    "former": {
+      "roots": [
+        {
+          "root": "form",
+          "meaning": "形式"
+        },
+        {
+          "root": "-er",
+          "meaning": "比较级"
+        }
+      ],
+      "composition": "form（形式）+ -er → 在前面的 → 以前的"
+    },
+    "president": {
+      "roots": [
+        {
+          "root": "pre-",
+          "meaning": "在前"
+        },
+        {
+          "root": "sid",
+          "meaning": "坐"
+        },
+        {
+          "root": "-ent",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "pre-（在前）+ sid（坐，拉丁语 sedere）+ -ent → 坐在前面主持的人 → 总统"
+    },
+    "award": {
+      "roots": []
+    },
+    "seek": {
+      "roots": []
+    },
+    "achieve": {
+      "roots": [
+        {
+          "root": "a-",
+          "meaning": "向"
+        },
+        {
+          "root": "chiev",
+          "meaning": "头、完成"
+        }
+      ],
+      "composition": "a-（向）+ chiev（头，拉丁语 caput「头」→ 法语 chief「首领」）→ 达到目标 → 实现"
+    },
+    "chapter": {
+      "roots": [
+        {
+          "root": "capit",
+          "meaning": "头"
+        }
+      ],
+      "composition": "capit（头，拉丁语 capitulum「小头、章节标题」）→ chapter（章节）"
+    },
+    "choose": {
+      "roots": []
+    },
+    "deal": {
+      "roots": []
+    },
+    "theory": {
+      "roots": [
+        {
+          "root": "theor",
+          "meaning": "观察、沉思"
+        }
+      ],
+      "composition": "theor（观察，希腊语 theōria「沉思」）→ theory（理论）"
+    },
+    "property": {
+      "roots": [
+        {
+          "root": "propr",
+          "meaning": "自己的"
+        },
+        {
+          "root": "-ty",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "propr（自己的，拉丁语 proprius）+ -ty → 属于自己的 → 财产"
+    },
+    "poor": {
+      "roots": []
+    },
+    "son": {
+      "roots": []
+    },
+    "wide": {
+      "roots": []
+    },
+    "south": {
+      "roots": []
+    },
+    "financial": {
+      "roots": [
+        {
+          "root": "fin",
+          "meaning": "结束"
+        },
+        {
+          "root": "-ance",
+          "meaning": "名词后缀"
+        },
+        {
+          "root": "-ial",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "fin（结束）→ finance（结清债务）+ -ial → 财务的"
+    },
+    "director": {
+      "roots": [
+        {
+          "root": "di-",
+          "meaning": "分开"
+        },
+        {
+          "root": "rect",
+          "meaning": "直"
+        },
+        {
+          "root": "-or",
+          "meaning": "人"
+        }
+      ],
+      "composition": "di-（分开）+ rect（引导为直，拉丁语 regere）+ -or → 引导者 → 导演、主管"
+    },
+    "leader": {
+      "roots": [
+        {
+          "root": "lead",
+          "meaning": "引导"
+        },
+        {
+          "root": "-er",
+          "meaning": "人"
+        }
+      ]
+    },
+    "twenty": {
+      "roots": []
+    },
+    "firm": {
+      "roots": []
+    },
+    "application": {
+      "roots": [
+        {
+          "root": "ap-",
+          "meaning": "向（=ad-）"
+        },
+        {
+          "root": "plic",
+          "meaning": "折叠"
+        },
+        {
+          "root": "-ation",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "ap-（向）+ plic（折叠，拉丁语 plicare）+ -ation → 贴合 → 应用、申请"
+    },
+    "cos": {
+      "roots": []
+    },
+    "production": {
+      "roots": [
+        {
+          "root": "pro-",
+          "meaning": "向前"
+        },
+        {
+          "root": "duct",
+          "meaning": "引导"
+        },
+        {
+          "root": "-ion",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "pro-（向前）+ duct（引导）+ -ion → 引出 → 生产"
+    },
+    "board": {
+      "roots": []
+    },
+    "king": {
+      "roots": []
+    },
+    "secretary": {
+      "roots": [
+        {
+          "root": "secret",
+          "meaning": "秘密"
+        },
+        {
+          "root": "-ary",
+          "meaning": "与...相关的人"
+        }
+      ],
+      "composition": "secret（秘密，拉丁语 secretus「分开的」）+ -ary → 掌管机密的人 → 秘书"
+    },
+    "us": {
+      "roots": []
+    },
+    "soon": {
+      "roots": []
+    },
+    "fail": {
+      "roots": []
+    },
+    "chance": {
+      "roots": [
+        {
+          "root": "cad",
+          "meaning": "落下"
+        }
+      ],
+      "composition": "cad（落下，拉丁语 cadere）→ cadentia（落下之事）→ chance（机会、偶然）"
+    },
+    "opportunity": {
+      "roots": [
+        {
+          "root": "ob-",
+          "meaning": "朝向"
+        },
+        {
+          "root": "port",
+          "meaning": "港口"
+        },
+        {
+          "root": "-ity",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "ob-（朝向）+ port（港口，拉丁语 portus）+ -ity → 顺风驶向港口 → 机会"
+    },
+    "operation": {
+      "roots": [
+        {
+          "root": "oper",
+          "meaning": "工作"
+        },
+        {
+          "root": "-ation",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "oper（工作，拉丁语 operari）+ -ation → 操作"
+    },
+    "share": {
+      "roots": []
+    },
+    "foreign": {
+      "roots": [
+        {
+          "root": "for",
+          "meaning": "外面、门"
+        }
+      ],
+      "composition": "for（外面，拉丁语 foris「门外」）→ foreign（外国的）"
+    },
+    "lord": {
+      "roots": []
+    },
+    "agreement": {
+      "roots": [
+        {
+          "root": "a-",
+          "meaning": "向"
+        },
+        {
+          "root": "gre",
+          "meaning": "令人愉快"
+        },
+        {
+          "root": "-ment",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "agree（同意）+ -ment → 协议"
+    },
+    "simple": {
+      "roots": [
+        {
+          "root": "simpl",
+          "meaning": "单一"
+        }
+      ],
+      "composition": "simpl（单一，拉丁语 simplex「一重的」）→ simple（简单的）"
+    },
+    "serve": {
+      "roots": [
+        {
+          "root": "serv",
+          "meaning": "服务"
+        }
+      ]
+    },
+    "picture": {
+      "roots": [
+        {
+          "root": "pict",
+          "meaning": "画"
+        }
+      ],
+      "composition": "pict（画，拉丁语 pingere「描绘」）→ picture（图画）"
+    },
+    "test": {
+      "roots": []
+    },
+    "contract": {
+      "roots": [
+        {
+          "root": "con-",
+          "meaning": "一起"
+        },
+        {
+          "root": "tract",
+          "meaning": "拉、拖"
+        }
+      ],
+      "composition": "con-（一起）+ tract（拉，拉丁语 trahere）→ 拉到一起约束 → 合同"
+    },
+    "concerned": {
+      "roots": []
+    },
+    "recent": {
+      "roots": [
+        {
+          "root": "rec",
+          "meaning": "新鲜"
+        }
+      ],
+      "composition": "rec（新鲜，拉丁语 recens）→ recent（最近的）"
+    },
+    "thousand": {
+      "roots": []
+    },
+    "security": {
+      "roots": [
+        {
+          "root": "se-",
+          "meaning": "离开"
+        },
+        {
+          "root": "cur",
+          "meaning": "关心、忧虑"
+        },
+        {
+          "root": "-ity",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "se-（离开）+ cur（忧虑）+ -ity → 远离忧虑 → 安全"
+    },
+    "source": {
+      "roots": [
+        {
+          "root": "surg",
+          "meaning": "升起"
+        }
+      ],
+      "composition": "surg（升起，拉丁语 surgere）→ source（源泉）"
+    },
+    "occur": {
+      "roots": [
+        {
+          "root": "oc-",
+          "meaning": "朝向（=ob-）"
+        },
+        {
+          "root": "cur",
+          "meaning": "跑"
+        }
+      ],
+      "composition": "oc-（朝向）+ cur（跑，拉丁语 currere）→ 跑过来 → 发生"
+    },
+    "kill": {
+      "roots": []
+    },
+    "American": {
+      "roots": []
+    },
+    "david": {
+      "roots": []
+    },
+    "election": {
+      "roots": [
+        {
+          "root": "e-",
+          "meaning": "出"
+        },
+        {
+          "root": "lect",
+          "meaning": "选择"
+        },
+        {
+          "root": "-ion",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "e-（出）+ lect（选择，拉丁语 legere）+ -ion → 选出 → 选举"
+    },
+    "future": {
+      "roots": [
+        {
+          "root": "fut",
+          "meaning": "将要成为"
+        }
+      ],
+      "composition": "fut（将要成为，拉丁语 futurus，源自 esse「存在」的将来分词）→ 未来"
+    },
+    "drive": {
+      "roots": []
+    },
+    "used": {
+      "roots": []
+    },
+    "colour": {
+      "roots": [
+        {
+          "root": "color",
+          "meaning": "颜色"
+        }
+      ],
+      "composition": "color（颜色，拉丁语 color）→ colour（颜色）"
+    },
+    "various": {
+      "roots": [
+        {
+          "root": "vari",
+          "meaning": "变化"
+        },
+        {
+          "root": "-ous",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "vari（变化，拉丁语 varius）+ -ous → 各种各样的"
+    },
+    "rise": {
+      "roots": []
+    },
+    "represent": {
+      "roots": [
+        {
+          "root": "re-",
+          "meaning": "再次"
+        },
+        {
+          "root": "present",
+          "meaning": "在场"
+        }
+      ],
+      "composition": "re-（再次）+ present（在场）→ 使再现 → 代表"
+    },
+    "site": {
+      "roots": []
+    },
+    "close": {
+      "roots": []
+    },
+    "shop": {
+      "roots": []
+    },
+    "loss": {
+      "roots": []
+    },
+    "clearly": {
+      "roots": [
+        {
+          "root": "clar",
+          "meaning": "清晰"
+        },
+        {
+          "root": "-ly",
+          "meaning": "副词后缀"
+        }
+      ],
+      "composition": "clear + -ly → 清楚地"
+    },
+    "evening": {
+      "roots": []
+    },
+    "animal": {
+      "roots": [
+        {
+          "root": "anim",
+          "meaning": "呼吸、灵魂"
+        },
+        {
+          "root": "-al",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "anim（呼吸，拉丁语 anima「灵魂」）+ -al → 有灵魂的 → 动物"
+    },
+    "standard": {
+      "roots": [
+        {
+          "root": "stand",
+          "meaning": "站立"
+        },
+        {
+          "root": "-ard",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "stand（站立）+ -ard → 立在那里的旗帜 → 标准"
+    },
+    "heart": {
+      "roots": []
+    },
+    "purpose": {
+      "roots": [
+        {
+          "root": "pro-",
+          "meaning": "向前"
+        },
+        {
+          "root": "pos",
+          "meaning": "放置"
+        }
+      ],
+      "composition": "pro-（向前）+ pos（放置，拉丁语 ponere）→ 摆在前面的目标 → 目的"
+    },
+    "benefit": {
+      "roots": [
+        {
+          "root": "bene",
+          "meaning": "好"
+        },
+        {
+          "root": "fit",
+          "meaning": "做"
+        }
+      ],
+      "composition": "bene（好，拉丁语）+ fit（做，拉丁语 facere）→ 做好事 → 利益"
+    },
+    "p": {
+      "roots": []
+    },
+    "page": {
+      "roots": []
+    },
+    "fine": {
+      "roots": []
+    },
+    "discuss": {
+      "roots": [
+        {
+          "root": "dis-",
+          "meaning": "分开"
+        },
+        {
+          "root": "cuss",
+          "meaning": "摇、击"
+        }
+      ],
+      "composition": "dis-（分开）+ cuss（摇击，拉丁语 quatere）→ 拆开审视 → 讨论"
+    },
+    "anyone": {
+      "roots": []
+    },
+    "pick": {
+      "roots": []
+    },
+    "doctor": {
+      "roots": [
+        {
+          "root": "doct",
+          "meaning": "教"
+        },
+        {
+          "root": "-or",
+          "meaning": "人"
+        }
+      ],
+      "composition": "doct（教，拉丁语 docere）+ -or → 教导者 → 博士、医生"
+    },
+    "factor": {
+      "roots": [
+        {
+          "root": "fact",
+          "meaning": "做"
+        },
+        {
+          "root": "-or",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "fact（做，拉丁语 facere）+ -or → 做事的人/物 → 因素"
+    },
+    "music": {
+      "roots": []
+    },
+    "hair": {
+      "roots": []
+    },
+    "love": {
+      "roots": []
+    },
+    "prove": {
+      "roots": [
+        {
+          "root": "prob",
+          "meaning": "证明、检验"
+        }
+      ],
+      "composition": "prob（证明，拉丁语 probare「检验」）→ prove（证明）"
+    },
+    "wrong": {
+      "roots": []
+    },
+    "wear": {
+      "roots": []
+    },
+    "argue": {
+      "roots": [
+        {
+          "root": "argu",
+          "meaning": "使明白"
+        }
+      ],
+      "composition": "argu（使明白，拉丁语 arguere「使清楚」）→ 争论"
+    },
+    "charge": {
+      "roots": [
+        {
+          "root": "carr",
+          "meaning": "车、装载"
+        }
+      ],
+      "composition": "carr（车，拉丁语 carrus）→ 装载 → charge（收费、指控、充电）"
+    },
+    "pattern": {
+      "roots": [
+        {
+          "root": "patr",
+          "meaning": "父、模范"
+        }
+      ],
+      "composition": "patr（父，拉丁语 pater → patronus「保护者」）→ 模板 → pattern（模式）"
+    },
+    "piece": {
+      "roots": []
+    },
+    "present": {
+      "roots": [
+        {
+          "root": "pre-",
+          "meaning": "在前"
+        },
+        {
+          "root": "sent",
+          "meaning": "存在"
+        }
+      ],
+      "composition": "pre-（在前）+ sent（存在，拉丁语 esse）→ 在面前的 → 目前、礼物、展示"
+    },
+    "design": {
+      "roots": [
+        {
+          "root": "de-",
+          "meaning": "出"
+        },
+        {
+          "root": "sign",
+          "meaning": "标记"
+        }
+      ],
+      "composition": "de-（出）+ sign（标记，拉丁语 signum）→ 画出标记 → 设计"
+    },
+    "tree": {
+      "roots": []
+    },
+    "catch": {
+      "roots": []
+    },
+    "royal": {
+      "roots": []
+    },
+    "population": {
+      "roots": [
+        {
+          "root": "popul",
+          "meaning": "人民"
+        },
+        {
+          "root": "-ation",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "popul（人民，拉丁语 populus）+ -ation → 人口"
+    },
+    "April": {
+      "roots": []
+    },
+    "enjoy": {
+      "roots": [
+        {
+          "root": "en-",
+          "meaning": "使进入"
+        },
+        {
+          "root": "joy",
+          "meaning": "快乐"
+        }
+      ],
+      "composition": "en-（使进入）+ joy（快乐，拉丁语 gaudium）→ 使快乐 → 享受"
+    },
+    "despite": {
+      "roots": [
+        {
+          "root": "de-",
+          "meaning": "向下"
+        },
+        {
+          "root": "spit",
+          "meaning": "看"
+        }
+      ],
+      "composition": "de-（向下）+ spit（看，拉丁语 spectare）→ 蔑视 → 尽管"
+    },
+    "pressure": {
+      "roots": [
+        {
+          "root": "press",
+          "meaning": "压"
+        },
+        {
+          "root": "-ure",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "press（压，拉丁语 premere）+ -ure → 压力"
+    },
+    "performance": {
+      "roots": [
+        {
+          "root": "per-",
+          "meaning": "完全"
+        },
+        {
+          "root": "form",
+          "meaning": "形成"
+        },
+        {
+          "root": "-ance",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "per-（完全）+ form（形成）+ -ance → 完成 → 表现、演出"
+    },
+    "knowledge": {
+      "roots": []
+    },
+    "plant": {
+      "roots": []
+    },
+    "June": {
+      "roots": []
+    },
+    "news": {
+      "roots": []
+    },
+    "fire": {
+      "roots": []
+    },
+    "basis": {
+      "roots": [
+        {
+          "root": "bas",
+          "meaning": "底部"
+        }
+      ],
+      "composition": "bas（底部，希腊语 basis「台阶」）→ basis（基础）"
+    },
+    "march": {
+      "roots": []
+    },
+    "further": {
+      "roots": []
+    },
+    "size": {
+      "roots": []
+    },
+    "introduce": {
+      "roots": [
+        {
+          "root": "intro-",
+          "meaning": "向内"
+        },
+        {
+          "root": "duc",
+          "meaning": "引导"
+        }
+      ],
+      "composition": "intro-（向内）+ duc（引导）→ 引入 → 介绍"
+    },
+    "series": {
+      "roots": [
+        {
+          "root": "ser",
+          "meaning": "连接、排列"
+        }
+      ],
+      "composition": "ser（连接，拉丁语 serere「连接」）→ series（系列）"
+    },
+    "garden": {
+      "roots": []
+    },
+    "eat": {
+      "roots": []
+    },
+    "environment": {
+      "roots": [
+        {
+          "root": "en-",
+          "meaning": "使进入"
+        },
+        {
+          "root": "viron",
+          "meaning": "圆圈、周围"
+        },
+        {
+          "root": "-ment",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "en-（进入）+ viron（周围，法语 virer「转圈」）+ -ment → 围绕周围的事物 → 环境"
+    },
+    "rest": {
+      "roots": []
+    },
+    "better": {
+      "roots": []
+    },
+    "success": {
+      "roots": [
+        {
+          "root": "suc-",
+          "meaning": "在下（=sub-）"
+        },
+        {
+          "root": "cess",
+          "meaning": "走"
+        }
+      ],
+      "composition": "suc-（在下）+ cess（走，拉丁语 cedere）→ 紧随其后 → 成功"
+    },
+    "enter": {
+      "roots": [
+        {
+          "root": "enter",
+          "meaning": "内部"
+        }
+      ],
+      "composition": "enter（内部，拉丁语 intrare「进入」）→ enter（进入）"
+    },
+    "analysis": {
+      "roots": [
+        {
+          "root": "ana-",
+          "meaning": "向上、分解"
+        },
+        {
+          "root": "lys",
+          "meaning": "松开"
+        }
+      ],
+      "composition": "ana-（向上）+ lys（松开，希腊语 lyein）→ 拆开来看 → 分析"
+    },
+    "arrive": {
+      "roots": [
+        {
+          "root": "ar-",
+          "meaning": "向（=ad-）"
+        },
+        {
+          "root": "riv",
+          "meaning": "岸"
+        }
+      ],
+      "composition": "ar-（向）+ riv（岸，拉丁语 ripa）→ 到达岸边 → 到达"
+    },
+    "natural": {
+      "roots": [
+        {
+          "root": "nat",
+          "meaning": "出生"
+        },
+        {
+          "root": "-ure",
+          "meaning": "名词后缀"
+        },
+        {
+          "root": "-al",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "nat（出生）+ -ural → 天生的 → 自然的"
+    },
+    "thought": {
+      "roots": []
+    },
+    "ensure": {
+      "roots": [
+        {
+          "root": "en-",
+          "meaning": "使"
+        },
+        {
+          "root": "sur",
+          "meaning": "安全"
+        }
+      ],
+      "composition": "en-（使）+ sure（确定）→ 使确定 → 确保"
+    },
+    "region": {
+      "roots": [
+        {
+          "root": "reg",
+          "meaning": "统治、引导"
+        },
+        {
+          "root": "-ion",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "reg（统治，拉丁语 regere）+ -ion → 统治的范围 → 地区"
+    },
+    "attention": {
+      "roots": [
+        {
+          "root": "at-",
+          "meaning": "向（=ad-）"
+        },
+        {
+          "root": "tent",
+          "meaning": "伸展"
+        },
+        {
+          "root": "-ion",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "at-（向）+ tent（伸展，拉丁语 tendere）+ -ion → 伸向 → 注意"
+    },
+    "space": {
+      "roots": [
+        {
+          "root": "spati",
+          "meaning": "空间"
+        }
+      ],
+      "composition": "spati（空间，拉丁语 spatium）→ space（空间）"
+    },
+    "list": {
+      "roots": []
+    },
+    "statement": {
+      "roots": [
+        {
+          "root": "stat",
+          "meaning": "站立"
+        },
+        {
+          "root": "-ment",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "stat（站立）→ state（陈述）+ -ment → 声明"
+    },
+    "pull": {
+      "roots": []
+    },
+    "relation": {
+      "roots": [
+        {
+          "root": "re-",
+          "meaning": "回"
+        },
+        {
+          "root": "lat",
+          "meaning": "带、运"
+        },
+        {
+          "root": "-ion",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "re-（回）+ lat（运，拉丁语 latus）+ -ion → 带回关联 → 关系"
+    },
+    "step": {
+      "roots": []
+    },
+    "sea": {
+      "roots": []
+    },
+    "principle": {
+      "roots": [
+        {
+          "root": "prim",
+          "meaning": "第一"
+        },
+        {
+          "root": "cip",
+          "meaning": "取"
+        }
+      ],
+      "composition": "prim（第一）+ cip（取，拉丁语 capere）→ 第一位的事 → 原则"
+    },
+    "demand": {
+      "roots": [
+        {
+          "root": "de-",
+          "meaning": "完全"
+        },
+        {
+          "root": "mand",
+          "meaning": "委托、命令"
+        }
+      ],
+      "composition": "de-（完全）+ mand（命令，拉丁语 mandare）→ 坚决要求 → 需求"
+    },
+    "labour": {
+      "roots": []
+    },
+    "choice": {
+      "roots": []
+    },
+    "near": {
+      "roots": []
+    },
+    "couple": {
+      "roots": []
+    },
+    "refer": {
+      "roots": []
+    },
+    "capital": {
+      "roots": [
+        {
+          "root": "capit",
+          "meaning": "头"
+        },
+        {
+          "root": "-al",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "capit（头，拉丁语 caput）+ -al → 头等的 → 首都、资本"
+    },
+    "round": {
+      "roots": []
+    },
+    "hotel": {
+      "roots": []
+    },
+    "player": {
+      "roots": []
+    },
+    "above": {
+      "roots": []
+    },
+    "forward": {
+      "roots": []
+    },
+    "village": {
+      "roots": []
+    },
+    "station": {
+      "roots": []
+    },
+    "nine": {
+      "roots": []
+    },
+    "individual": {
+      "roots": [
+        {
+          "root": "in-",
+          "meaning": "不"
+        },
+        {
+          "root": "divid",
+          "meaning": "分开"
+        },
+        {
+          "root": "-ual",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "in-（不）+ divid（分开，拉丁语 dividere）+ -ual → 不可再分的 → 个体"
+    },
+    "film": {
+      "roots": []
+    },
+    "attempt": {
+      "roots": [
+        {
+          "root": "at-",
+          "meaning": "向（=ad-）"
+        },
+        {
+          "root": "tempt",
+          "meaning": "尝试"
+        }
+      ],
+      "composition": "at-（向）+ tempt（尝试，拉丁语 temptare）→ 尝试"
+    },
+    "feature": {
+      "roots": [
+        {
+          "root": "fact",
+          "meaning": "做、制造"
+        }
+      ],
+      "composition": "fact（做，拉丁语 factura「制作」）→ 制作出来的形态 → 特征"
+    },
+    "association": {
+      "roots": [
+        {
+          "root": "as-",
+          "meaning": "向（=ad-）"
+        },
+        {
+          "root": "soci",
+          "meaning": "同伴"
+        },
+        {
+          "root": "-ation",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "as-（向）+ soci（同伴）+ -ation → 结成同伴 → 协会"
+    },
+    "per": {
+      "roots": []
+    },
+    "income": {
+      "roots": [
+        {
+          "root": "in-",
+          "meaning": "进入"
+        },
+        {
+          "root": "come",
+          "meaning": "来"
+        }
+      ]
+    },
+    "effort": {
+      "roots": [
+        {
+          "root": "ef-",
+          "meaning": "出（=ex-）"
+        },
+        {
+          "root": "fort",
+          "meaning": "强"
+        }
+      ],
+      "composition": "ef-（出）+ fort（强，拉丁语 fortis）→ 使出力量 → 努力"
+    },
+    "relate": {
+      "roots": [
+        {
+          "root": "re-",
+          "meaning": "回"
+        },
+        {
+          "root": "lat",
+          "meaning": "带、运"
+        }
+      ],
+      "composition": "re-（回）+ lat（运，拉丁语 latus）→ 带回关联 → 关联"
+    },
+    "following": {
+      "roots": []
+    },
+    "cup": {
+      "roots": []
+    },
+    "nice": {
+      "roots": []
+    },
+    "organisation": {
+      "roots": [
+        {
+          "root": "organ",
+          "meaning": "工具、器官"
+        },
+        {
+          "root": "-ize",
+          "meaning": "动词后缀"
+        },
+        {
+          "root": "-ation",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "organ（工具，希腊语 organon）+ -ization → 组织"
+    },
+    "manage": {
+      "roots": [
+        {
+          "root": "man",
+          "meaning": "手"
+        }
+      ],
+      "composition": "man（手，拉丁语 manus）→ 用手操控 → 管理"
+    },
+    "everyone": {
+      "roots": []
+    },
+    "affect": {
+      "roots": [
+        {
+          "root": "af-",
+          "meaning": "向（=ad-）"
+        },
+        {
+          "root": "fect",
+          "meaning": "做"
+        }
+      ],
+      "composition": "af-（向）+ fect（做，拉丁语 facere）→ 对…施加作用 → 影响"
+    },
+    "current": {
+      "roots": [
+        {
+          "root": "curr",
+          "meaning": "跑"
+        },
+        {
+          "root": "-ent",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "curr（跑，拉丁语 currere）+ -ent → 正在流动的 → 当前的、电流"
+    },
+    "technology": {
+      "roots": [
+        {
+          "root": "techn",
+          "meaning": "技艺"
+        },
+        {
+          "root": "-ology",
+          "meaning": "学科"
+        }
+      ],
+      "composition": "techn（技艺，希腊语 technē）+ -ology（学科）→ 技术"
+    },
+    "identify": {
+      "roots": [
+        {
+          "root": "ident",
+          "meaning": "相同"
+        },
+        {
+          "root": "-fy",
+          "meaning": "使成为"
+        }
+      ],
+      "composition": "ident（相同，拉丁语 idem「同一」）+ -fy（使）→ 确认同一性 → 识别"
+    },
+    "please": {
+      "roots": []
+    },
+    "whatever": {
+      "roots": []
+    },
+    "difficulty": {
+      "roots": [
+        {
+          "root": "dif-",
+          "meaning": "不"
+        },
+        {
+          "root": "fic",
+          "meaning": "做"
+        },
+        {
+          "root": "-ulty",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "dif-（不）+ ficult（容易做的）+ -y → 不容易做 → 困难"
+    },
+    "machine": {
+      "roots": [
+        {
+          "root": "machin",
+          "meaning": "装置"
+        }
+      ],
+      "composition": "machin（装置，希腊语 mēkhanē）→ machine（机器）"
+    },
+    "modern": {
+      "roots": [
+        {
+          "root": "mod",
+          "meaning": "方式、尺度"
+        }
+      ],
+      "composition": "mod（方式，拉丁语 modus）→ modernus（当下方式的）→ modern（现代的）"
+    },
+    "degree": {
+      "roots": [
+        {
+          "root": "de-",
+          "meaning": "向下"
+        },
+        {
+          "root": "gre",
+          "meaning": "步"
+        }
+      ],
+      "composition": "de-（向下）+ gre（步，拉丁语 gradus）→ 逐步下降 → 程度、学位"
+    },
+    "legal": {
+      "roots": [
+        {
+          "root": "leg",
+          "meaning": "法律"
+        },
+        {
+          "root": "-al",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "leg（法律，拉丁语 lex）+ -al → 法律的"
+    },
+    "energy": {
+      "roots": [
+        {
+          "root": "en-",
+          "meaning": "内"
+        },
+        {
+          "root": "erg",
+          "meaning": "工作"
+        }
+      ],
+      "composition": "en-（内）+ erg（工作，希腊语 ergon）→ 内在的力量 → 能量"
+    },
+    "treatment": {
+      "roots": [
+        {
+          "root": "treat",
+          "meaning": "处理"
+        },
+        {
+          "root": "-ment",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "treat（处理，拉丁语 tractare）+ -ment → 治疗、对待"
+    },
+    "Scotland": {
+      "roots": []
+    },
+    "thank": {
+      "roots": []
+    },
+    "cell": {
+      "roots": []
+    },
+    "growth": {
+      "roots": [
+        {
+          "root": "grow",
+          "meaning": "生长"
+        },
+        {
+          "root": "-th",
+          "meaning": "名词后缀"
+        }
+      ]
+    },
+    "finally": {
+      "roots": []
+    },
+    "mile": {
+      "roots": []
+    },
+    "compare": {
+      "roots": []
+    },
+    "lady": {
+      "roots": []
+    },
+    "whom": {
+      "roots": []
+    },
+    "top": {
+      "roots": []
+    },
+    "happy": {
+      "roots": []
+    },
+    "final": {
+      "roots": [
+        {
+          "root": "fin",
+          "meaning": "结束"
+        },
+        {
+          "root": "-al",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "fin（结束，拉丁语 finis）+ -al → 最终的"
+    },
+    "task": {
+      "roots": []
+    },
+    "sound": {
+      "roots": []
+    },
+    "risk": {
+      "roots": []
+    },
+    "function": {
+      "roots": [
+        {
+          "root": "funct",
+          "meaning": "执行"
+        }
+      ],
+      "composition": "funct（执行，拉丁语 fungi「履行」）→ function（功能）"
+    },
+    "provision": {
+      "roots": [
+        {
+          "root": "pro-",
+          "meaning": "向前、预先"
+        },
+        {
+          "root": "vis",
+          "meaning": "看"
+        },
+        {
+          "root": "-ion",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "pro-（预先）+ vis（看）+ -ion → 预先看到并准备 → 供应、条款"
+    },
+    "county": {
+      "roots": []
+    },
+    "east": {
+      "roots": []
+    },
+    "resource": {
+      "roots": [
+        {
+          "root": "re-",
+          "meaning": "再次"
+        },
+        {
+          "root": "source",
+          "meaning": "升起"
+        }
+      ],
+      "composition": "re-（再次）+ source（升起，拉丁语 surgere）→ 可反复利用的来源 → 资源"
+    },
+    "behaviour": {
+      "roots": [
+        {
+          "root": "be-",
+          "meaning": "加强"
+        },
+        {
+          "root": "hav",
+          "meaning": "持有"
+        },
+        {
+          "root": "-iour",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "be-（加强）+ have（持有）+ -iour → 举止 → 行为"
+    },
+    "defence": {
+      "roots": [
+        {
+          "root": "de-",
+          "meaning": "离开"
+        },
+        {
+          "root": "fens",
+          "meaning": "打击"
+        }
+      ],
+      "composition": "de-（离开）+ fens（打击，拉丁语 fendere）→ 击退 → 防御"
+    },
+    "west": {
+      "roots": []
+    },
+    "style": {
+      "roots": [
+        {
+          "root": "styl",
+          "meaning": "笔、书写"
+        }
+      ],
+      "composition": "styl（笔，拉丁语 stilus「书写工具」）→ 书写方式 → 风格"
+    },
+    "floor": {
+      "roots": []
+    },
+    "ST": {
+      "roots": []
+    },
+    "obtain": {
+      "roots": [
+        {
+          "root": "ob-",
+          "meaning": "朝向"
+        },
+        {
+          "root": "tain",
+          "meaning": "持有"
+        }
+      ],
+      "composition": "ob-（朝向）+ tain（持有，拉丁语 tenere）→ 获取"
+    },
+    "science": {
+      "roots": [
+        {
+          "root": "sci",
+          "meaning": "知道"
+        },
+        {
+          "root": "-ence",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "sci（知道，拉丁语 scire）+ -ence → 知识 → 科学"
+    },
+    "announce": {
+      "roots": [
+        {
+          "root": "an-",
+          "meaning": "向（=ad-）"
+        },
+        {
+          "root": "nounc",
+          "meaning": "报告"
+        }
+      ],
+      "composition": "an-（向）+ nounc（报告，拉丁语 nuntiare）→ 向人报告 → 宣布"
+    },
+    "red": {
+      "roots": []
+    },
+    "feeling": {
+      "roots": []
+    },
+    "response": {
+      "roots": [
+        {
+          "root": "re-",
+          "meaning": "回"
+        },
+        {
+          "root": "spons",
+          "meaning": "承诺"
+        }
+      ],
+      "composition": "re-（回）+ spons（承诺，拉丁语 spondere）→ 回应承诺 → 回答"
+    },
+    "note": {
+      "roots": []
+    },
+    "hall": {
+      "roots": []
+    },
+    "skill": {
+      "roots": []
+    },
+    "college": {
+      "roots": [
+        {
+          "root": "col-",
+          "meaning": "共同"
+        },
+        {
+          "root": "leg",
+          "meaning": "选择、派遣"
+        }
+      ],
+      "composition": "col-（共同）+ leg（选择，拉丁语 legere）→ 被共同选出的人 → 学院"
+    },
+    "horse": {
+      "roots": []
+    },
+    "myself": {
+      "roots": []
+    },
+    "character": {
+      "roots": [
+        {
+          "root": "charact",
+          "meaning": "刻印"
+        }
+      ],
+      "composition": "charact（刻印，希腊语 charassein「雕刻」）→ 刻下的印记 → 性格、角色"
+    },
+    "user": {
+      "roots": []
+    },
+    "serious": {
+      "roots": [
+        {
+          "root": "seri",
+          "meaning": "严肃"
+        },
+        {
+          "root": "-ous",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "seri（严肃，拉丁语 serius）+ -ous → 严肃的"
+    },
+    "answer": {
+      "roots": []
+    },
+    "quickly": {
+      "roots": []
+    },
+    "nor": {
+      "roots": []
+    },
+    "normal": {
+      "roots": [
+        {
+          "root": "norm",
+          "meaning": "规范、准则"
+        },
+        {
+          "root": "-al",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "norm（准则，拉丁语 norma「木匠的直角尺」）+ -al → 符合规范的 → 正常的"
+    },
+    "indicate": {
+      "roots": [
+        {
+          "root": "in-",
+          "meaning": "向"
+        },
+        {
+          "root": "dic",
+          "meaning": "说、指出"
+        }
+      ],
+      "composition": "in-（向）+ dic（指出，拉丁语 dicare）→ 指出 → 表明"
+    },
+    "forget": {
+      "roots": []
+    },
+    "peter": {
+      "roots": []
+    },
+    "wonder": {
+      "roots": []
+    },
+    "investment": {
+      "roots": [
+        {
+          "root": "in-",
+          "meaning": "进入"
+        },
+        {
+          "root": "vest",
+          "meaning": "穿衣"
+        },
+        {
+          "root": "-ment",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "in-（进入）+ vest（穿衣，拉丁语 vestire）→ 给钱「穿上」→ 投资"
+    },
+    "economy": {
+      "roots": [
+        {
+          "root": "eco",
+          "meaning": "家"
+        },
+        {
+          "root": "nom",
+          "meaning": "管理"
+        }
+      ],
+      "composition": "eco（家，希腊语 oikos）+ nom（管理，希腊语 nemein）→ 治家之道 → 经济"
+    },
+    "army": {
+      "roots": []
+    },
+    "dog": {
+      "roots": []
+    },
+    "Dr": {
+      "roots": []
+    },
+    "suffer": {
+      "roots": [
+        {
+          "root": "suf-",
+          "meaning": "在下（=sub-）"
+        },
+        {
+          "root": "fer",
+          "meaning": "承受"
+        }
+      ],
+      "composition": "suf-（在下）+ fer（承受，拉丁语 ferre）→ 承受重压 → 遭受"
+    },
+    "recently": {
+      "roots": [
+        {
+          "root": "rec",
+          "meaning": "新鲜"
+        },
+        {
+          "root": "-ly",
+          "meaning": "副词后缀"
+        }
+      ],
+      "composition": "recent + -ly → 最近地"
+    },
+    "along": {
+      "roots": []
+    },
+    "previous": {
+      "roots": [
+        {
+          "root": "pre-",
+          "meaning": "在前"
+        },
+        {
+          "root": "vi",
+          "meaning": "路"
+        },
+        {
+          "root": "-ous",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "pre-（在前）+ vi（路，拉丁语 via）+ -ous → 在前面路上的 → 先前的"
+    },
+    "maintain": {
+      "roots": [
+        {
+          "root": "main",
+          "meaning": "手"
+        },
+        {
+          "root": "tain",
+          "meaning": "持有"
+        }
+      ],
+      "composition": "main（手，拉丁语 manus）+ tain（持有，拉丁语 tenere）→ 用手握住 → 维持"
+    },
+    "husband": {
+      "roots": []
+    },
+    "brother": {
+      "roots": []
+    },
+    "publish": {
+      "roots": [
+        {
+          "root": "publ",
+          "meaning": "人民"
+        }
+      ],
+      "composition": "publ（人民，拉丁语 publicus）→ 使公之于众 → 出版"
+    },
+    "France": {
+      "roots": []
+    },
+    "responsibility": {
+      "roots": [
+        {
+          "root": "re-",
+          "meaning": "回"
+        },
+        {
+          "root": "spons",
+          "meaning": "承诺"
+        },
+        {
+          "root": "-ibility",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "re-（回）+ spons（承诺）+ -ibility → 对承诺负责 → 责任"
+    },
+    "total": {
+      "roots": [
+        {
+          "root": "tot",
+          "meaning": "全部"
+        },
+        {
+          "root": "-al",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "tot（全部，拉丁语 totus）+ -al → 总的"
+    },
+    "argument": {
+      "roots": [
+        {
+          "root": "argu",
+          "meaning": "使明白"
+        },
+        {
+          "root": "-ment",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "argu（使明白）+ -ment → 争论"
+    },
+    "season": {
+      "roots": []
+    },
+    "anyway": {
+      "roots": []
+    },
+    "avoid": {
+      "roots": [
+        {
+          "root": "a-",
+          "meaning": "离开"
+        },
+        {
+          "root": "void",
+          "meaning": "空"
+        }
+      ],
+      "composition": "a-（离开）+ void（空，拉丁语 vocivus）→ 使空出 → 避免"
+    },
+    "concern": {
+      "roots": [
+        {
+          "root": "con-",
+          "meaning": "一起"
+        },
+        {
+          "root": "cern",
+          "meaning": "筛、分辨"
+        }
+      ],
+      "composition": "con-（一起）+ cern（筛，拉丁语 cernere）→ 一同审视 → 关心、忧虑"
+    },
+    "bill": {
+      "roots": []
+    },
+    "prime": {
+      "roots": [
+        {
+          "root": "prim",
+          "meaning": "第一"
+        }
+      ],
+      "composition": "prim（第一，拉丁语 primus）→ prime（首要的）"
+    },
+    "express": {
+      "roots": [
+        {
+          "root": "ex-",
+          "meaning": "出"
+        },
+        {
+          "root": "press",
+          "meaning": "压"
+        }
+      ],
+      "composition": "ex-（出）+ press（压，拉丁语 premere）→ 压出来 → 表达"
+    },
+    "suppose": {
+      "roots": [
+        {
+          "root": "sub-",
+          "meaning": "在下"
+        },
+        {
+          "root": "pos",
+          "meaning": "放置"
+        }
+      ],
+      "composition": "sub-（在下）+ pos（放置，拉丁语 ponere）→ 放在下面假设 → 假定"
+    },
+    "significant": {
+      "roots": [
+        {
+          "root": "sign",
+          "meaning": "标记"
+        },
+        {
+          "root": "fic",
+          "meaning": "做"
+        },
+        {
+          "root": "-ant",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "sign（标记）+ fic（做）+ -ant → 做出标记的 → 重大的"
+    },
+    "finish": {
+      "roots": [
+        {
+          "root": "fin",
+          "meaning": "结束"
+        }
+      ],
+      "composition": "fin（结束，拉丁语 finis）→ finish（完成）"
+    },
+    "element": {
+      "roots": [
+        {
+          "root": "element",
+          "meaning": "元素、基本成分"
+        }
+      ],
+      "composition": "element（基本成分，拉丁语 elementum「字母、基础」）→ 元素"
+    },
+    "glass": {
+      "roots": []
+    },
+    "determine": {
+      "roots": [
+        {
+          "root": "de-",
+          "meaning": "完全"
+        },
+        {
+          "root": "termin",
+          "meaning": "界限"
+        }
+      ],
+      "composition": "de-（完全）+ termin（界限，拉丁语 terminus）→ 划定界限 → 决定"
+    },
+    "duty": {
+      "roots": []
+    },
+    "July": {
+      "roots": []
+    },
+    "save": {
+      "roots": []
+    },
+    "tend": {
+      "roots": [
+        {
+          "root": "tend",
+          "meaning": "伸展"
+        }
+      ],
+      "composition": "tend（伸展，拉丁语 tendere）→ 倾向、趋向"
+    },
+    "listen": {
+      "roots": []
+    },
+    "leg": {
+      "roots": []
+    },
+    "fund": {
+      "roots": [
+        {
+          "root": "fund",
+          "meaning": "底部、基础"
+        }
+      ],
+      "composition": "fund（底部，拉丁语 fundus「底、地产」）→ fund（基金）"
+    },
+    "park": {
+      "roots": []
+    },
+    "suddenly": {
+      "roots": [
+        {
+          "root": "sub-",
+          "meaning": "在下"
+        },
+        {
+          "root": "it",
+          "meaning": "走"
+        },
+        {
+          "root": "-ly",
+          "meaning": "副词后缀"
+        }
+      ],
+      "composition": "sudden（源自拉丁语 subitus「悄然来到」，sub- + ire「走」）+ -ly → 突然地"
+    },
+    "title": {
+      "roots": []
+    },
+    "treat": {
+      "roots": []
+    },
+    "outside": {
+      "roots": []
+    },
+    "summer": {
+      "roots": []
+    },
+    "throughout": {
+      "roots": []
+    },
+    "discussion": {
+      "roots": [
+        {
+          "root": "dis-",
+          "meaning": "分开"
+        },
+        {
+          "root": "cuss",
+          "meaning": "摇、击"
+        },
+        {
+          "root": "-ion",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "dis-（分开）+ cuss（击）+ -ion → 拆开审视 → 讨论"
+    },
+    "generally": {
+      "roots": [
+        {
+          "root": "gen",
+          "meaning": "种类"
+        },
+        {
+          "root": "-eral",
+          "meaning": "形容词后缀"
+        },
+        {
+          "root": "-ly",
+          "meaning": "副词后缀"
+        }
+      ],
+      "composition": "general + -ly → 一般地"
+    },
+    "aspect": {
+      "roots": [
+        {
+          "root": "a-",
+          "meaning": "向（=ad-）"
+        },
+        {
+          "root": "spect",
+          "meaning": "看"
+        }
+      ],
+      "composition": "a-（向）+ spect（看，拉丁语 spectare）→ 看向某一面 → 方面"
+    },
+    "industrial": {
+      "roots": [
+        {
+          "root": "indu-",
+          "meaning": "内部"
+        },
+        {
+          "root": "stru",
+          "meaning": "建造"
+        },
+        {
+          "root": "-ial",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "industry（工业）+ -ial → 工业的"
+    },
+    "chairman": {
+      "roots": []
+    },
+    "nearly": {
+      "roots": []
+    },
+    "remove": {
+      "roots": [
+        {
+          "root": "re-",
+          "meaning": "回"
+        },
+        {
+          "root": "mov",
+          "meaning": "运动"
+        }
+      ],
+      "composition": "re-（回）+ mov（运动）→ 移走 → 移除"
+    },
+    "visit": {
+      "roots": [
+        {
+          "root": "vis",
+          "meaning": "看"
+        }
+      ],
+      "composition": "vis（看，拉丁语 visitare「去看」）→ visit（拜访）"
+    },
+    "throw": {
+      "roots": []
+    },
+    "baby": {
+      "roots": []
+    },
+    "sorry": {
+      "roots": []
+    },
+    "daughter": {
+      "roots": []
+    },
+    "sun": {
+      "roots": []
+    },
+    "united": {
+      "roots": []
+    },
+    "box": {
+      "roots": []
+    },
+    "exist": {
+      "roots": [
+        {
+          "root": "ex-",
+          "meaning": "出"
+        },
+        {
+          "root": "sist",
+          "meaning": "站立"
+        }
+      ],
+      "composition": "ex-（出）+ sist（站立，拉丁语 sistere）→ 站出来 → 存在"
+    },
+    "river": {
+      "roots": []
+    },
+    "dead": {
+      "roots": []
+    },
+    "paul": {
+      "roots": []
+    },
+    "customer": {
+      "roots": [
+        {
+          "root": "custom",
+          "meaning": "习惯"
+        },
+        {
+          "root": "-er",
+          "meaning": "人"
+        }
+      ],
+      "composition": "custom（习惯，拉丁语 consuetudo）+ -er → 有惯例交易的人 → 顾客"
+    },
+    "institution": {
+      "roots": [
+        {
+          "root": "in-",
+          "meaning": "向内"
+        },
+        {
+          "root": "stit",
+          "meaning": "站立、设立"
+        },
+        {
+          "root": "-ion",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "in-（向内）+ stit（设立，拉丁语 statuere）+ -ion → 设立的机构 → 机构"
+    },
+    "encourage": {
+      "roots": [
+        {
+          "root": "en-",
+          "meaning": "使"
+        },
+        {
+          "root": "cour",
+          "meaning": "心"
+        },
+        {
+          "root": "-age",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "en-（使）+ cour（心，拉丁语 cor）+ -age → 使心生勇气 → 鼓励"
+    },
+    "specific": {
+      "roots": [
+        {
+          "root": "spec",
+          "meaning": "看"
+        },
+        {
+          "root": "-fic",
+          "meaning": "做"
+        }
+      ],
+      "composition": "spec（看）+ -fic（做）→ 看清楚的、做出区分的 → 具体的"
+    },
+    "appropriate": {
+      "roots": [
+        {
+          "root": "ap-",
+          "meaning": "向（=ad-）"
+        },
+        {
+          "root": "propri",
+          "meaning": "自己的"
+        }
+      ],
+      "composition": "ap-（向）+ propri（自己的，拉丁语 proprius）→ 使成为自己的 → 恰当的"
+    },
+    "profit": {
+      "roots": [
+        {
+          "root": "pro-",
+          "meaning": "向前"
+        },
+        {
+          "root": "fit",
+          "meaning": "做"
+        }
+      ],
+      "composition": "pro-（向前）+ fit（做，拉丁语 facere）→ 做出成果 → 利润"
+    },
+    "reflect": {
+      "roots": [
+        {
+          "root": "re-",
+          "meaning": "回"
+        },
+        {
+          "root": "flect",
+          "meaning": "弯曲"
+        }
+      ],
+      "composition": "re-（回）+ flect（弯曲，拉丁语 flectere）→ 弯回来 → 反射、反思"
+    },
+    "assume": {
+      "roots": [
+        {
+          "root": "as-",
+          "meaning": "向（=ad-）"
+        },
+        {
+          "root": "sum",
+          "meaning": "取"
+        }
+      ],
+      "composition": "as-（向）+ sum（取，拉丁语 sumere）→ 取为己用 → 假设"
+    },
+    "admit": {
+      "roots": [
+        {
+          "root": "ad-",
+          "meaning": "向"
+        },
+        {
+          "root": "mit",
+          "meaning": "送"
+        }
+      ],
+      "composition": "ad-（向）+ mit（送，拉丁语 mittere）→ 放入 → 承认、允许进入"
+    },
+    "stone": {
+      "roots": []
+    },
+    "measure": {
+      "roots": [
+        {
+          "root": "mens",
+          "meaning": "测量"
+        }
+      ],
+      "composition": "mens（测量，拉丁语 mensura）→ measure（测量）"
+    },
+    "conference": {
+      "roots": [
+        {
+          "root": "con-",
+          "meaning": "一起"
+        },
+        {
+          "root": "fer",
+          "meaning": "带、运"
+        },
+        {
+          "root": "-ence",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "con-（一起）+ fer（带）+ -ence → 把人聚到一起 → 会议"
+    },
+    "division": {
+      "roots": [
+        {
+          "root": "di-",
+          "meaning": "分开"
+        },
+        {
+          "root": "vis",
+          "meaning": "分"
+        },
+        {
+          "root": "-ion",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "di-（分开）+ vis（分，拉丁语 dividere）+ -ion → 分开 → 部门、划分"
+    },
+    "smile": {
+      "roots": []
+    },
+    "prepare": {
+      "roots": [
+        {
+          "root": "pre-",
+          "meaning": "在前"
+        },
+        {
+          "root": "par",
+          "meaning": "准备"
+        }
+      ],
+      "composition": "pre-（在前）+ par（准备，拉丁语 parare）→ 预先准备"
+    },
+    "replace": {
+      "roots": [
+        {
+          "root": "re-",
+          "meaning": "再次"
+        },
+        {
+          "root": "place",
+          "meaning": "放置"
+        }
+      ],
+      "composition": "re-（再次）+ place（放置）→ 重新放置 → 替换"
+    },
+    "post": {
+      "roots": []
+    },
+    "george": {
+      "roots": []
+    },
+    "procedure": {
+      "roots": [
+        {
+          "root": "pro-",
+          "meaning": "向前"
+        },
+        {
+          "root": "ced",
+          "meaning": "走"
+        },
+        {
+          "root": "-ure",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "pro-（向前）+ ced（走，拉丁语 cedere）+ -ure → 向前走的方式 → 程序"
+    },
+    "commission": {
+      "roots": [
+        {
+          "root": "com-",
+          "meaning": "一起"
+        },
+        {
+          "root": "miss",
+          "meaning": "送"
+        },
+        {
+          "root": "-ion",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "com-（一起）+ miss（送，拉丁语 mittere）+ -ion → 共同委派 → 委员会、佣金"
+    },
+    "proposal": {
+      "roots": [
+        {
+          "root": "pro-",
+          "meaning": "向前"
+        },
+        {
+          "root": "pos",
+          "meaning": "放置"
+        },
+        {
+          "root": "-al",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "pro-（向前）+ pos（放置）+ -al → 摆在前面 → 提案"
+    },
+    "fill": {
+      "roots": []
+    },
+    "unless": {
+      "roots": []
+    },
+    "mention": {
+      "roots": [
+        {
+          "root": "ment",
+          "meaning": "心、想"
+        }
+      ],
+      "composition": "ment（心，拉丁语 mens「心智」）→ 提起心中之事 → 提及"
+    },
+    "improve": {
+      "roots": [
+        {
+          "root": "im-",
+          "meaning": "进入"
+        },
+        {
+          "root": "prov",
+          "meaning": "利益"
+        }
+      ],
+      "composition": "im-（进入）+ prov（利益，拉丁语 prode「有益」）→ 使有益 → 改善"
+    },
+    "image": {
+      "roots": [
+        {
+          "root": "imag",
+          "meaning": "相似、模仿"
+        }
+      ],
+      "composition": "imag（相似，拉丁语 imago「肖像」）→ image（图像）"
+    },
+    "circumstance": {
+      "roots": [
+        {
+          "root": "circum-",
+          "meaning": "周围"
+        },
+        {
+          "root": "sta",
+          "meaning": "站立"
+        }
+      ],
+      "composition": "circum-（周围）+ sta（站立，拉丁语 stare）→ 站在周围的事物 → 情况"
+    },
+    "oil": {
+      "roots": []
+    },
+    "client": {
+      "roots": []
+    },
+    "obviously": {
+      "roots": []
+    },
+    "sector": {
+      "roots": [
+        {
+          "root": "sect",
+          "meaning": "切"
+        },
+        {
+          "root": "-or",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "sect（切，拉丁语 secare）+ -or → 切下的部分 → 部门"
+    },
+    "direction": {
+      "roots": [
+        {
+          "root": "di-",
+          "meaning": "分开"
+        },
+        {
+          "root": "rect",
+          "meaning": "直"
+        },
+        {
+          "root": "-ion",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "di-（分开）+ rect（直，拉丁语 regere）+ -ion → 引向直路 → 方向"
+    },
+    "basic": {
+      "roots": [
+        {
+          "root": "bas",
+          "meaning": "底部"
+        },
+        {
+          "root": "-ic",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "bas（底部，希腊语 basis）+ -ic → 基础的"
+    },
+    "seat": {
+      "roots": []
+    },
+    "attack": {
+      "roots": [
+        {
+          "root": "at-",
+          "meaning": "向（=ad-）"
+        },
+        {
+          "root": "tach",
+          "meaning": "固定、附着"
+        }
+      ],
+      "composition": "at-（向）+ tach（附着，法语 attacher）→ 冲向并附着 → 攻击"
+    },
+    "Soviet": {
+      "roots": []
+    },
+    "successful": {
+      "roots": [
+        {
+          "root": "suc-",
+          "meaning": "在下"
+        },
+        {
+          "root": "cess",
+          "meaning": "走"
+        },
+        {
+          "root": "-ful",
+          "meaning": "充满"
+        }
+      ],
+      "composition": "success（成功）+ -ful → 成功的"
+    },
+    "intend": {
+      "roots": [
+        {
+          "root": "in-",
+          "meaning": "向"
+        },
+        {
+          "root": "tend",
+          "meaning": "伸展"
+        }
+      ],
+      "composition": "in-（向）+ tend（伸展，拉丁语 tendere）→ 伸向某目标 → 打算"
+    },
+    "fight": {
+      "roots": []
+    },
+    "original": {
+      "roots": [
+        {
+          "root": "origin",
+          "meaning": "起源"
+        },
+        {
+          "root": "-al",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "origin（起源，拉丁语 origo）+ -al → 原始的"
+    },
+    "miss": {
+      "roots": []
+    },
+    "attitude": {
+      "roots": [
+        {
+          "root": "apt",
+          "meaning": "适合"
+        }
+      ],
+      "composition": "apt（适合，拉丁语 aptitudo「适合的状态」）→ attitude（态度）"
+    },
+    "aware": {
+      "roots": []
+    },
+    "military": {
+      "roots": [
+        {
+          "root": "milit",
+          "meaning": "士兵"
+        },
+        {
+          "root": "-ary",
+          "meaning": "与...相关的"
+        }
+      ],
+      "composition": "milit（士兵，拉丁语 miles）+ -ary → 军事的"
+    },
+    "discover": {
+      "roots": [
+        {
+          "root": "dis-",
+          "meaning": "去除"
+        },
+        {
+          "root": "cover",
+          "meaning": "覆盖"
+        }
+      ],
+      "composition": "dis-（去除）+ cover（覆盖）→ 揭开覆盖物 → 发现"
+    },
+    "exactly": {
+      "roots": [
+        {
+          "root": "ex-",
+          "meaning": "出"
+        },
+        {
+          "root": "act",
+          "meaning": "做"
+        },
+        {
+          "root": "-ly",
+          "meaning": "副词后缀"
+        }
+      ],
+      "composition": "ex-（出）+ act（做）→ 做到精确 → exactly（精确地）"
+    },
+    "drop": {
+      "roots": []
+    },
+    "push": {
+      "roots": []
+    },
+    "hit": {
+      "roots": []
+    },
+    "de": {
+      "roots": []
+    },
+    "Germany": {
+      "roots": []
+    },
+    "goal": {
+      "roots": []
+    },
+    "disease": {
+      "roots": [
+        {
+          "root": "dis-",
+          "meaning": "不"
+        },
+        {
+          "root": "ease",
+          "meaning": "舒适"
+        }
+      ],
+      "composition": "dis-（不）+ ease（舒适）→ 不舒适 → 疾病"
+    },
+    "yourself": {
+      "roots": []
+    },
+    "employment": {
+      "roots": [
+        {
+          "root": "em-",
+          "meaning": "进入"
+        },
+        {
+          "root": "ploy",
+          "meaning": "折叠、涉入"
+        },
+        {
+          "root": "-ment",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "em-（进入）+ ploy（折叠，拉丁语 plicare）+ -ment → 使参与 → 就业"
+    },
+    "HON": {
+      "roots": []
+    },
+    "sign": {
+      "roots": [
+        {
+          "root": "sign",
+          "meaning": "标记"
+        }
+      ],
+      "composition": "sign（标记，拉丁语 signum）→ 符号、签名"
+    },
+    "refuse": {
+      "roots": [
+        {
+          "root": "re-",
+          "meaning": "回"
+        },
+        {
+          "root": "fus",
+          "meaning": "倾倒"
+        }
+      ],
+      "composition": "re-（回）+ fus（倾倒，拉丁语 fundere）→ 倒回去 → 拒绝"
+    },
+    "prevent": {
+      "roots": [
+        {
+          "root": "pre-",
+          "meaning": "在前"
+        },
+        {
+          "root": "vent",
+          "meaning": "来"
+        }
+      ],
+      "composition": "pre-（在前）+ vent（来，拉丁语 venire）→ 提前到来阻挡 → 预防"
+    },
+    "popular": {
+      "roots": [
+        {
+          "root": "popul",
+          "meaning": "人民"
+        },
+        {
+          "root": "-ar",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "popul（人民，拉丁语 populus）+ -ar → 受人民欢迎的 → 流行的"
+    },
+    "October": {
+      "roots": []
+    },
+    "affair": {
+      "roots": []
+    },
+    "appeal": {
+      "roots": [
+        {
+          "root": "ap-",
+          "meaning": "向（=ad-）"
+        },
+        {
+          "root": "pel",
+          "meaning": "驱动"
+        }
+      ],
+      "composition": "ap-（向）+ pel（驱动，拉丁语 pellere）→ 驱向 → 上诉、呼吁"
+    },
+    "heavy": {
+      "roots": []
+    },
+    "beyond": {
+      "roots": []
+    },
+    "regard": {
+      "roots": [
+        {
+          "root": "re-",
+          "meaning": "再次"
+        },
+        {
+          "root": "gard",
+          "meaning": "看"
+        }
+      ],
+      "composition": "re-（再次）+ gard（看，法语 garder「注视」）→ 反复看 → 关注、认为"
+    },
+    "ability": {
+      "roots": [
+        {
+          "root": "abil",
+          "meaning": "能够"
+        },
+        {
+          "root": "-ity",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "abil（能够，拉丁语 habilis）+ -ity → 能力"
+    },
+    "professional": {
+      "roots": [
+        {
+          "root": "pro-",
+          "meaning": "向前"
+        },
+        {
+          "root": "fess",
+          "meaning": "声明"
+        },
+        {
+          "root": "-ion",
+          "meaning": "名词后缀"
+        },
+        {
+          "root": "-al",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "pro-（向前）+ fess（声明）→ 公开宣称的职业 → 专业的"
+    },
+    "holiday": {
+      "roots": []
+    },
+    "technique": {
+      "roots": [
+        {
+          "root": "techn",
+          "meaning": "技艺"
+        }
+      ],
+      "composition": "techn（技艺，希腊语 technē）→ technique（技巧）"
+    },
+    "item": {
+      "roots": []
+    },
+    "medium": {
+      "roots": [
+        {
+          "root": "medi",
+          "meaning": "中间"
+        }
+      ],
+      "composition": "medi（中间，拉丁语 medius）→ medium（媒介、中等）"
+    },
+    "pupil": {
+      "roots": []
+    },
+    "version": {
+      "roots": [
+        {
+          "root": "vers",
+          "meaning": "转"
+        },
+        {
+          "root": "-ion",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "vers（转，拉丁语 vertere）+ -ion → 转变 → 版本"
+    },
+    "fish": {
+      "roots": []
+    },
+    "maybe": {
+      "roots": []
+    },
+    "campaign": {
+      "roots": [
+        {
+          "root": "camp",
+          "meaning": "原野"
+        }
+      ],
+      "composition": "camp（原野，拉丁语 campus）→ 在原野上作战 → 战役、运动"
+    },
+    "okay": {
+      "roots": []
+    },
+    "lay": {
+      "roots": []
+    },
+    "teach": {
+      "roots": []
+    },
+    "direct": {
+      "roots": [
+        {
+          "root": "di-",
+          "meaning": "分开"
+        },
+        {
+          "root": "rect",
+          "meaning": "直"
+        }
+      ],
+      "composition": "di-（分开）+ rect（直，拉丁语 regere「引导」）→ 引向正路 → 直接的、指挥"
+    },
+    "press": {
+      "roots": [
+        {
+          "root": "press",
+          "meaning": "压"
+        }
+      ],
+      "composition": "press（压，拉丁语 premere）→ press（压、新闻出版）"
+    },
+    "advice": {
+      "roots": [
+        {
+          "root": "ad-",
+          "meaning": "向"
+        },
+        {
+          "root": "vis",
+          "meaning": "看"
+        }
+      ],
+      "composition": "ad-（向）+ vis（看，拉丁语 videre）→ 以某种眼光看 → 建议"
+    },
+    "drug": {
+      "roots": []
+    },
+    "September": {
+      "roots": []
+    },
+    "sales": {
+      "roots": []
+    },
+    "dark": {
+      "roots": []
+    },
+    "library": {
+      "roots": [
+        {
+          "root": "libr",
+          "meaning": "书"
+        }
+      ],
+      "composition": "libr（书，拉丁语 liber）→ library（图书馆）"
+    },
+    "reveal": {
+      "roots": [
+        {
+          "root": "re-",
+          "meaning": "回（反转）"
+        },
+        {
+          "root": "veal",
+          "meaning": "遮盖"
+        }
+      ],
+      "composition": "re-（反转）+ veal（遮盖，拉丁语 velare）→ 揭开遮盖 → 揭示"
+    },
+    "advantage": {
+      "roots": [
+        {
+          "root": "avant-",
+          "meaning": "在前"
+        },
+        {
+          "root": "-age",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "avant-（在前，法语，源自拉丁语 abante）+ -age → 占先 → 优势"
+    },
+    "operate": {
+      "roots": [
+        {
+          "root": "oper",
+          "meaning": "工作"
+        }
+      ],
+      "composition": "oper（工作，拉丁语 operari）→ operate（操作）"
+    },
+    "surface": {
+      "roots": [
+        {
+          "root": "sur-",
+          "meaning": "在上"
+        },
+        {
+          "root": "face",
+          "meaning": "面"
+        }
+      ],
+      "composition": "sur-（在上，法语 sur）+ face（面）→ 上面的面 → 表面"
+    },
+    "cold": {
+      "roots": []
+    },
+    "America": {
+      "roots": []
+    },
+    "immediately": {
+      "roots": [
+        {
+          "root": "im-",
+          "meaning": "不"
+        },
+        {
+          "root": "medi",
+          "meaning": "中间"
+        },
+        {
+          "root": "-ate",
+          "meaning": "形容词后缀"
+        },
+        {
+          "root": "-ly",
+          "meaning": "副词后缀"
+        }
+      ],
+      "composition": "im-（不）+ medi（中间）+ -ately → 没有中间过程 → 立即"
+    },
+    "worth": {
+      "roots": []
+    },
+    "ready": {
+      "roots": []
+    },
+    "variety": {
+      "roots": [
+        {
+          "root": "vari",
+          "meaning": "变化"
+        },
+        {
+          "root": "-ety",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "vari（变化，拉丁语 varius）+ -ety → 多样性"
+    },
+    "television": {
+      "roots": [
+        {
+          "root": "tele-",
+          "meaning": "远"
+        },
+        {
+          "root": "vis",
+          "meaning": "看"
+        },
+        {
+          "root": "-ion",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "tele-（远，希腊语）+ vis（看）+ -ion → 远距离观看 → 电视"
+    },
+    "memory": {
+      "roots": [
+        {
+          "root": "memor",
+          "meaning": "记得"
+        }
+      ],
+      "composition": "memor（记得，拉丁语 memor「记忆的」）→ memory（记忆）"
+    },
+    "blood": {
+      "roots": []
+    },
+    "james": {
+      "roots": []
+    },
+    "island": {
+      "roots": []
+    },
+    "culture": {
+      "roots": [
+        {
+          "root": "cult",
+          "meaning": "耕种、培养"
+        },
+        {
+          "root": "-ure",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "cult（耕种，拉丁语 colere「耕作、培养」）+ -ure → 培养 → 文化"
+    },
+    "January": {
+      "roots": []
+    },
+    "green": {
+      "roots": []
+    },
+    "useful": {
+      "roots": [
+        {
+          "root": "us",
+          "meaning": "使用"
+        },
+        {
+          "root": "-ful",
+          "meaning": "充满"
+        }
+      ]
+    },
+    "depend": {
+      "roots": [
+        {
+          "root": "de-",
+          "meaning": "向下"
+        },
+        {
+          "root": "pend",
+          "meaning": "悬挂"
+        }
+      ],
+      "composition": "de-（向下）+ pend（悬挂，拉丁语 pendere）→ 向下悬挂、依附 → 依赖"
+    },
+    "Sunday": {
+      "roots": []
+    },
+    "majority": {
+      "roots": [
+        {
+          "root": "maj",
+          "meaning": "较大"
+        },
+        {
+          "root": "-ity",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "maj（较大，拉丁语 major）+ -ority → 多数"
+    },
+    "extent": {
+      "roots": [
+        {
+          "root": "ex-",
+          "meaning": "出"
+        },
+        {
+          "root": "tent",
+          "meaning": "伸展"
+        }
+      ],
+      "composition": "ex-（出）+ tent（伸展，拉丁语 tendere）→ 伸展的范围 → 程度"
+    },
+    "enable": {
+      "roots": [
+        {
+          "root": "en-",
+          "meaning": "使"
+        },
+        {
+          "root": "able",
+          "meaning": "能够"
+        }
+      ]
+    },
+    "competition": {
+      "roots": [
+        {
+          "root": "com-",
+          "meaning": "一起"
+        },
+        {
+          "root": "pet",
+          "meaning": "追求"
+        },
+        {
+          "root": "-ition",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "com-（一起）+ pet（追求，拉丁语 petere）+ -ition → 一起追求 → 竞争"
+    },
+    "bar": {
+      "roots": []
+    },
+    "parliament": {
+      "roots": [
+        {
+          "root": "parl",
+          "meaning": "说话"
+        },
+        {
+          "root": "-ment",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "parl（说话，法语 parler）+ -ment → 说话讨论的地方 → 议会"
+    },
+    "goods": {
+      "roots": []
+    },
+    "speaker": {
+      "roots": []
+    },
+    "check": {
+      "roots": []
+    },
+    "complete": {
+      "roots": [
+        {
+          "root": "com-",
+          "meaning": "完全"
+        },
+        {
+          "root": "plet",
+          "meaning": "填满"
+        }
+      ],
+      "composition": "com-（完全）+ plet（填满，拉丁语 plere）→ 完全填满 → 完成"
+    },
+    "access": {
+      "roots": [
+        {
+          "root": "ac-",
+          "meaning": "向（=ad-）"
+        },
+        {
+          "root": "cess",
+          "meaning": "走"
+        }
+      ],
+      "composition": "ac-（向）+ cess（走，拉丁语 cedere）→ 走近 → 接近、访问"
+    },
+    "richard": {
+      "roots": []
+    },
+    "star": {
+      "roots": []
+    },
+    "text": {
+      "roots": [
+        {
+          "root": "text",
+          "meaning": "编织"
+        }
+      ],
+      "composition": "text（编织，拉丁语 texere）→ 编织的文字 → 文本"
+    },
+    "thirty": {
+      "roots": []
+    },
+    "easily": {
+      "roots": []
+    },
+    "trouble": {
+      "roots": [
+        {
+          "root": "turb",
+          "meaning": "搅动"
+        }
+      ],
+      "composition": "turb（搅动，拉丁语 turbare「扰乱」）→ trouble（麻烦）"
+    },
+    "traditional": {
+      "roots": [
+        {
+          "root": "tra-",
+          "meaning": "跨越"
+        },
+        {
+          "root": "dit",
+          "meaning": "给"
+        },
+        {
+          "root": "-ion",
+          "meaning": "名词后缀"
+        },
+        {
+          "root": "-al",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "tra-（跨越）+ dit（给）+ -ional → 代代相传的 → 传统的"
+    },
+    "effective": {
+      "roots": [
+        {
+          "root": "ef-",
+          "meaning": "出（=ex-）"
+        },
+        {
+          "root": "fect",
+          "meaning": "做"
+        },
+        {
+          "root": "-ive",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "composition": "ef-（出）+ fect（做）+ -ive → 做出效果的 → 有效的"
+    },
+    "western": {
+      "roots": []
+    },
+    "payment": {
+      "roots": [
+        {
+          "root": "pac",
+          "meaning": "和平"
+        },
+        {
+          "root": "-ment",
+          "meaning": "名词后缀"
+        }
+      ],
+      "composition": "pay（支付，源自拉丁语 pacare「使满意」）+ -ment → 支付"
+    },
+    "york": {
+      "roots": []
+    },
+    "mouth": {
+      "roots": []
+    }
+  }
+}
