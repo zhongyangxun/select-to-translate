@@ -17,11 +17,6 @@
   "hello": {
     "phonetic": "hә'lәu",
     "translation": "interj. 喂, 嘿",
-    "collins": 3,
-    "oxford": 1,
-    "tag": "zk gk",
-    "bnc": 2319,
-    "frq": 2238,
     "exchange": "s:hellos"
   }
 }
@@ -32,11 +27,6 @@
 |------|------|------|
 | `phonetic` | 音标 | hә'lәu |
 | `translation` | 中文释义 | 喂, 你好 |
-| `collins` | 柯林斯星级 (1-5) | 3 |
-| `oxford` | 牛津核心词 (0/1) | 1 |
-| `tag` | 考试标签 | zk gk cet4 cet6 |
-| `bnc` | BNC词频排名 | 2319 |
-| `frq` | 当代词频排名 | 2238 |
 | `exchange` | 词形变化 | p:ran/d:run/i:running |
 
 #### `exchange` 字段格式解读
