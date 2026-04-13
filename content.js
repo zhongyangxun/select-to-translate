@@ -78,10 +78,9 @@ class Panel {
     return this;
   }
 
-  setLoading(word) {
-    this.#wordEl.textContent = word;
-    this.#definitionEl.className = 'definition loading';
-    this.#definitionEl.textContent = '查询中...';
+  setLoading() {
+    this.#panel.classList.add('loading');
+    this.#panel.classList.remove('not-found');
     return this;
   }
 
@@ -130,7 +129,7 @@ document.addEventListener('mouseup', async (e) => {
   const rect = range.getBoundingClientRect();
 
   panel
-    .setLoading(text)
+    .setLoading()
     .setPosition(rect.left, rect.bottom + 8)
     .show();
 

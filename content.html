@@ -4,33 +4,57 @@
     margin: 0;
     padding: 0;
   }
+
   .panel {
     position: fixed;
     z-index: 2147483647;
-    width: 280px;
+    width: 340px;
     max-height: 300px;
     background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     font-family:
       -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     font-size: 14px;
     color: #333;
     overflow: hidden;
   }
+
   .header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
-    padding: 10px 12px;
-    background: #f7f7f8;
-    border-bottom: 1px solid #eee;
+    padding: 16px 16px 12px 16px;
+    gap: 8px;
   }
+
+  .word-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+  }
+
   .word {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
     font-weight: 600;
-    font-size: 16px;
-    color: #1a1a1a;
   }
+
+  .phonetic-container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 2px;
+  }
+
+  .phonetic {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-family:
+      ui-monospace, SFMono-Regular, 'Cascadia Code', Consolas, monospace;
+  }
+
   .close-btn {
     width: 20px;
     height: 20px;
@@ -41,34 +65,197 @@
     color: #999;
     line-height: 1;
   }
+
   .close-btn:hover {
     color: #333;
   }
-  .content {
-    padding: 12px;
-    overflow-y: auto;
-    max-height: 240px;
+
+  .definition-section {
+    padding: 8px 16px 12px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
   }
-  .definition {
-    line-height: 1.6;
-    color: #444;
-    white-space: pre-wrap;
+
+  .def-row {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
   }
-  .loading {
-    color: #999;
-    font-style: italic;
+
+  .root-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 16px 16px 16px;
   }
+
+  .root-list {
+    margin-top: 4px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .root-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+  }
+
+  .root-item .root {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    font-family:
+      ui-monospace, SFMono-Regular, 'Cascadia Code', Consolas, monospace;
+    letter-spacing: 0.025em;
+  }
+
+  .root-item .note,
+  .root-item .meaning {
+    font-size: 10px;
+  }
+
+  .root-item .meaning {
+    font-size: 0.75rem;
+  }
+
+  .composition {
+    margin-top: 12px;
+    font-size: 0.75rem;
+    line-height: 1.625;
+  }
+
   .not-found {
     color: #999;
   }
+
+  .loading .word,
+  .loading .phonetic,
+  .loading .pos-label,
+  .loading .def-text,
+  .loading .root-item span,
+  .loading .composition {
+    background-color: #e9edf0;
+    border-radius: 6px;
+    color: transparent;
+    min-height: 1em;
+    animation: shimmer 1.5s ease-in-out infinite;
+  }
+
+  .loading .word {
+    min-height: 1.2em;
+    width: 112px;
+  }
+
+  .loading .phonetic {
+    display: inline-block;
+    width: 88px;
+  }
+
+  .loading .audio-btn {
+    display: none;
+  }
+
+  .loading .pos-label {
+    width: 20px;
+  }
+
+  .loading .def-text {
+    width: 96px;
+  }
+
+  .loading .def-row:last-child .def-text {
+    width: 80px;
+  }
+
+  .loading .root-item span {
+    display: inline-block;
+  }
+
+  .loading .root-item .root {
+    min-height: 2em;
+  }
+
+  .loading .root-item .prefix {
+    width: 48px;
+  }
+
+  .loading .root-item .root-word {
+    width: 44px;
+  }
+
+  .loading .root-item .suffix {
+    width: 52px;
+  }
+
+  .loading .root-item .note {
+    width: 32px;
+  }
+
+  .loading .root-item .meaning {
+    width: 56px;
+  }
+
+  .loading .composition {
+    width: 192px;
+  }
+
+  @keyframes shimmer {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
 </style>
 
-<div class="panel">
+<div class="panel loading">
   <div class="header">
-    <span class="word"></span>
+    <div class="word-container">
+      <h2 class="word"></h2>
+      <div class="phonetic-container">
+        <span class="phonetic"></span>
+        <button class="audio-btn">🔊</button>
+      </div>
+    </div>
     <button class="close-btn">&times;</button>
   </div>
   <div class="content">
-    <div class="definition"></div>
+    <div class="definition-section">
+      <div class="def-row">
+        <div class="pos-label"></div>
+        <div class="def-text"></div>
+      </div>
+      <div class="def-row">
+        <div class="pos-label"></div>
+        <div class="def-text"></div>
+      </div>
+    </div>
+    <div class="root-section">
+      <div class="root-list">
+        <div class="root-item root-prefix-item">
+          <span class="root prefix"></span>
+          <span class="note">PREFIX</span>
+          <span class="meaning"></span>
+        </div>
+        <div class="root-item root-word-item">
+          <span class="root root-word"></span>
+          <span class="note">ROOT</span>
+          <span class="meaning"></span>
+        </div>
+        <div class="root-item root-suffix-item">
+          <span class="root suffix"></span>
+          <span class="note">SUFFIX</span>
+          <span class="meaning"></span>
+        </div>
+      </div>
+      <p class="composition"></p>
+    </div>
   </div>
 </div>
