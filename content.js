@@ -8,89 +8,7 @@ class Panel {
   #wordEl = null;
   #definitionEl = null;
 
-  constructor() {
-    if (Panel.#instance) {
-      return Panel.#instance;
-    }
-
-    const host = document.createElement('div');
-    host.id = 'select-to-translate-host';
-    const shadow = host.attachShadow({ mode: 'closed' });
-
-    shadow.innerHTML = /* html */ `
-      <style>
-        * {
-          box-sizing: border-box;
-          margin: 0;
-          padding: 0;
-        }
-        .panel {
-          position: fixed;
-          z-index: 2147483647;
-          width: 280px;
-          max-height: 300px;
-          background: #fff;
-          border-radius: 8px;
-          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-          font-size: 14px;
-          color: #333;
-          overflow: hidden;
-        }
-        .header {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding: 10px 12px;
-          background: #f7f7f8;
-          border-bottom: 1px solid #eee;
-        }
-        .word {
-          font-weight: 600;
-          font-size: 16px;
-          color: #1a1a1a;
-        }
-        .close-btn {
-          width: 20px;
-          height: 20px;
-          border: none;
-          background: transparent;
-          cursor: pointer;
-          font-size: 18px;
-          color: #999;
-          line-height: 1;
-        }
-        .close-btn:hover {
-          color: #333;
-        }
-        .content {
-          padding: 12px;
-          overflow-y: auto;
-          max-height: 240px;
-        }
-        .definition {
-          line-height: 1.6;
-          color: #444;
-        }
-        .loading {
-          color: #999;
-          font-style: italic;
-        }
-        .not-found {
-          color: #999;
-        }
-      </style>
-      <div class="panel">
-        <div class="header">
-          <span class="word"></span>
-          <button class="close-btn">&times;</button>
-        </div>
-        <div class="content">
-          <div class="definition"></div>
-        </div>
-      </div>
-    `;
-
+  constructor(host, shadow) {
     this.#host = host;
     this.#shadow = shadow;
     this.#panel = shadow.querySelector('.panel');
@@ -102,9 +20,25 @@ class Panel {
       .addEventListener('click', () => this.hide());
 
     this.hide();
+  }
+
+  static async create() {
+    if (Panel.#instance) {
+      return Panel.#instance;
+    }
+
+    const host = document.createElement('div');
+    host.id = 'select-to-translate-host';
+    const shadow = host.attachShadow({ mode: 'closed' });
+
+    const url = chrome.runtime.getURL('content.html');
+    const html = await fetch(url).then((r) => r.text());
+    shadow.innerHTML = html;
+
     document.body.appendChild(host);
 
-    Panel.#instance = this;
+    Panel.#instance = new Panel(host, shadow);
+    return Panel.#instance;
   }
 
   get host() {
@@ -170,7 +104,7 @@ class Panel {
   }
 }
 
-const panel = new Panel();
+const panelReady = Panel.create();
 
 const shouldTranslate = (text) => {
   const trimmedText = text.trim();
@@ -180,6 +114,7 @@ const shouldTranslate = (text) => {
 };
 
 document.addEventListener('mouseup', async (e) => {
+  const panel = await panelReady;
   if (panel.contains(e.target)) {
     return;
   }
@@ -207,7 +142,8 @@ document.addEventListener('mouseup', async (e) => {
   panel.setContent(text, response?.definition);
 });
 
-document.addEventListener('mousedown', (e) => {
+document.addEventListener('mousedown', async (e) => {
+  const panel = await panelReady;
   if (panel.isShown() && !panel.contains(e.target)) {
     panel.hide();
   }

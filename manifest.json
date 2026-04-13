@@ -20,7 +20,7 @@
 
   "web_accessible_resources": [
     {
-      "resources": ["data/high_freq_words.json"],
+      "resources": ["data/high_freq_words.json", "content.html"],
       "matches": ["<all_urls>"]
     }
   ]
