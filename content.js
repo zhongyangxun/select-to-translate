@@ -107,25 +107,26 @@ class Panel {
   }
 
   setRootList(roots) {
-    const [prefix, word, suffix] = roots;
+    this.#rootListEl.innerHTML = roots
+      .map(({ root, meaning }) => {
+        const isPrefix = root.startsWith('-');
+        const isSuffix = root.endsWith('-');
+        const rootClass = isPrefix
+          ? 'prefix'
+          : isSuffix
+            ? 'suffix'
+            : 'root-word';
+        const noteText = isPrefix ? 'PREFIX' : isSuffix ? 'SUFFIX' : 'ROOT';
 
-    if (prefix) {
-      this.#rootListEl.querySelector('.root.prefix').textContent = prefix.root;
-      this.#rootListEl.querySelector('.meaning-prefix').textContent =
-        prefix.meaning;
-    }
-
-    if (word) {
-      this.#rootListEl.querySelector('.root.root-word').textContent = word.root;
-      this.#rootListEl.querySelector('.meaning-root-word').textContent =
-        word.meaning;
-    }
-
-    if (suffix) {
-      this.#rootListEl.querySelector('.root.suffix').textContent = suffix.root;
-      this.#rootListEl.querySelector('.meaning-suffix').textContent =
-        suffix.meaning;
-    }
+        return `
+        <div class="root-item">
+          <span class="root ${rootClass}">${root}</span>
+          <span class="note">${noteText}</span>
+          <span class="meaning">${meaning}</span>
+        </div>
+      `;
+      })
+      .join('');
 
     return this;
   }
