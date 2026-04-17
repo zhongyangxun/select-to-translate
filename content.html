@@ -1,4 +1,21 @@
 <style>
+  :host {
+    --primary: oklch(0.52 0.14 195);
+    --secondary: oklch(0.71 0.04 252);
+    --muted: oklch(0.94 0.006 240);
+    --accent: oklch(0.94 0.006 240);
+    --background: oklch(0.98 0.004 240);
+    --card: oklch(1 0 0);
+    --foreground: oklch(0.18 0.01 240);
+    --border: oklch(0.88 0.008 240);
+    --chip-prefix: oklch(0.93 0.06 258);
+    --chip-prefix-fg: oklch(0.38 0.12 258);
+    --chip-root: oklch(0.93 0.08 195);
+    --chip-root-fg: oklch(0.32 0.12 195);
+    --chip-suffix: oklch(0.93 0.07 80);
+    --chip-suffix-fg: oklch(0.42 0.1 80);
+  }
+
   * {
     box-sizing: border-box;
     margin: 0;
@@ -9,14 +26,11 @@
     position: fixed;
     z-index: 2147483647;
     width: 340px;
-    max-height: 300px;
-    background: #fff;
+    background-color: var(--card);
     border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    font-family:
-      -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    font-size: 14px;
-    color: #333;
+    box-shadow: 0 8px 20px rgb(0 0 0 / 15%);
+    font-family: 'Inter', sans-serif;
+    border: 1px solid var(--border);
     overflow: hidden;
   }
 
@@ -39,6 +53,7 @@
     font-size: 1.25rem;
     line-height: 1.75rem;
     font-weight: 600;
+    color: var(--foreground);
   }
 
   .phonetic-container {
@@ -51,23 +66,53 @@
   .phonetic {
     font-size: 0.875rem;
     line-height: 1.25rem;
-    font-family:
-      ui-monospace, SFMono-Regular, 'Cascadia Code', Consolas, monospace;
+    color: var(--muted-foreground);
+    font-weight: 400;
+  }
+
+  .audio-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: transparent;
+    border-radius: 50%;
+    color: var(--muted-foreground);
+    transition:
+      background-color 0.15s,
+      color 0.15s;
+    flex-shrink: 0;
+  }
+
+  .audio-btn:hover {
+    color: var(--primary);
+    background-color: color-mix(in oklch, var(--primary) 10%, transparent);
   }
 
   .close-btn {
-    width: 20px;
-    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    /* 垂直居中补偿，因为 `&times;` 的基线比文字高 */
+    padding-top: 2px;
     border: none;
     background: transparent;
-    cursor: pointer;
+    border-radius: 50%;
     font-size: 18px;
-    color: #999;
-    line-height: 1;
+    color: var(--secondary);
+    transition:
+      background-color 0.15s,
+      color 0.15s;
+    flex-shrink: 0;
   }
 
   .close-btn:hover {
-    color: #333;
+    background-color: var(--muted);
+    color: var(--foreground);
   }
 
   .definition-section {
@@ -81,6 +126,21 @@
     display: flex;
     align-items: baseline;
     gap: 8px;
+  }
+
+  .pos-label {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 600;
+    color: var(--primary);
+    flex-shrink: 0;
+  }
+
+  .def-text {
+    font-size: 0.875rem;
+    line-height: 1.625;
+    font-weight: 400;
+    color: var(--foreground);
   }
 
   .root-section {
@@ -109,24 +169,46 @@
     border-radius: 6px;
     font-size: 0.875rem;
     font-weight: 600;
-    font-family:
-      ui-monospace, SFMono-Regular, 'Cascadia Code', Consolas, monospace;
+    color: var(--foreground);
     letter-spacing: 0.025em;
   }
 
-  .root-item .note,
-  .root-item .meaning {
+  .root-item .prefix {
+    background-color: var(--chip-prefix);
+    color: var(--chip-prefix-fg);
+  }
+  .root-item .root-word {
+    background: var(--chip-root);
+    color: var(--chip-root-fg);
+  }
+  .root-item .suffix {
+    background: var(--chip-suffix);
+    color: var(--chip-suffix-fg);
+  }
+
+  .root-item .note {
     font-size: 10px;
+    font-weight: 500;
+    color: var(--muted-foreground);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
   }
 
   .root-item .meaning {
     font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--muted-foreground);
+    text-align: center;
+    line-height: 1.625;
   }
 
   .composition {
     margin-top: 12px;
     font-size: 0.75rem;
     line-height: 1.625;
+    font-weight: 400;
+    color: var(--muted-foreground);
+    text-align: center;
   }
 
   .not-found {
@@ -139,7 +221,7 @@
   .loading .def-text,
   .loading .root-item span,
   .loading .composition {
-    background-color: #e9edf0;
+    background-color: var(--muted);
     border-radius: 6px;
     color: transparent;
     min-height: 1em;
@@ -221,7 +303,22 @@
       <h2 class="word"></h2>
       <div class="phonetic-container">
         <span class="phonetic"></span>
-        <button class="audio-btn">🔊</button>
+        <button class="audio-btn">
+          <svg
+            width="13"
+            height="13"
+            viewBox="0 0 22 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
+          </svg>
+        </button>
       </div>
     </div>
     <button class="close-btn">&times;</button>
@@ -242,17 +339,17 @@
         <div class="root-item root-prefix-item">
           <span class="root prefix"></span>
           <span class="note">PREFIX</span>
-          <span class="meaning"></span>
+          <span class="meaning meaning-prefix"></span>
         </div>
         <div class="root-item root-word-item">
           <span class="root root-word"></span>
           <span class="note">ROOT</span>
-          <span class="meaning"></span>
+          <span class="meaning meaning-root-word"></span>
         </div>
         <div class="root-item root-suffix-item">
           <span class="root suffix"></span>
           <span class="note">SUFFIX</span>
-          <span class="meaning"></span>
+          <span class="meaning meaning-suffix"></span>
         </div>
       </div>
       <p class="composition"></p>
