@@ -30,6 +30,9 @@ class Panel {
     shadow
       .querySelector('.close-btn')
       .addEventListener('click', () => this.hide());
+    shadow
+      .querySelector('.audio-btn')
+      .addEventListener('click', () => this.playAudio());
 
     this.hide();
   }
@@ -75,6 +78,14 @@ class Panel {
 
     this.#panel.style.left = `${x}px`;
     this.#panel.style.top = `${y}px`;
+    return this;
+  }
+
+  playAudio() {
+    const utterance = new SpeechSynthesisUtterance(this.#wordEl.textContent);
+    utterance.lang = 'en-US';
+    speechSynthesis.speak(utterance);
+
     return this;
   }
 
