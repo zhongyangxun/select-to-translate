@@ -1,5 +1,6 @@
 let dict = null;
 let wordRoots = null;
+let reverseIndex = null;
 
 async function loadDict() {
   if (dict) return dict;
@@ -21,10 +22,37 @@ async function loadWordRoots() {
   return wordRoots;
 }
 
+async function loadReverseIndex() {
+  if (reverseIndex) return reverseIndex;
+
+  console.log('开始初始化反向索引');
+
+  const dict = await loadDict();
+  reverseIndex = {};
+
+  Object.entries(dict).forEach(([word, definition]) => {
+    const { exchange } = definition;
+    if (!exchange) return;
+
+    const exchangeList = exchange.split('/');
+    exchangeList.forEach((exchangeItem) => {
+      const [_, variant] = exchangeItem.split(':');
+
+      reverseIndex[variant] = word;
+    });
+  });
+
+  console.log('反向索引初始化完成，词条数:', Object.keys(reverseIndex).length);
+
+  return reverseIndex;
+}
+
 // 插件安装或更新时触发
 chrome.runtime.onInstalled.addListener(() => {
   console.log('插件已安装/更新');
+  // 加载词典、反向索引和词根库
   loadDict();
+  loadReverseIndex();
   loadWordRoots();
 });
 
@@ -40,7 +68,13 @@ chrome.runtime.onMessage.addListener(async (message, sender, sendResponse) => {
     const { text } = message;
     const dict = await loadDict();
     const wordRoots = await loadWordRoots();
-    const definition = dict[text];
+    let definition = dict[text];
+    if (!definition) {
+      const reverseIndex = await loadReverseIndex();
+      const word = reverseIndex[text];
+      word && (definition = dict[word]);
+    }
+
     const root = wordRoots[text];
 
     if (definition) {
