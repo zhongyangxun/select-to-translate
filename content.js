@@ -109,8 +109,8 @@ class Panel {
   setRootList(roots) {
     this.#rootListEl.innerHTML = roots
       .map(({ root, meaning }) => {
-        const isPrefix = root.startsWith('-');
-        const isSuffix = root.endsWith('-');
+        const isPrefix = root.endsWith('-');
+        const isSuffix = root.startsWith('-');
         const rootClass = isPrefix
           ? 'prefix'
           : isSuffix
