@@ -211,8 +211,8 @@
     text-align: center;
   }
 
-  .not-found {
-    color: #999;
+  .not-found-section {
+    display: none;
   }
 
   .loading .word,
@@ -295,6 +295,40 @@
       opacity: 0.5;
     }
   }
+
+  .not-found .phonetic-container,
+  .not-found .definition-section,
+  .not-found .root-section {
+    display: none;
+  }
+
+  .not-found .not-found-section {
+    display: block;
+    padding: 0 16px 16px 16px;
+  }
+
+  .not-found .not-found-content {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--muted-foreground);
+  }
+
+  .not-found .not-found-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: var(--muted);
+    border-radius: 50%;
+  }
+
+  .not-found .not-found-text-content {
+    font-size: 0.875rem;
+    line-height: 1.625;
+    font-weight: 400;
+  }
 </style>
 
 <div class="panel loading">
@@ -353,6 +387,26 @@
         </div>
       </div>
       <p class="composition"></p>
+    </div>
+    <div class="not-found-section">
+      <p class="not-found-content">
+        <span class="not-found-icon">
+          <svg
+            width="13"
+            height="13"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          >
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            <line x1="8" y1="8" x2="14" y2="14" />
+            <line x1="14" y1="8" x2="8" y2="14" /></svg
+        ></span>
+        <span class="not-found-text-content"> 未找到该单词 </span>
+      </p>
     </div>
   </div>
 </div>
