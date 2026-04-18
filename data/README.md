@@ -42,17 +42,17 @@ s:hellos
 
 **完整的代码表**
 
-| 代码 | 英文                | 含义         | 示例          |
-| ---- | ------------------- | ------------ | ------------- |
-| `s`  | plural              | 复数         | cat → cats    |
-| `p`  | past tense          | 过去式       | run → ran     |
-| `d`  | past participle     | 过去分词     | run → run     |
-| `i`  | present participle  | 现在分词     | run → running |
-| `3`  | 3rd person singular | 第三人称单数 | run → runs    |
-| `r`  | comparative         | 比较级       | big → bigger  |
-| `t`  | superlative         | 最高级       | big → biggest |
-| `0`  | lemma               | 原型词       | running → run |
-| `1`  | lemma variant       | 原型变体     | -             |
+| 代码 | 英文                | 含义         | 示例                    |
+| ---- | ------------------- | ------------ | ----------------------- |
+| `s`  | plural              | 复数         | cat → cats              |
+| `p`  | past tense          | 过去式       | run → ran               |
+| `d`  | past participle     | 过去分词     | run → run               |
+| `i`  | present participle  | 现在分词     | run → running           |
+| `3`  | 3rd person singular | 第三人称单数 | run → runs              |
+| `r`  | comparative         | 比较级       | big → bigger            |
+| `t`  | superlative         | 最高级       | big → biggest           |
+| `0`  | lemma               | 原型词       | running → run           |
+| `1`  | lemma variant       | 原型变体     | color → colour, colours |
 
 ## 高频词词根词缀标注
 
