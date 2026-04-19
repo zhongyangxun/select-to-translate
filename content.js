@@ -6,6 +6,7 @@ class Panel {
   #panel = null;
   #shadow = null;
   #wordEl = null;
+  #variantInfoEl = null;
   #definitionSectionEl = null;
   #phoneticEl = null;
   #posLabelEl = null;
@@ -19,6 +20,7 @@ class Panel {
     this.#shadow = shadow;
     this.#panel = shadow.querySelector('.panel');
     this.#wordEl = shadow.querySelector('.word');
+    this.#variantInfoEl = shadow.querySelector('.variant-info');
     this.#definitionSectionEl = shadow.querySelector('.definition-section');
     this.#phoneticEl = shadow.querySelector('.phonetic');
     this.#posLabelEl = shadow.querySelector('.pos-label');
@@ -142,7 +144,7 @@ class Panel {
     return this;
   }
 
-  setContent(word, definition, root) {
+  setContent(word, definition, root, variantInfo) {
     this.#wordEl.textContent = word;
     if (definition) {
       const { phonetic, translation } = definition;
@@ -151,6 +153,13 @@ class Panel {
       this.#definitionSectionEl.innerHTML =
         this.generateDefSectionHTML(translations);
       this.#phoneticEl.textContent = `/${phonetic}/`;
+
+      if (variantInfo) {
+        const { exchangeWord, typeName } = variantInfo;
+        this.#variantInfoEl.textContent = `${exchangeWord} 的${typeName}`;
+      } else {
+        this.#variantInfoEl.textContent = '';
+      }
 
       if (root) {
         const { roots, composition } = root;
@@ -238,7 +247,9 @@ document.addEventListener('mouseup', async (e) => {
 
   console.log('response', response);
 
-  panel.stopLoading().setContent(text, response?.definition, response?.root);
+  const { definition, root, variantInfo } = response || {};
+
+  panel.stopLoading().setContent(text, definition, root, variantInfo);
 });
 
 document.addEventListener('mousedown', async (e) => {

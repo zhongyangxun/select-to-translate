@@ -49,6 +49,17 @@
     color: var(--foreground);
   }
 
+  .variant-info {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    color: var(--muted-foreground);
+  }
+
+  .variant-info:empty {
+    display: none;
+  }
+
   .phonetic-container {
     display: flex;
     align-items: center;
@@ -226,6 +237,10 @@
     width: 112px;
   }
 
+  .loading .variant-info {
+    display: none;
+  }
+
   .loading .phonetic {
     display: inline-block;
     width: 88px;
@@ -331,7 +346,10 @@
 <div class="panel loading">
   <div class="header">
     <div class="word-container">
-      <h2 class="word"></h2>
+      <div class="word-content">
+        <h2 class="word"></h2>
+        <p class="variant-info"></p>
+      </div>
       <div class="phonetic-container">
         <span class="phonetic"></span>
         <button class="audio-btn">

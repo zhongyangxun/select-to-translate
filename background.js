@@ -2,6 +2,18 @@ let dict = null;
 let wordRoots = null;
 let reverseIndex = null;
 
+const EXCHANGES = {
+  s: { name: '复数形式', weight: 9 },
+  p: { name: '过去式', weight: 8 },
+  i: { name: '现在分词', weight: 7 },
+  d: { name: '过去分词', weight: 6 },
+  3: { name: '第三人称单数', weight: 5 },
+  r: { name: '比较级', weight: 4 },
+  t: { name: '最高级', weight: 3 },
+  0: { name: '原型', weight: 2 },
+  1: { name: '拼写变体', weight: 1 },
+};
+
 async function loadDict() {
   if (dict) return dict;
 
@@ -36,9 +48,21 @@ async function loadReverseIndex() {
 
     const exchangeList = exchange.split('/');
     exchangeList.forEach((exchangeItem) => {
-      const [_, variant] = exchangeItem.split(':');
+      const [type, variant] = exchangeItem.split(':');
 
-      reverseIndex[variant] = word;
+      const currentWeight = EXCHANGES[type]?.weight ?? 0;
+
+      const existingInfo = reverseIndex[variant];
+      const existingWeight = EXCHANGES[existingInfo?.type]?.weight ?? -1;
+
+      // 只取权重最大的单词变体信息
+      if (currentWeight > existingWeight) {
+        reverseIndex[variant] = {
+          exchangeWord: word,
+          type,
+          typeName: EXCHANGES?.[type]?.name || '',
+        };
+      }
     });
   });
 
@@ -69,10 +93,13 @@ chrome.runtime.onMessage.addListener(async (message, sender, sendResponse) => {
     const dict = await loadDict();
     const wordRoots = await loadWordRoots();
     let definition = dict[text];
+    let variantInfo = null;
     if (!definition) {
       const reverseIndex = await loadReverseIndex();
-      const word = reverseIndex[text];
-      word && (definition = dict[word]);
+      variantInfo = reverseIndex[text];
+      if (variantInfo) {
+        definition = dict[variantInfo.exchangeWord];
+      }
     }
 
     const root = wordRoots[text];
@@ -81,6 +108,7 @@ chrome.runtime.onMessage.addListener(async (message, sender, sendResponse) => {
       sendResponse({
         definition,
         root,
+        variantInfo,
       });
     } else {
       // TODO: 请求 API 查词
