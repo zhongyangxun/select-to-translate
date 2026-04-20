@@ -195,6 +195,27 @@ class Panel {
 
   resetPanel() {
     this.#panel.classList.remove('loading', 'not-found', 'no-root');
+
+    this.#wordEl.textContent = '';
+    this.#variantInfoEl.textContent = '';
+    this.#phoneticEl.textContent = '';
+
+    this.#definitionSectionEl.innerHTML = `
+      <div class="def-row">
+        <div class="pos-label"></div>
+        <div class="def-text"></div>
+      </div>`
+      .trim()
+      .repeat(2);
+
+    this.#shadow.querySelectorAll('.root').forEach((item) => {
+      item.textContent = '';
+    });
+    this.#shadow.querySelectorAll('.meaning').forEach((item) => {
+      item.textContent = '';
+    });
+    this.#compositionEl.textContent = '';
+
     return this;
   }
 
@@ -263,6 +284,6 @@ document.addEventListener('mouseup', async (e) => {
 document.addEventListener('mousedown', async (e) => {
   const panel = await panelReady;
   if (panel.isShown() && !panel.contains(e.target)) {
-    panel.hide();
+    panel.hide().resetPanel();
   }
 });
