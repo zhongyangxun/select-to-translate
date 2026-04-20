@@ -91,10 +91,10 @@ class Panel {
     return this;
   }
 
-  processTranslation(translation) {
+  processTranslation(translation, lineLimit = 3) {
     const lines = translation.split('\n');
 
-    return lines.map((line) => {
+    return lines.slice(0, lineLimit).map((line) => {
       const spaceIndex = line.indexOf(' ');
 
       if (spaceIndex === -1) {
