@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>划词翻译测试</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f6f7f9;
+        --text: #1a1d21;
+        --muted: #5c6570;
+        --border: #e2e5ea;
+        --card: #fff;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #1a1d21;
+          --text: #e8eaed;
+          --muted: #9aa3ad;
+          --border: #3d444d;
+          --card: #252a31;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family:
+          system-ui,
+          -apple-system,
+          'Segoe UI',
+          sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--text);
+        background: var(--bg);
+      }
+      .wrap {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 2rem 1.25rem 3rem;
+      }
+      h1 {
+        margin: 0 0 0.35rem;
+        font-size: 1.35rem;
+        font-weight: 600;
+      }
+      .hint {
+        margin: 0 0 1.5rem;
+        font-size: 0.875rem;
+        color: var(--muted);
+      }
+      section {
+        margin-bottom: 1.75rem;
+      }
+      section h2 {
+        margin: 0 0 0.65rem;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+      .card {
+        padding: 1rem 1.15rem;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+      }
+      .words {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem 0.75rem;
+      }
+      .words li {
+        padding: 0.2rem 0;
+        cursor: text;
+        user-select: text;
+      }
+      p.sample {
+        margin: 0;
+        text-align: justify;
+        hyphens: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>划词翻译测试</h1>
+      <p class="hint">在下方单词或句子中拖选文字，触发扩展的划词翻译。</p>
+
+      <section>
+        <h2>单词</h2>
+        <div class="card">
+          <!-- 记得要测试字母 A -->
+          <ul class="words" aria-label="测试用单词"><li>a</li><li>find</li><li>Mr</li><li>mm</li><li>sort</li><li>Mrs</li><li>ground</li><li>bit</li><li>share</li><li>p</li><li>thought</li><li>choice</li><li>basic</li><li>lay</li><li>left</li><li>past</li><li>copy</li><li>born</li><li>beat</li><li>aim</li><li>etc</li><li>mhm</li><li>TV</li><li>Ltd</li><li>PP</li><li>cat</li><li>USA</li><li>shot</li><li>IBM</li><li>MP</li><li>DEC</li><li>BBC</li><li>UNIX</li><li>rose</li><li>crew</li><li>PC</li><li>rent</li><li>DNA</li><li>written</li><li>found</li><li>given</li><li>broken</li><li>lost</li><li>NHS</li><li>PM</li><li>bound</li><li>wound</li><li>AM</li><li>known</li><li>Leicester</li><li>AIDS</li><li>MS</li><li>DC</li><li>GP</li><li>USSR</li><li>drunk</li><li>AC</li><li>pH</li><li>Corbett</li><li>NATO</li><li>FA</li><li>hidden</li><li>stuck</li><li>Edwards</li><li>EEC</li><li>exit</li><li>Lamont</li><li>frozen</li><li>chosen</li><li>Nicholson</li><li>ML</li><li>IMF</li><li>telecom</li><li>wembley</li><li>lb</li><li>Gaulle</li><li>bore</li><li>paid</li><li>stolen</li><li>ITV</li><li>EST</li><li>Leith</li><li>dos</li><li>stove</li><li>spoken</li><li>learned</li><li>Sainsbury</li><li>Coleridge</li><li>Theda</li><li>saw</li><li>Worcester</li><li>halifax</li><li>Downing</li><li>paisley</li><li>SA</li><li>GNP</li><li>Gooch</li><li>Cranston</li><li>GMT</li><li>said</li><li>gilt</li><li>upheld</li><li>PR</li><li>cohen</li><li>Shropshire</li><li>vaughan</li><li>Pearce</li><li>Ramsay</li><li>CIA</li><li>NEC</li><li>Alton</li><li>Devlin</li><li>GATT</li><li>Mellor</li><li>Teesside</li><li>TT</li><li>Modigliani</li><li>proven</li><li>fell</li><li>Falklands</li><li>OP</li><li>DA</li><li>HQ</li><li>bates</li><li>BA</li><li>Forster</li><li>drew</li><li>Harlow</li><li>Benn</li><li>Cowley</li><li>EE</li><li>Fergus</li><li>urgh</li><li>mistaken</li><li>beaten</li><li>blessed</li><li>bitten</li><li>dove</li><li>fallen</li><li>clad</li><li>swollen</li><li>Hampstead</li><li>Granada</li></ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>短语与短句</h2>
+        <div class="card">
+          <p class="sample">
+            The quick brown fox jumps over the lazy dog. Learning a language
+            takes patience and consistent practice. Try selecting individual
+            words or whole phrases above and below.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>中英混排</h2>
+        <div class="card">
+          <p class="sample">
+            请尝试划选 English words 或 中文词语。This page is only for manual
+            testing of the extension.
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
