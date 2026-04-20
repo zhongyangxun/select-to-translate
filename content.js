@@ -96,6 +96,14 @@ class Panel {
 
     return lines.map((line) => {
       const spaceIndex = line.indexOf(' ');
+
+      if (spaceIndex === -1) {
+        return {
+          pos: '',
+          text: line,
+        };
+      }
+
       const pos = line.slice(0, spaceIndex);
       const text = line.slice(spaceIndex + 1);
 
@@ -111,7 +119,7 @@ class Panel {
       .map(
         ({ pos, text }) => `
       <div class="def-row">
-        <div class="pos-label">${pos}</div>
+        ${pos && `<div class="pos-label">${pos}</div>`}
         <div class="def-text">${text}</div>
       </div>
     `,
