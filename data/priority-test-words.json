@@ -1,0 +1,607 @@
+{
+  "a": {
+    "phonetic": "ei",
+    "translation": "第一个字母 A; 一个; 第一的\r\nart. [计] 累加器, 加法器, 地址, 振幅, 模拟, 区域, 面积, 汇编, 组件, 异步"
+  },
+  "find": {
+    "phonetic": "faind",
+    "translation": "vt. 发现, 感到, 找到, 认为, 得到\nvi. 裁决\nn. 发现\n[计] 查找; DOS外部命令:在指定的文件或从键盘输入的文本行中\n寻找指定的字符串, 将符合条件的行或行数输出到标准输出设备上",
+    "exchange": "d:found/p:found/i:finding/3:finds/s:finds"
+  },
+  "Mr": {
+    "phonetic": "'mistә(r)",
+    "translation": "先生\n[计] 存储器回收程序, 多重请求"
+  },
+  "mm": {
+    "translation": "毫米\n[计] 毫米"
+  },
+  "sort": {
+    "phonetic": "sɒ:t",
+    "translation": "n. 种类, 方式, 品质, 态度, 举止\nvt. 分类, 排序, 挑选\nvi. 交往, 协调\n[计] 排序; DOS外部命令:从标准输入设备接收数据, 整个数据输入完后\n对它以行为单位进行排序, 然后在标准输出设备上输出",
+    "exchange": "s:sorts/d:sorted/i:sorting/p:sorted/3:sorts"
+  },
+  "Mrs": {
+    "phonetic": "'misiz",
+    "translation": "太太"
+  },
+  "ground": {
+    "phonetic": "graund",
+    "translation": "n. 土地, 战场, 场地, 地面, 范围\na. 土地的, 地面上的\nvt. 放在地上, 使搁浅, 打基础, 给...以训练\nvi. 搁浅, 落地, 根据, 基于\na. 磨过的\ngrind的过去式和过去分词",
+    "exchange": "s:grounds/d:grounded/p:grounded/0:grind/1:dp/i:grinding/3:grinds"
+  },
+  "bit": {
+    "phonetic": "bit",
+    "translation": "n. 少量, 马嚼子, 辅币\nvt. 给马上嚼子, 控制\nbite的过去式和过去分词\n[计] 比特, 二进制数位, 机内测试",
+    "exchange": "s:bits/0:bite/1:pd"
+  },
+  "share": {
+    "phonetic": "ʃєә",
+    "translation": "n. 部分, 参与, 一份, 参股, 份额\nvt. 均分, 分担, 分享, 分配, 共有\nvi. 分享\n[计] 共享; DOS外部命令:在网络或多工系统中提供文件共享\n文件锁定及检测磁盘更动和对超过32MB硬盘分区的支持",
+    "exchange": "s:shares/d:shared/i:sharing/p:shared/3:shares"
+  },
+  "p": {
+    "phonetic": "pi:",
+    "translation": "便士\n[计] 页, 对, 并行, 奇偶性, 指示器, 多项式, 程序, 方法, 皮",
+    "exchange": "s:pp"
+  },
+  "thought": {
+    "phonetic": "θɒ:t",
+    "translation": "n. 想法, 思想, 思维, 关心, 挂念\nthink的过去式和过去分词",
+    "exchange": "0:think/1:pd/s:thoughts"
+  },
+  "choice": {
+    "phonetic": "tʃɒis",
+    "translation": "n. 选择, 精选品, 选择权\na. 精选的, 挑三拣四的, 上等的\n[计] DOS内部命令:在批处理文件中\n该命令用于提示用户作出选择, 决定批处理文件的流程",
+    "exchange": "s:choices"
+  },
+  "basic": {
+    "phonetic": "'beisik",
+    "translation": "n. 基本原理, 要素, 基本规律\na. 基本的, 碱性的\n(计算机)BASIC语言",
+    "exchange": "s:basics"
+  },
+  "lay": {
+    "phonetic": "lei",
+    "translation": "vt. 放置, 产, 铺设, 布置, 提出, 平息\nvi. 下蛋, 打赌\nn. 位置, 层, 隐藏处\na. 世俗的, 外行的\nlie的过去式",
+    "exchange": "0:lie/1:p/d:laid/p:laid/i:laying/3:lays"
+  },
+  "left": {
+    "phonetic": "left",
+    "translation": "a. 左边的, 左倾的, 左侧的, 左派的\nadv. 在左面\nn. 左, 左面, 左派\nleave的过去式和过去分词",
+    "exchange": "0:leave/1:dp/d:left/p:left"
+  },
+  "past": {
+    "phonetic": "pɑ:st",
+    "translation": "n. 过去, 昔时, 往事, 早年经历, 过去时\na. 过去的, 结束的, 卸任的, 过去时的\nprep. 越过, 晚于, 超越, 超出...的可能性(能力、范围等)\npass的过去分词"
+  },
+  "copy": {
+    "phonetic": "'kɒpi",
+    "translation": "n. 副本, 摹仿, 一册\nv. 复印, 抄袭, 复制\n[计] 副本; 复制; DOS内部命令:复制文件\n将几个文件合并成一个文件, 以及将文件传至外设或在设备之间传送",
+    "exchange": "s:copies/d:copied/i:copying/p:copied/3:copies"
+  },
+  "born": {
+    "phonetic": "bɒ:n",
+    "translation": "a. 天生的\nbear的过去分词",
+    "exchange": "0:bear/1:d/d:born/p:born/i:borning"
+  },
+  "beat": {
+    "phonetic": "bi:t",
+    "translation": "n. 心跳(声), 打, 敲打声, 拍子\nv. 打, 拍打, 打败\na. 疲乏的, 颓废的\nbeat的过去式\n[计] 拍; 节拍",
+    "exchange": "p:beat/0:beat/1:pd/d:beaten/i:beating/3:beats/s:beats"
+  },
+  "aim": {
+    "phonetic": "eim",
+    "translation": "n. 目标, 瞄准, 击中目标的能力\nvi. 对准目标, 致力, 打算\nvt. 瞄准\n[计] 医学文摘索引, 存取隔离机构, 高级信息管理程序, 先进接口模块\n应用接口模块, 医学人工智能, 相联索引法, 异步接口模块\n自动化信息管理, 自动化综合制造, 自动化库存管理",
+    "exchange": "s:aims/3:aims/p:aimed/d:aimed/i:aiming"
+  },
+  "etc": {
+    "translation": "及其他, 等等"
+  },
+  "mhm": {
+    "translation": " （表示同意或在听对方说话）哦, 嗯"
+  },
+  "TV": {
+    "phonetic": "'ti:'vi:",
+    "translation": "电视\n[计] 电视, 转移向量"
+  },
+  "Ltd": {
+    "phonetic": "'limitid",
+    "translation": "有限的"
+  },
+  "PP": {
+    "translation": "包裹邮递, 包裹邮件, 邮包, 包裹邮务处, 过去分词\n[计] 并行打印, 并行处理器, 打印位置",
+    "exchange": "0:p/1:s/s:pps"
+  },
+  "cat": {
+    "phonetic": "kæt",
+    "translation": "n. 猫, 恶妇\nvi. 呕吐\n计算机辅助教育, 计算机辅助测试, 计算机辅助翻译, 计算机辅助排版\n[计] 计算机辅助教学, 计算机辅助翻译, 计算机辅助排字, 计算机辅助测试",
+    "exchange": "s:cats/i:catting/p:catted/3:cats/d:catted"
+  },
+  "USA": {
+    "phonetic": "ju: es 'ei",
+    "translation": "美国, 美利坚合众国, 美国陆军"
+  },
+  "shot": {
+    "phonetic": "ʃɒt",
+    "translation": "n. 发射, 炮弹, 射击, 射手, 投篮, 射门, 子弹, 射程, 拍摄, 注射\nvt. 装弹, 使成颗粒状\na. 杂色的, 交织着的, 渗透的, 点焊的, 破旧的\nshoot的过去式和过去分词",
+    "exchange": "0:shoot/1:dp/s:shots"
+  },
+  "IBM": {
+    "translation": "美国国际商用机器公司\n[计] 国际商用机器公司"
+  },
+  "MP": {
+    "translation": "国会议员, 下院议员\n[计] 宏处理程序, 维护程序, 线性规划, 微程序, 多处理器",
+    "exchange": "s:mps"
+  },
+  "DEC": {
+    "translation": "美国数字电子公司\n[计] 数字设备公司"
+  },
+  "BBC": {
+    "translation": "英国广播公司"
+  },
+  "UNIX": {
+    "translation": "UNIX操作系统\n[计] 多用户分时操作系统",
+    "exchange": "s:unixes"
+  },
+  "rose": {
+    "phonetic": "rәuz",
+    "translation": "n. 玫瑰, 蔷薇, 玫瑰色\na. 玫瑰色的, 玫瑰花的\nvt. 使成玫瑰色\nrise的过去式",
+    "exchange": "0:rise/1:pd/s:roses"
+  },
+  "crew": {
+    "phonetic": "kru:",
+    "translation": "n. 全体人员, 一群人, 全体队员\ncrow的过去式",
+    "exchange": "s:crews/d:crewed/p:crewed/i:crewing/3:crews"
+  },
+  "PC": {
+    "translation": "个人计算机\n[计] 外部控制, 个人计算机, 光电导体, 伪码",
+    "exchange": "s:pcs"
+  },
+  "rent": {
+    "phonetic": "rent",
+    "translation": "n. 租金, 房租, 出租物, 裂缝, 破裂处, 分裂\nvt. 租用, 租出\nvi. 出租\na. 分裂的, 破裂的\nrend的过去式和过去分词",
+    "exchange": "s:rents/i:renting/d:rented/p:rented/3:rents/0:rent/1:d"
+  },
+  "DNA": {
+    "translation": "脱氧核糖核酸\n[计] 无效数据, 数字网络体系结构, 分布式网络体系结构",
+    "exchange": "s:dnas"
+  },
+  "written": {
+    "phonetic": "'ritn",
+    "translation": "a. 书面的, 写成文字的\nwrite的过去分词",
+    "exchange": "0:write/1:d/d:written"
+  },
+  "found": {
+    "phonetic": "faund",
+    "translation": "vt. 建立, 创立, 铸造\nfind的过去式和过去分词",
+    "exchange": "0:find/1:dp/d:founded/p:founded/i:founding/3:founds"
+  },
+  "given": {
+    "phonetic": "'givәn",
+    "translation": "a. 赠予的, 沉溺的, 约定的\ngive的过去分词",
+    "exchange": "0:give/1:d/d:given/s:givens"
+  },
+  "broken": {
+    "phonetic": "'brәukәn",
+    "translation": "a. 坏掉的, 打破的, 断掉的\nbreak的过去分词",
+    "exchange": "0:break/1:d/d:broken"
+  },
+  "lost": {
+    "phonetic": "lɒst",
+    "translation": "a. 失去的, 遗失的, 迷惑的\nlose的过去式和过去分词",
+    "exchange": "0:lose/1:dp/p:lost/d:lost"
+  },
+  "NHS": {
+    "translation": "国家医疗保健机构"
+  },
+  "PM": {
+    "translation": "出纳员, 军需官\n[计] 调相, 性能管理, 处理模块, 程序存储器",
+    "exchange": "s:pms"
+  },
+  "bound": {
+    "phonetic": "baund",
+    "translation": "n. 跃, 回跳, 范围, 边界\na. 受约束的, 装有封面的, 有义务的, 关联的, 被束缚的, 准备去...的, 便秘的\nvi. 跳跃, 弹起\nvt. 使跳, 限制, 形成...的疆界\nbind过去式和过去分词\n[计] 装订的",
+    "exchange": "0:bind/1:dp/s:bounds/d:bounded/i:bounding/p:bound/3:bounds"
+  },
+  "wound": {
+    "phonetic": "wu:nd",
+    "translation": "n. 创伤, 伤口, 伤疤, 伤害, 痛苦\nvt. 伤害, 损害, 使受伤\nvi. 打伤, 伤害\nwind的过去式和过去分词",
+    "exchange": "0:wind/1:pd/s:wounds/d:wounded/i:wounding/p:wounded/3:wounds"
+  },
+  "AM": {
+    "phonetic": "æm",
+    "translation": "be的单数第一人称\n[计] 存取管理程序, 寻址方式, 地址标记, 变址数, 调幅, 辅助存储器",
+    "exchange": "s:ams/r:amer"
+  },
+  "known": {
+    "phonetic": "nәun",
+    "translation": "a. 已知的, 有名的\nknow的过去分词",
+    "exchange": "0:know/1:d/d:known/p:known"
+  },
+  "Leicester": {
+    "phonetic": "'lestә",
+    "translation": "莱斯特(英国城市)"
+  },
+  "AIDS": {
+    "phonetic": "eidz",
+    "translation": "n. 爱滋病(获得性免疫缺陷综合征)\n[计] 高级综合数据系统, 先进交互调试系统, 自动图解文档编制系统\n美国决策学学会, 信息自动显示系统, 自动综合调试系统",
+    "exchange": "0:aid/1:s3"
+  },
+  "MS": {
+    "phonetic": "miz",
+    "translation": "美国微软公司\n[计] 主存储器, 制造系统, 毫秒, 微软公司"
+  },
+  "DC": {
+    "translation": "直流电\n[计] 数据单元, 数据中心, 数据代码, 数据通信, 数据控制, 数字控制, 直流",
+    "exchange": "s:dcs"
+  },
+  "GP": {
+    "translation": "普通医师, 普通医生开业医生\n[计] 通用程序设计, 图形处理器",
+    "exchange": "s:gps"
+  },
+  "USSR": {
+    "translation": "苏联"
+  },
+  "drunk": {
+    "phonetic": "drʌŋk",
+    "translation": "a. 喝醉了的\ndrink的过去式",
+    "exchange": "0:drink/1:dp/d:drunk/s:drunks/r:drunker/p:drunk"
+  },
+  "AC": {
+    "translation": "公元前\n[计] 存取周期, 累加器, 声耦合器, 交流, 应用控制, 自动检查, 自动计算机",
+    "exchange": "s:acs"
+  },
+  "pH": {
+    "phonetic": "pi:eitʃ",
+    "translation": "氢离子指数\n[医] 药典; 苯基",
+    "exchange": "s:phs"
+  },
+  "Corbett": {
+    "translation": "科比特（人名）\n科比特（地名）"
+  },
+  "NATO": {
+    "phonetic": "'neitәj",
+    "translation": "北大西洋公约组织, 北约组织\n[经] 北大西洋公约组织"
+  },
+  "FA": {
+    "phonetic": "fɑ:",
+    "translation": "(英国)足球协会, 战地救护车, 野战救护队, 野战炮, 野战炮兵, 美术, 急救\n[医] 脂肪酸",
+    "exchange": "s:fas"
+  },
+  "hidden": {
+    "phonetic": "'hidn",
+    "translation": "a. 隐藏的\nhide的过去分词\n[计] 隐藏的",
+    "exchange": "0:hide/1:d/d:hidden"
+  },
+  "stuck": {
+    "phonetic": "stʌk",
+    "translation": "stick的过去式和过去分词",
+    "exchange": "0:stick/1:pd/d:stuck/p:stuck"
+  },
+  "Edwards": {
+    "phonetic": "'edwәdz",
+    "translation": "爱德华兹(姓氏)"
+  },
+  "EEC": {
+    "translation": "欧洲经济共同体"
+  },
+  "exit": {
+    "phonetic": "'eksit",
+    "translation": "n. 出口, 退场, 离去, 去世\nvi. 退出, 脱离, 去世\n[计] 退出; DOS内部命令:本命令用于退出当前的命令处理器(COMMAND.COM)\n恢复前一个命令处理器",
+    "exchange": "s:exits/i:exiting/p:exited/d:exited/3:exits"
+  },
+  "Lamont": {
+    "translation": "拉蒙特\n马尼拉麻"
+  },
+  "frozen": {
+    "phonetic": "'frәuzn",
+    "translation": "a. 冻结的, 冰冷的, 严寒的, 冻伤的, 冷酷的\nfreeze的过去分词",
+    "exchange": "0:freeze/1:d/d:frozen"
+  },
+  "chosen": {
+    "phonetic": "'tʃouzn",
+    "translation": "choose的过去分词",
+    "exchange": "0:choose/1:d/d:chosen"
+  },
+  "Nicholson": {
+    "phonetic": "'nikәlsn",
+    "translation": "尼科尔森(姓氏)"
+  },
+  "ML": {
+    "translation": "法学硕士, 摩托艇, 汽艇\n[医] 毫升",
+    "exchange": "s:mls"
+  },
+  "IMF": {
+    "translation": "国际货币基金组织\n[经] 国际货币基金"
+  },
+  "telecom": {
+    "phonetic": "'telәkɔm",
+    "translation": "telecommunication 电信"
+  },
+  "wembley": {
+    "translation": "文布利"
+  },
+  "lb": {
+    "translation": "磅, 文学士\n[经] 磅",
+    "exchange": "s:lbs"
+  },
+  "Gaulle": {
+    "translation": "高尔（人名）"
+  },
+  "bore": {
+    "phonetic": "bɒ:",
+    "translation": "n. 令人讨厌的人, 激浪, 枪膛, 孔\nvt. 使烦扰, 钻孔\nvi. 钻孔\nbear的过去式\n[计] 内径; 孔径",
+    "exchange": "0:bear/1:p/i:boring/p:bored/3:bores/d:bored/s:bores"
+  },
+  "paid": {
+    "phonetic": "peid",
+    "translation": "a. 受雇的, 付清的\npay的过去式和过去分词",
+    "exchange": "0:pay/1:dp/d:paid/p:paid"
+  },
+  "stolen": {
+    "phonetic": "'stәulәn",
+    "translation": "steal的过去分词\n[经] 被偷窃的",
+    "exchange": "0:steal/1:d/d:stolen"
+  },
+  "ITV": {
+    "translation": "独立电视, 工业电视, 教学电视\n[计] 交互式电视, 电视点播"
+  },
+  "EST": {
+    "translation": "(美国)东部时间",
+    "exchange": "r:ester"
+  },
+  "Leith": {
+    "phonetic": "l i:θ",
+    "translation": "利思(姓氏)"
+  },
+  "dos": {
+    "phonetic": "du:z",
+    "translation": "磁盘操作系统\n[计] 磁盘操作系统; DOS内部命令:该命令用于将DOS核心部分装入高内存区\n且允许其设备驱动程序或常驻程序装入上层内存块"
+  },
+  "stove": {
+    "phonetic": "stәuv",
+    "translation": "n. 火炉, 窑\nvt. 用火炉烤\nstave的过去式和过去分词",
+    "exchange": "s:stoves/d:stoved/p:stoved/0:stove/1:p"
+  },
+  "spoken": {
+    "phonetic": "'spәukәn",
+    "translation": "a. 口头讲的, 口语的\nspeak的过去分词",
+    "exchange": "0:speak/1:d/d:spoken"
+  },
+  "learned": {
+    "phonetic": "'lә:nid",
+    "translation": "a. 有学问的, 学术上的\nlearn的过去式和过去分词",
+    "exchange": "0:learn/1:dp/p:learned/d:learned"
+  },
+  "Sainsbury": {
+    "phonetic": "'seinzbәri",
+    "translation": "塞恩斯伯里(姓氏)"
+  },
+  "Coleridge": {
+    "phonetic": "'kәulridʒ",
+    "translation": "姓氏"
+  },
+  "Theda": {
+    "translation": "西达（人名）"
+  },
+  "saw": {
+    "phonetic": "sɒ:",
+    "translation": "n. 锯子, 谚语\nvt. 锯, 锯开, 来回移动\nvi. 拉锯, 移动\nsee的过去式",
+    "exchange": "0:see/1:p/i:sawing/s:saws/d:sawn/p:sawed/3:saws"
+  },
+  "Worcester": {
+    "phonetic": "'wustә",
+    "translation": "伍斯特(①姓氏 ②英国城市 ③美国城市)"
+  },
+  "halifax": {
+    "phonetic": "'hælifæks",
+    "translation": "哈里法克斯（财富500强公司之一, 总部所在地英国；主要经营银行）"
+  },
+  "Downing": {
+    "translation": "唐宁",
+    "exchange": "1:i/0:down"
+  },
+  "paisley": {
+    "phonetic": "'peizli",
+    "translation": "(苏格兰)佩斯利涡纹旋花呢(的)"
+  },
+  "SA": {
+    "translation": "救世军, 南非, 南美, 南澳大利亚, 性的魅力, 性感\n[计] 源地址, 结构分析, 系统分析",
+    "exchange": "s:sas"
+  },
+  "GNP": {
+    "phonetic": "dʒi:en'pi:",
+    "translation": "国民生产总值\n[经] 国民生产毛额",
+    "exchange": "s:gnps"
+  },
+  "Gooch": {
+    "translation": "古氏"
+  },
+  "Cranston": {
+    "phonetic": "'krænstәn",
+    "translation": "克兰斯敦(美国城市)"
+  },
+  "GMT": {
+    "translation": "格林威治平均时\n[计] 格林威治平均时间"
+  },
+  "said": {
+    "phonetic": "sed",
+    "translation": "a. 上述的\nsay的过去式和过去分词",
+    "exchange": "0:say/1:pd/p:said/d:said/3:saids"
+  },
+  "gilt": {
+    "phonetic": "gilt",
+    "translation": "n. 镀金, 眩目的外表, 小母猪\na. 镀金的\ngild的过去式",
+    "exchange": "1:pd/0:gild/s:gilts"
+  },
+  "upheld": {
+    "phonetic": "ʌp'held",
+    "translation": "uphold的过去式和过去分词",
+    "exchange": "d:upheld/0:upheld/1:dp/p:upheld"
+  },
+  "PR": {
+    "translation": "与公众的关系, 公关\n[计] 模式识别, 实际记录, 前缀, 程序寄存器",
+    "exchange": "s:prs/i:pring/t:prest"
+  },
+  "cohen": {
+    "phonetic": "'kәuin",
+    "translation": "科恩（姓氏）"
+  },
+  "Shropshire": {
+    "phonetic": "'ʃrɔpʃiә",
+    "translation": "(黑头黑脚白毛无角)肉用羊, 萨罗普羊"
+  },
+  "vaughan": {
+    "phonetic": "vɔ:n",
+    "translation": "沃恩（姓氏, 男子名）"
+  },
+  "Pearce": {
+    "translation": "皮尔斯（人名）"
+  },
+  "Ramsay": {
+    "phonetic": "'ræmzi",
+    "translation": "拉姆齐(①姓氏 ②Sir William, 1852-1916, 英国化学家, 氦的发现者, 曾获1904年诺贝尔化学奖)"
+  },
+  "CIA": {
+    "translation": "中央情报局\n[计] 中国互联网络协会"
+  },
+  "NEC": {
+    "translation": "日本电气公司"
+  },
+  "Alton": {
+    "phonetic": "'ɔ:ltәn",
+    "translation": "奥尔顿(①姓氏, 男子名 ②美国一城市)"
+  },
+  "Devlin": {
+    "translation": "德夫林"
+  },
+  "GATT": {
+    "phonetic": "^æt",
+    "translation": "关贸总协定\n[经] 关税贸易总协定"
+  },
+  "Mellor": {
+    "translation": "梅勒（人名）"
+  },
+  "Teesside": {
+    "translation": "蒂赛德（地区）（地名）（英国）"
+  },
+  "TT": {
+    "translation": "电汇\n[计] 电传打字机, 用户终端"
+  },
+  "Modigliani": {
+    "translation": "n. (Modigliani)人名；(意、英)莫迪利亚尼\n莫迪利亚尼"
+  },
+  "proven": {
+    "phonetic": "'pru:vn",
+    "translation": "prove的过去分词",
+    "exchange": "0:prove/1:d/d:proven"
+  },
+  "fell": {
+    "phonetic": "fel",
+    "translation": "vt. 击倒\nn. 一季所伐的木材, 折缝\na. 凶猛的, 可怕的\nfall的过去式",
+    "exchange": "0:fall/1:pd/d:felled/s:fells/i:felling/p:fell/3:falls"
+  },
+  "Falklands": {
+    "translation": "福克兰群岛"
+  },
+  "OP": {
+    "phonetic": "'әjp",
+    "translation": "观测所\n[计] 操作, 运算, 算符",
+    "exchange": "s:ops/p:opped"
+  },
+  "DA": {
+    "phonetic": ",di:'ei",
+    "translation": "美国地方检察官\n[计] 数据采集, 数据管理员, 数据分析, 设计自动化"
+  },
+  "HQ": {
+    "translation": "司令部, 指挥部, 总部, 总店",
+    "exchange": "s:hqs"
+  },
+  "bates": {
+    "phonetic": "beits",
+    "translation": "贝茨",
+    "exchange": "1:s3/0:bate"
+  },
+  "BA": {
+    "phonetic": "bɑ:",
+    "translation": "文学士\n[计] 基本汇编程序, 布尔代数, 总线可用",
+    "exchange": "s:bas"
+  },
+  "Forster": {
+    "phonetic": "'fɔ:stә",
+    "translation": "福斯特(姓氏)"
+  },
+  "drew": {
+    "phonetic": "dru:",
+    "translation": "draw的过去式",
+    "exchange": "0:draw/1:p"
+  },
+  "Harlow": {
+    "phonetic": "'hɑ:lәu",
+    "translation": "哈洛(男子名)"
+  },
+  "Benn": {
+    "translation": "本（人名）"
+  },
+  "Cowley": {
+    "phonetic": "'kauli",
+    "translation": "考利（姓氏）"
+  },
+  "EE": {
+    "translation": "电机工程师\n[化] 对映体过量",
+    "exchange": "s:ees"
+  },
+  "Fergus": {
+    "phonetic": "'fә:^әs",
+    "translation": "费格斯(姓氏, 男子名)"
+  },
+  "urgh": {
+    "translation": " = ugh"
+  },
+  "mistaken": {
+    "phonetic": "mis'teikәn",
+    "translation": "a. 犯错的, 错误的\nmistake的过去分词",
+    "exchange": "0:mistake/1:d/d:mistaken"
+  },
+  "beaten": {
+    "phonetic": "'bi:tn",
+    "translation": "a. 被打败了的, 筋疲力竭的, 敲平的, 踏平的\nbeat的过去分词",
+    "exchange": "0:beat/1:d/d:beaten"
+  },
+  "blessed": {
+    "phonetic": "'blesid",
+    "translation": "a. 神圣的, 受祝福的\nbless的过去式和过去分词",
+    "exchange": "0:bless/1:dp/d:blessed/p:blessed"
+  },
+  "bitten": {
+    "phonetic": "'bitn",
+    "translation": "bite的过去分词",
+    "exchange": "d:bitten/0:bitten/1:d"
+  },
+  "dove": {
+    "phonetic": "dʌv",
+    "translation": "n. 鸽子\ndive的过去式",
+    "exchange": "0:dive/1:p/s:doves/i:doving"
+  },
+  "fallen": {
+    "phonetic": "'fɒ:lәn",
+    "translation": "a. 堕落的, 落下来的, 陷落的\nfall的过去分词",
+    "exchange": "0:fall/1:d/d:fallen"
+  },
+  "clad": {
+    "phonetic": "klæd",
+    "translation": "vt. 在金属外包上另一种金属\na. 包层金属的\nclothe的过去式和过去分词",
+    "exchange": "d:clad/0:clad/1:dp/p:clad/i:cladding/s:clads"
+  },
+  "swollen": {
+    "phonetic": "'swәulәn",
+    "translation": "a. 肿大的, 涨水的, 夸张的, 骄傲的\nswell的过去分词",
+    "exchange": "0:swell/1:d/d:swollen"
+  },
+  "Hampstead": {
+    "translation": "汉普斯特德（英国）"
+  },
+  "Granada": {
+    "phonetic": "^rɑ:'nɑ:dɑ:",
+    "translation": "格兰纳达薄呢"
+  }
+}
