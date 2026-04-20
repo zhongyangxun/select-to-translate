@@ -1,7 +1,6 @@
 <style>
   :host {
     --primary: oklch(0.52 0.14 195);
-    --secondary: oklch(0.71 0.04 252);
     --muted: oklch(0.94 0.006 240);
     --card: oklch(1 0 0);
     --foreground: oklch(0.18 0.01 240);
@@ -14,6 +13,24 @@
     --chip-suffix: oklch(0.93 0.07 80);
     --chip-suffix-fg: oklch(0.42 0.1 80);
     --shadow: oklch(0 0 0 / 15%);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :host {
+      --primary: oklch(0.62 0.14 195);
+      --muted: oklch(0.24 0.01 240);
+      --card: oklch(0.18 0.008 240);
+      --foreground: oklch(0.94 0.006 240);
+      --muted-foreground: oklch(0.58 0.01 240);
+      --border: oklch(0.28 0.01 240);
+      --chip-prefix: oklch(0.26 0.08 258);
+      --chip-prefix-fg: oklch(0.74 0.14 258);
+      --chip-root: oklch(0.24 0.08 195);
+      --chip-root-fg: oklch(0.72 0.14 195);
+      --chip-suffix: oklch(0.28 0.07 80);
+      --chip-suffix-fg: oklch(0.78 0.12 80);
+      --shadow: oklch(0 0 0 / 20%);
+    }
   }
 
   * {
@@ -107,7 +124,7 @@
     background: transparent;
     border-radius: 50%;
     font-size: 18px;
-    color: var(--secondary);
+    color: var(--muted-foreground);
     transition:
       background-color 0.15s,
       color 0.15s;
