@@ -157,10 +157,11 @@ class Panel {
     if (definition) {
       const { phonetic, translation } = definition;
       const translations = this.processTranslation(translation);
+      const phoneticText = phonetic ? `/${phonetic}/` : '发音:';
 
       this.#definitionSectionEl.innerHTML =
         this.generateDefSectionHTML(translations);
-      this.#phoneticEl.textContent = `/${phonetic}/`;
+      this.#phoneticEl.textContent = phoneticText;
 
       if (variantInfo) {
         const { exchangeWord, typeName } = variantInfo;
