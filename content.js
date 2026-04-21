@@ -1,5 +1,31 @@
 console.log('content script loaded');
 
+// POS tags sourced from ECDICT
+const VALID_POS_TAGS = new Set([
+  'n.', // noun
+  'v.', // verb
+  'a.', // adjective
+  'adv.', // adverb
+  'prep.', // preposition
+  'conj.', // conjunction
+  'pron.', // pronoun
+  'int.', // interjection (short)
+  'interj.', // interjection
+  'art.', // article
+  'vi.', // intransitive verb
+  'vt.', // transitive verb
+  'vi.vt.', // intransitive & transitive verb
+  'vt.vi.', // transitive & intransitive verb
+  'aux.', // auxiliary verb
+  'abbr.', // abbreviation
+  'num.', // numeral
+  'pl.', // plural
+]);
+
+function isValidPOS(pos) {
+  return VALID_POS_TAGS.has(pos);
+}
+
 class Panel {
   static #instance = null;
   #host = null;
@@ -98,19 +124,17 @@ class Panel {
       const spaceIndex = line.indexOf(' ');
 
       if (spaceIndex === -1) {
-        return {
-          pos: '',
-          text: line,
-        };
+        return { pos: '', text: line };
       }
 
       const pos = line.slice(0, spaceIndex);
       const text = line.slice(spaceIndex + 1);
 
-      return {
-        pos,
-        text,
-      };
+      if (!isValidPOS(pos)) {
+        return { pos: '', text: line };
+      }
+
+      return { pos, text };
     });
   }
 
