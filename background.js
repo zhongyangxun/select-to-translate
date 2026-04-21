@@ -48,21 +48,19 @@ async function loadReverseIndex() {
 
     const exchangeList = exchange.split('/');
     exchangeList.forEach((exchangeItem) => {
+      // TODO: 写个脚本检查是否多个单词对应同一个变体
       const [type, variant] = exchangeItem.split(':');
+      const typeName = EXCHANGES?.[type]?.name || '';
 
-      const currentWeight = EXCHANGES[type]?.weight ?? 0;
+      const existing = reverseIndex[variant] || {};
+      const existingTypes = existing.types || [];
+      const existingTypeNames = existing.typeNames || [];
 
-      const existingInfo = reverseIndex[variant];
-      const existingWeight = EXCHANGES[existingInfo?.type]?.weight ?? -1;
-
-      // 只取权重最大的单词变体信息
-      if (currentWeight > existingWeight) {
-        reverseIndex[variant] = {
-          exchangeWord: word,
-          type,
-          typeName: EXCHANGES?.[type]?.name || '',
-        };
-      }
+      reverseIndex[variant] = {
+        exchangeWord: word,
+        types: [...existingTypes, type],
+        typeNames: [...existingTypeNames, typeName],
+      };
     });
   });
 

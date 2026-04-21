@@ -188,8 +188,8 @@ class Panel {
       this.#phoneticEl.textContent = phoneticText;
 
       if (variantInfo) {
-        const { exchangeWord, typeName } = variantInfo;
-        this.#variantInfoEl.textContent = `${exchangeWord} 的${typeName}`;
+        const { exchangeWord, typeNames } = variantInfo;
+        this.#variantInfoEl.textContent = `${exchangeWord} 的${typeNames.join('/')}`;
       } else {
         this.#variantInfoEl.textContent = '';
       }
