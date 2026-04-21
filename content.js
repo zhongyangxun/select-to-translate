@@ -254,7 +254,7 @@ document.addEventListener('mouseup', async (e) => {
   }
 
   const selection = document.getSelection();
-  const text = selection.toString().trim().toLowerCase();
+  const text = selection.toString().trim();
 
   if (!shouldTranslate(text)) {
     return;
@@ -276,9 +276,9 @@ document.addEventListener('mouseup', async (e) => {
 
   console.log('response', response);
 
-  const { definition, root, variantInfo } = response || {};
+  const { lookupKey = text, definition, root, variantInfo } = response || {};
 
-  panel.stopLoading().setContent(text, definition, root, variantInfo);
+  panel.stopLoading().setContent(lookupKey, definition, root, variantInfo);
 });
 
 document.addEventListener('mousedown', async (e) => {

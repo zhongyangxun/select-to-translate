@@ -92,20 +92,29 @@ chrome.runtime.onMessage.addListener(async (message, sender, sendResponse) => {
     const { text } = message;
     const dict = await loadDict();
     const wordRoots = await loadWordRoots();
-    let definition = dict[text];
+
+    let lookupKey = text;
+    let definition = dict[lookupKey];
     let variantInfo = null;
+
+    if (!definition) {
+      lookupKey = text.toLowerCase();
+      definition = dict[lookupKey];
+    }
+
     if (!definition) {
       const reverseIndex = await loadReverseIndex();
-      variantInfo = reverseIndex[text];
+      variantInfo = reverseIndex[lookupKey];
       if (variantInfo) {
         definition = dict[variantInfo.exchangeWord];
       }
     }
 
-    const root = wordRoots[text];
+    const root = wordRoots[lookupKey];
 
     if (definition) {
       sendResponse({
+        lookupKey,
         definition,
         root,
         variantInfo,
