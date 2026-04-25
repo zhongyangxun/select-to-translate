@@ -219,6 +219,15 @@
       "过去式"
     ]
   },
+  "gotten": {
+    "exchangeWord": "get",
+    "types": [
+      "d"
+    ],
+    "typeNames": [
+      "过去分词"
+    ]
+  },
   "getting": {
     "exchangeWord": "get",
     "types": [
@@ -1531,9 +1540,11 @@
   "showed": {
     "exchangeWord": "show",
     "types": [
+      "d",
       "p"
     ],
     "typeNames": [
+      "过去分词",
       "过去式"
     ]
   },
@@ -8067,6 +8078,17 @@
       "过去式"
     ]
   },
+  "learnt": {
+    "exchangeWord": "learn",
+    "types": [
+      "d",
+      "p"
+    ],
+    "typeNames": [
+      "过去分词",
+      "过去式"
+    ]
+  },
   "learning": {
     "exchangeWord": "learn",
     "types": [
@@ -8264,6 +8286,17 @@
     ]
   },
   "lit": {
+    "exchangeWord": "light",
+    "types": [
+      "p",
+      "d"
+    ],
+    "typeNames": [
+      "过去式",
+      "过去分词"
+    ]
+  },
+  "lighted": {
     "exchangeWord": "light",
     "types": [
       "p",
@@ -10552,6 +10585,15 @@
     "typeNames": [
       "过去分词",
       "过去式"
+    ]
+  },
+  "proven": {
+    "exchangeWord": "prove",
+    "types": [
+      "d"
+    ],
+    "typeNames": [
+      "过去分词"
     ]
   },
   "proving": {
@@ -13028,9 +13070,11 @@
   "forgot": {
     "exchangeWord": "forget",
     "types": [
+      "d",
       "p"
     ],
     "typeNames": [
+      "过去分词",
       "过去式"
     ]
   },
@@ -17218,6 +17262,15 @@
       "过去分词"
     ]
   },
+  "borne": {
+    "exchangeWord": "bear",
+    "types": [
+      "d"
+    ],
+    "typeNames": [
+      "过去分词"
+    ]
+  },
   "bearing": {
     "exchangeWord": "bear",
     "types": [
@@ -17306,6 +17359,17 @@
     ]
   },
   "hung": {
+    "exchangeWord": "hang",
+    "types": [
+      "p",
+      "d"
+    ],
+    "typeNames": [
+      "过去式",
+      "过去分词"
+    ]
+  },
+  "hanged": {
     "exchangeWord": "hang",
     "types": [
       "p",
@@ -20197,18 +20261,22 @@
   "sped": {
     "exchangeWord": "speed",
     "types": [
-      "p"
+      "p",
+      "d"
     ],
     "typeNames": [
-      "过去式"
+      "过去式",
+      "过去分词"
     ]
   },
   "speeded": {
     "exchangeWord": "speed",
     "types": [
+      "p",
       "d"
     ],
     "typeNames": [
+      "过去式",
       "过去分词"
     ]
   },
@@ -21123,6 +21191,15 @@
     ],
     "typeNames": [
       "过去式",
+      "过去分词"
+    ]
+  },
+  "stricken": {
+    "exchangeWord": "strike",
+    "types": [
+      "d"
+    ],
+    "typeNames": [
       "过去分词"
     ]
   },
@@ -24281,9 +24358,11 @@
   "sprung": {
     "exchangeWord": "spring",
     "types": [
+      "p",
       "d"
     ],
     "typeNames": [
+      "过去式",
       "过去分词"
     ]
   },
@@ -24478,6 +24557,17 @@
     ]
   },
   "dreamed": {
+    "exchangeWord": "dream",
+    "types": [
+      "d",
+      "p"
+    ],
+    "typeNames": [
+      "过去分词",
+      "过去式"
+    ]
+  },
+  "dreamt": {
     "exchangeWord": "dream",
     "types": [
       "d",
@@ -28379,10 +28469,23 @@
   "burnt": {
     "exchangeWord": "burn",
     "types": [
-      "d"
+      "d",
+      "p"
     ],
     "typeNames": [
-      "过去分词"
+      "过去分词",
+      "过去式"
+    ]
+  },
+  "burned": {
+    "exchangeWord": "burn",
+    "types": [
+      "d",
+      "p"
+    ],
+    "typeNames": [
+      "过去分词",
+      "过去式"
     ]
   },
   "burning": {
@@ -28392,15 +28495,6 @@
     ],
     "typeNames": [
       "现在分词"
-    ]
-  },
-  "burned": {
-    "exchangeWord": "burn",
-    "types": [
-      "p"
-    ],
-    "typeNames": [
-      "过去式"
     ]
   },
   "burns": {
@@ -30340,6 +30434,17 @@
     ]
   },
   "leaned": {
+    "exchangeWord": "lean",
+    "types": [
+      "p",
+      "d"
+    ],
+    "typeNames": [
+      "过去式",
+      "过去分词"
+    ]
+  },
+  "leant": {
     "exchangeWord": "lean",
     "types": [
       "p",
@@ -40882,10 +40987,23 @@
   "smelled": {
     "exchangeWord": "smell",
     "types": [
-      "p"
+      "p",
+      "d"
     ],
     "typeNames": [
-      "过去式"
+      "过去式",
+      "过去分词"
+    ]
+  },
+  "smelt": {
+    "exchangeWord": "smell",
+    "types": [
+      "p",
+      "d"
+    ],
+    "typeNames": [
+      "过去式",
+      "过去分词"
     ]
   },
   "smelling": {
@@ -40895,15 +41013,6 @@
     ],
     "typeNames": [
       "现在分词"
-    ]
-  },
-  "smelt": {
-    "exchangeWord": "smell",
-    "types": [
-      "d"
-    ],
-    "typeNames": [
-      "过去分词"
     ]
   },
   "pitches": {
@@ -49839,6 +49948,15 @@
       "第三人称单数"
     ]
   },
+  "bitten": {
+    "exchangeWord": "bite",
+    "types": [
+      "d"
+    ],
+    "typeNames": [
+      "过去分词"
+    ]
+  },
   "angels": {
     "exchangeWord": "angel",
     "types": [
@@ -50171,6 +50289,17 @@
     ]
   },
   "shone": {
+    "exchangeWord": "shine",
+    "types": [
+      "p",
+      "d"
+    ],
+    "typeNames": [
+      "过去式",
+      "过去分词"
+    ]
+  },
+  "shined": {
     "exchangeWord": "shine",
     "types": [
       "p",
@@ -50708,6 +50837,17 @@
     ]
   },
   "spelt": {
+    "exchangeWord": "spell",
+    "types": [
+      "d",
+      "p"
+    ],
+    "typeNames": [
+      "过去分词",
+      "过去式"
+    ]
+  },
+  "spelled": {
     "exchangeWord": "spell",
     "types": [
       "d",
@@ -51383,6 +51523,17 @@
     ]
   },
   "leapt": {
+    "exchangeWord": "leap",
+    "types": [
+      "p",
+      "d"
+    ],
+    "typeNames": [
+      "过去式",
+      "过去分词"
+    ]
+  },
+  "leaped": {
     "exchangeWord": "leap",
     "types": [
       "p",
@@ -55634,6 +55785,17 @@
     ]
   },
   "pleaded": {
+    "exchangeWord": "plead",
+    "types": [
+      "p",
+      "d"
+    ],
+    "typeNames": [
+      "过去式",
+      "过去分词"
+    ]
+  },
+  "pled": {
     "exchangeWord": "plead",
     "types": [
       "p",
@@ -61874,6 +62036,17 @@
       "过去式"
     ]
   },
+  "spoilt": {
+    "exchangeWord": "spoil",
+    "types": [
+      "d",
+      "p"
+    ],
+    "typeNames": [
+      "过去分词",
+      "过去式"
+    ]
+  },
   "spoiling": {
     "exchangeWord": "spoil",
     "types": [
@@ -64560,6 +64733,17 @@
     ]
   },
   "spilled": {
+    "exchangeWord": "spill",
+    "types": [
+      "p",
+      "d"
+    ],
+    "typeNames": [
+      "过去式",
+      "过去分词"
+    ]
+  },
+  "spilt": {
     "exchangeWord": "spill",
     "types": [
       "p",
@@ -73394,6 +73578,17 @@
       "过去分词"
     ]
   },
+  "weaved": {
+    "exchangeWord": "weave",
+    "types": [
+      "d",
+      "p"
+    ],
+    "typeNames": [
+      "过去分词",
+      "过去式"
+    ]
+  },
   "weaving": {
     "exchangeWord": "weave",
     "types": [
@@ -73619,6 +73814,15 @@
     "typeNames": [
       "过去式",
       "过去分词"
+    ]
+  },
+  "dove": {
+    "exchangeWord": "dive",
+    "types": [
+      "p"
+    ],
+    "typeNames": [
+      "过去式"
     ]
   },
   "diving": {
@@ -75663,6 +75867,17 @@
       "过去分词"
     ]
   },
+  "kneeled": {
+    "exchangeWord": "kneel",
+    "types": [
+      "p",
+      "d"
+    ],
+    "typeNames": [
+      "过去式",
+      "过去分词"
+    ]
+  },
   "kneeling": {
     "exchangeWord": "kneel",
     "types": [
@@ -76302,9 +76517,11 @@
   "shrunk": {
     "exchangeWord": "shrink",
     "types": [
+      "p",
       "d"
     ],
     "typeNames": [
+      "过去式",
       "过去分词"
     ]
   },
@@ -76413,6 +76630,17 @@
       "过去分词"
     ]
   },
+  "swelled": {
+    "exchangeWord": "swell",
+    "types": [
+      "d",
+      "p"
+    ],
+    "typeNames": [
+      "过去分词",
+      "过去式"
+    ]
+  },
   "swelling": {
     "exchangeWord": "swell",
     "types": [
@@ -76420,15 +76648,6 @@
     ],
     "typeNames": [
       "现在分词"
-    ]
-  },
-  "swelled": {
-    "exchangeWord": "swell",
-    "types": [
-      "p"
-    ],
-    "typeNames": [
-      "过去式"
     ]
   },
   "swells": {
@@ -76538,6 +76757,17 @@
     ],
     "typeNames": [
       "过去式"
+    ]
+  },
+  "strived": {
+    "exchangeWord": "strive",
+    "types": [
+      "p",
+      "d"
+    ],
+    "typeNames": [
+      "过去式",
+      "过去分词"
     ]
   },
   "strives": {
@@ -85907,6 +86137,17 @@
       "过去分词"
     ]
   },
+  "sewed": {
+    "exchangeWord": "sew",
+    "types": [
+      "d",
+      "p"
+    ],
+    "typeNames": [
+      "过去分词",
+      "过去式"
+    ]
+  },
   "sewing": {
     "exchangeWord": "sew",
     "types": [
@@ -85914,15 +86155,6 @@
     ],
     "typeNames": [
       "现在分词"
-    ]
-  },
-  "sewed": {
-    "exchangeWord": "sew",
-    "types": [
-      "p"
-    ],
-    "typeNames": [
-      "过去式"
     ]
   },
   "sews": {
@@ -90206,6 +90438,17 @@
       "过去分词"
     ]
   },
+  "sowed": {
+    "exchangeWord": "sow",
+    "types": [
+      "d",
+      "p"
+    ],
+    "typeNames": [
+      "过去分词",
+      "过去式"
+    ]
+  },
   "sows": {
     "exchangeWord": "sow",
     "types": [
@@ -90224,15 +90467,6 @@
     ],
     "typeNames": [
       "现在分词"
-    ]
-  },
-  "sowed": {
-    "exchangeWord": "sow",
-    "types": [
-      "p"
-    ],
-    "typeNames": [
-      "过去式"
     ]
   },
   "specialities": {
@@ -108923,6 +109157,17 @@
       "过去分词"
     ]
   },
+  "snuck": {
+    "exchangeWord": "sneak",
+    "types": [
+      "p",
+      "d"
+    ],
+    "typeNames": [
+      "过去式",
+      "过去分词"
+    ]
+  },
   "sneaking": {
     "exchangeWord": "sneak",
     "types": [
@@ -119831,6 +120076,17 @@
     ]
   },
   "clothed": {
+    "exchangeWord": "clothe",
+    "types": [
+      "d",
+      "p"
+    ],
+    "typeNames": [
+      "过去分词",
+      "过去式"
+    ]
+  },
+  "clad": {
     "exchangeWord": "clothe",
     "types": [
       "d",

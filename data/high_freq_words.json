@@ -171,7 +171,7 @@
   "get": {
     "phonetic": "get",
     "translation": "vt. 得到, 获得, 变成, 使得, 收获, 接通, 抓住, 染上\nvi. 到达, 成为, 变得\nn. (网球等)救球, 生殖, 幼兽\n[计] 取得指令, 获取文件",
-    "exchange": "d:got/p:got/i:getting/3:gets"
+    "exchange": "d:got/d:gotten/p:got/i:getting/3:gets"
   },
   "her": {
     "phonetic": "hә:",
@@ -653,7 +653,7 @@
   "show": {
     "phonetic": "ʃәu",
     "translation": "n. 显示, 表现, 展览, 卖弄, 炫耀, 外观, 演出, 洋相\nvt. 表示, 显示, 展现, 陈列, 演出, 表明, 指出, 带领\nvi. 露面, 显现, 演出\n[计] 显示",
-    "exchange": "d:shown/p:showed/3:shows/i:showing/s:shows"
+    "exchange": "d:shown/d:showed/p:showed/3:shows/i:showing/s:shows"
   },
   "house": {
     "phonetic": "haus",
@@ -2413,7 +2413,7 @@
   "learn": {
     "phonetic": "lә:n",
     "translation": "vt. 学习；认识到；得知",
-    "exchange": "d:learned/i:learning/p:learned/3:learns"
+    "exchange": "d:learned/d:learnt/i:learning/p:learned/p:learnt/3:learns"
   },
   "central": {
     "phonetic": "'sentrәl",
@@ -2456,7 +2456,7 @@
   "light": {
     "phonetic": "lait",
     "translation": "n. 光, 光亮, 灯, 日光, 发光体, 光源, 杰出人物, 火花, 眼光\na. 轻的, 少量的, 轻微的, 轻快的, 轻浮的, 明亮的, 淡色的, 容易的\nvt. 点燃, 照亮\nvi. 点着, 变亮, 突降, 偶然碰到\nadv. 轻地",
-    "exchange": "s:lights/p:lit/d:lit/r:lighter/i:lighting/t:lightest/3:lights"
+    "exchange": "s:lights/p:lit/p:lighted/d:lit/d:lighted/r:lighter/i:lighting/t:lightest/3:lights"
   },
   "university": {
     "phonetic": ".ju:ni'vә:siti",
@@ -3112,7 +3112,7 @@
   "prove": {
     "phonetic": "pru:v",
     "translation": "vt. 证明, 查验, 检验, 勘探, 显示\nvi. 证明是",
-    "exchange": "d:proved/p:proved/i:proving/3:proves"
+    "exchange": "d:proved/d:proven/p:proved/i:proving/3:proves"
   },
   "wrong": {
     "phonetic": "rɒŋ",
@@ -3789,7 +3789,7 @@
   "forget": {
     "phonetic": "fә'get",
     "translation": "vt. 忘记, 忽略, 忘\nvi. 忘记",
-    "exchange": "d:forgotten/p:forgot/i:forgetting/3:forgets"
+    "exchange": "d:forgotten/d:forgot/p:forgot/i:forgetting/3:forgets"
   },
   "peter": {
     "phonetic": "'pi:tә",
@@ -4987,7 +4987,7 @@
   "bear": {
     "phonetic": "bєә",
     "translation": "n. 熊\nvt. 忍受, 支承, 产生, 怀有, 通过卖空使跌价\nvi. 忍受, 结果实, 压挤, 行进, 转向",
-    "exchange": "d:born/i:bearing/p:bore/3:bears/s:bears"
+    "exchange": "d:born/d:borne/i:bearing/p:bore/3:bears/s:bears"
   },
   "fear": {
     "phonetic": "fiә",
@@ -5007,7 +5007,7 @@
   "hang": {
     "phonetic": "hæŋ",
     "translation": "n. 悬挂, 诀窍, 意义\nvt. 悬挂, 附着, 装饰, 垂下, 踌躇, 绞死, 使悬而未决\nvi. 悬着, 垂下, 被绞死, 悬而不决",
-    "exchange": "i:hanging/p:hung/d:hung/3:hangs"
+    "exchange": "i:hanging/p:hung/p:hanged/d:hung/d:hanged/3:hangs"
   },
   "rock": {
     "phonetic": "rɒk",
@@ -5837,7 +5837,7 @@
   "speed": {
     "phonetic": "spi:d",
     "translation": "n. 速率, 速度, 迅速\nvi. 加速, 超速, 快进\nvt. 快速传送, 促进, 使加速\n[计] 中央处理机速度设置程序",
-    "exchange": "s:speeds/i:speeding/p:sped/3:speeds/d:speeded"
+    "exchange": "s:speeds/i:speeding/p:sped/p:speeded/3:speeds/d:speeded/d:sped"
   },
   "route": {
     "phonetic": "ru:t",
@@ -6072,7 +6072,7 @@
   "strike": {
     "phonetic": "straik",
     "translation": "n. 罢工, 打击, 殴打\nvt. 打, 撞击, 冲击, 侵袭, 取消, 结算, 打掉, 罢工, 刺透, 使生根, 遇见\nvi. 打, 打击, 抓, 罢工, 搏动, 触礁, 敲, 响, 穿透, 打动",
-    "exchange": "p:struck/d:struck/s:strikes/3:strikes/i:striking"
+    "exchange": "p:struck/d:struck/d:stricken/s:strikes/3:strikes/i:striking"
   },
   "settle": {
     "phonetic": "'setl",
@@ -7045,7 +7045,7 @@
   "spring": {
     "phonetic": "spriŋ",
     "translation": "n. 春天, 弹簧, 跳跃, 弹性, 活力, 泉, 源泉\na. 春天的\nvi. 跳, 弹跳, 涌出, 生长, 裂开, 高耸\nvt. 使跳起, 使爆炸, 突然提出",
-    "exchange": "s:springs/p:sprang/d:sprung/i:springing/3:springs"
+    "exchange": "s:springs/p:sprang/p:sprung/d:sprung/i:springing/3:springs"
   },
   "ahead": {
     "phonetic": "ә'hed",
@@ -7094,7 +7094,7 @@
   "dream": {
     "phonetic": "dri:m",
     "translation": "n. 梦, 空想, 愿望\nv. 做梦, 想象, 梦想",
-    "exchange": "s:dreams/i:dreaming/d:dreamed/p:dreamed/3:dreams"
+    "exchange": "s:dreams/i:dreaming/d:dreamed/d:dreamt/p:dreamed/p:dreamt/3:dreams"
   },
   "victory": {
     "phonetic": "'viktәri",
@@ -8235,7 +8235,7 @@
   "burn": {
     "phonetic": "bә:n",
     "translation": "vt. 烧, 烧毁, 烧伤\nvi. 燃烧, 发热, 烧毁\nn. 烧伤, 烙印",
-    "exchange": "d:burnt/i:burning/p:burned/s:burns/3:burns"
+    "exchange": "d:burnt/d:burned/i:burning/p:burned/p:burnt/s:burns/3:burns"
   },
   "wing": {
     "phonetic": "wiŋ",
@@ -8768,7 +8768,7 @@
   "lean": {
     "phonetic": "li:n",
     "translation": "n. 瘦肉, 倾斜, 倾斜度\na. 瘦的, 贫乏的, 歉收的\nvi. 倚靠, 倾斜, 依赖\nvt. 使倾斜",
-    "exchange": "p:leaned/i:leaning/3:leans/r:leaner/d:leaned"
+    "exchange": "p:leaned/p:leant/i:leaning/3:leans/r:leaner/d:leaned/d:leant"
   },
   "stephen": {
     "phonetic": "'sti:vn",
@@ -12389,7 +12389,7 @@
   "smell": {
     "phonetic": "smel",
     "translation": "n. 味道, 气味, 嗅觉, 嗅, 臭味, 气息\nvt. 闻, 探出, 察觉, 发出...的气味\nvi. 嗅, 散发气味, 发臭",
-    "exchange": "s:smells/p:smelled/3:smells/i:smelling/d:smelt"
+    "exchange": "s:smells/p:smelled/p:smelt/3:smells/i:smelling/d:smelt/d:smelled"
   },
   "pitch": {
     "phonetic": "pitʃ",
@@ -15392,7 +15392,7 @@
   "bite": {
     "phonetic": "bait",
     "translation": "n. 咬, 一口\nv. 咬, 刺痛, 穿透",
-    "exchange": "p:bit/i:biting/s:bites/3:bites/d:bit"
+    "exchange": "p:bit/i:biting/s:bites/3:bites/d:bit/d:bitten"
   },
   "angel": {
     "phonetic": "'eindʒәl",
@@ -15547,7 +15547,7 @@
   "shine": {
     "phonetic": "ʃain",
     "translation": "n. 光泽, 阳光\nvt. 使发光\nvi. 照耀, 发光, 发亮",
-    "exchange": "p:shone/i:shining/3:shines/d:shone"
+    "exchange": "p:shone/p:shined/i:shining/3:shines/d:shone/d:shined"
   },
   "albert": {
     "phonetic": "'ælbәt",
@@ -15792,7 +15792,7 @@
   "spell": {
     "phonetic": "spel",
     "translation": "n. 符咒, 魅力, 轮值, 轮班, 工作时间, 一次发作\nvt. 拼写, 拼成, 琢磨, 理解, 招致, 轮换, 迷住\nvi. 轮换, 拼字",
-    "exchange": "s:spells/d:spelt/3:spells/i:spelling/p:spelt"
+    "exchange": "s:spells/d:spelt/d:spelled/3:spells/i:spelling/p:spelt/p:spelled"
   },
   "nursery": {
     "phonetic": "'nә:sәri",
@@ -15998,7 +15998,7 @@
   "leap": {
     "phonetic": "li:p",
     "translation": "n. 跳跃, 剧增, 急变, 被越过之物\nvi. 跳跃, 突然经过\nvt. 跃过, 使跃过",
-    "exchange": "p:leapt/i:leaping/s:leaps/3:leaps/d:leapt"
+    "exchange": "p:leapt/p:leaped/i:leaping/s:leaps/3:leaps/d:leapt/d:leaped"
   },
   "desert": {
     "phonetic": "'dezәt. di'sә:t",
@@ -17643,7 +17643,7 @@
   "plead": {
     "phonetic": "pli:d",
     "translation": "vi. 辩护, 恳求\nvt. 为...辩护, 提出...借口, 托称, 恳求",
-    "exchange": "p:pleaded/i:pleading/d:pleaded/3:pleads"
+    "exchange": "p:pleaded/p:pled/i:pleading/d:pleaded/d:pled/3:pleads"
   },
   "officially": {
     "phonetic": "ә'fiʃәli",
@@ -19969,7 +19969,7 @@
   "spoil": {
     "phonetic": "spɒil",
     "translation": "n. 战利品, 赃物, 奖品, 变质, 次品\nvt. 损坏, 破坏, 溺爱\nvi. 腐坏, 掠夺",
-    "exchange": "d:spoiled/i:spoiling/s:spoils/3:spoils/p:spoiled"
+    "exchange": "d:spoiled/d:spoilt/i:spoiling/s:spoils/3:spoils/p:spoiled/p:spoilt"
   },
   "regardless": {
     "phonetic": "ri'gɑ:dlis",
@@ -20914,7 +20914,7 @@
   "spill": {
     "phonetic": "spil",
     "translation": "n. 溢出, 溅出, 摔下, 溢出量, 木片, 小塞子\nvt. 使溢出, 使散落, 洒, 使流出, 倒出, 使摔下\nvi. 溢出, 涌流, 摔下",
-    "exchange": "i:spilling/p:spilled/3:spills/d:spilled/s:spills"
+    "exchange": "i:spilling/p:spilled/p:spilt/3:spills/d:spilled/d:spilt/s:spills"
   },
   "profitable": {
     "phonetic": "'prɒfitәbl",
@@ -24530,7 +24530,7 @@
   "weave": {
     "phonetic": "wi:v",
     "translation": "n. 编法, 织法, 编织式样\nvt. 编织, 组合, 编排, 使迂回前进\nvi. 纺织, 迂回行进",
-    "exchange": "d:woven/i:weaving/p:wove/3:weaves/s:weaves"
+    "exchange": "d:woven/d:weaved/i:weaving/p:wove/p:weaved/3:weaves/s:weaves"
   },
   "homeless": {
     "phonetic": "'hәumlis",
@@ -24607,7 +24607,7 @@
   "dive": {
     "phonetic": "daiv",
     "translation": "n. 潜水, 跳水\nvi. 跳水, 俯冲, 猛冲\nvt. 把...突然伸入",
-    "exchange": "p:dived/i:diving/3:dives/s:dives/d:dived"
+    "exchange": "p:dived/p:dove/i:diving/3:dives/s:dives/d:dived"
   },
   "coherent": {
     "phonetic": "kәu'hiәrәnt",
@@ -25355,7 +25355,7 @@
   "kneel": {
     "phonetic": "ni:l",
     "translation": "vi. 跪下",
-    "exchange": "p:knelt/i:kneeling/3:kneels/d:knelt"
+    "exchange": "p:knelt/p:kneeled/i:kneeling/3:kneels/d:knelt/d:kneeled"
   },
   "greenhouse": {
     "phonetic": "'gri:nhaus",
@@ -25693,7 +25693,7 @@
   "shrink": {
     "phonetic": "ʃriŋk",
     "translation": "n. 收缩, 萎缩, 回避\nvi. 收缩, 退缩, 萎缩, 缩小, 回避\nvt. 使收缩, 使缩小",
-    "exchange": "p:shrank/d:shrunk/i:shrinking/3:shrinks/s:shrinks"
+    "exchange": "p:shrank/p:shrunk/d:shrunk/i:shrinking/3:shrinks/s:shrinks"
   },
   "eve": {
     "phonetic": "i:v",
@@ -25722,7 +25722,7 @@
   "swell": {
     "phonetic": "swel",
     "translation": "n. 增大, 隆起的部分, 巨浪, 肿胀\na. 优秀的, 一流的\nvi. 增大, 膨胀, 肿胀, 增强, 骄傲\nvt. 使膨胀, 使增大, 使上涨, 使骄傲",
-    "exchange": "d:swollen/i:swelling/p:swelled/s:swells/3:swells"
+    "exchange": "d:swollen/d:swelled/i:swelling/p:swelled/s:swells/3:swells"
   },
   "scrap": {
     "phonetic": "skræp",
@@ -25742,7 +25742,7 @@
   "strive": {
     "phonetic": "straiv",
     "translation": "vi. 努力, 奋斗, 斗争",
-    "exchange": "i:striving/p:strove/3:strives/d:striven"
+    "exchange": "i:striving/p:strove/p:strived/3:strives/d:striven/d:strived"
   },
   "promptly": {
     "phonetic": "'prɒmptli",
@@ -29824,7 +29824,7 @@
   "sew": {
     "phonetic": "sәu",
     "translation": "vt. 缝纫, 缝合, 缝\nvi. 缝纫",
-    "exchange": "d:sewn/i:sewing/p:sewed/3:sews"
+    "exchange": "d:sewn/d:sewed/i:sewing/p:sewed/3:sews"
   },
   "homework": {
     "phonetic": "'hәumwә:k",
@@ -31833,7 +31833,7 @@
   "sow": {
     "phonetic": "sau. sәu",
     "translation": "n. 母猪, 懒胖女人\nvt. 播种, 散布, 使密布\nvi. 播种",
-    "exchange": "d:sown/s:sows/i:sowing/p:sowed/3:sows"
+    "exchange": "d:sown/d:sowed/s:sows/i:sowing/p:sowed/3:sows"
   },
   "speciality": {
     "phonetic": ".speʃi'æliti",
@@ -39938,7 +39938,7 @@
   "sneak": {
     "phonetic": "sni:k",
     "translation": "vi. 鬼鬼祟祟做事\nvt. 偷偷地做\nn. 鬼鬼祟祟的人, 偷偷摸摸的行为, 帆布胶底运动鞋\na. 暗中进行的",
-    "exchange": "p:sneaked/i:sneaking/d:sneaked/3:sneaks/s:sneaks"
+    "exchange": "p:sneaked/p:snuck/i:sneaking/d:sneaked/d:snuck/3:sneaks/s:sneaks"
   },
   "scissors": {
     "phonetic": "'sizәz",
@@ -45122,7 +45122,7 @@
   "clothe": {
     "phonetic": "klәuð",
     "translation": "vt. 给...穿衣, 盖上, 赋予",
-    "exchange": "d:clothed/p:clothed/s:clothes/3:clothes/i:cloathing"
+    "exchange": "d:clothed/d:clad/p:clothed/p:clad/s:clothes/3:clothes/i:cloathing"
   },
   "provocative": {
     "phonetic": "prә'vɒkәtiv",
