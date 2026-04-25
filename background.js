@@ -2,18 +2,6 @@ let dict = null;
 let wordRoots = null;
 let reverseIndex = null;
 
-const EXCHANGES = {
-  s: { name: '复数形式', weight: 9 },
-  p: { name: '过去式', weight: 8 },
-  i: { name: '现在分词', weight: 7 },
-  d: { name: '过去分词', weight: 6 },
-  3: { name: '第三人称单数', weight: 5 },
-  r: { name: '比较级', weight: 4 },
-  t: { name: '最高级', weight: 3 },
-  0: { name: '原型', weight: 2 },
-  1: { name: '拼写变体', weight: 1 },
-};
-
 async function loadDict() {
   if (dict) return dict;
 
@@ -37,34 +25,11 @@ async function loadWordRoots() {
 async function loadReverseIndex() {
   if (reverseIndex) return reverseIndex;
 
-  console.log('开始初始化反向索引');
+  const url = chrome.runtime.getURL('data/reverse_index.json');
+  const response = await fetch(url);
+  reverseIndex = await response.json();
 
-  const dict = await loadDict();
-  reverseIndex = {};
-
-  Object.entries(dict).forEach(([word, definition]) => {
-    const { exchange } = definition;
-    if (!exchange) return;
-
-    const exchangeList = exchange.split('/');
-    exchangeList.forEach((exchangeItem) => {
-      // TODO: 写个脚本检查是否多个单词对应同一个变体
-      const [type, variant] = exchangeItem.split(':');
-      const typeName = EXCHANGES?.[type]?.name || '';
-
-      const existing = reverseIndex[variant] || {};
-      const existingTypes = existing.types || [];
-      const existingTypeNames = existing.typeNames || [];
-
-      reverseIndex[variant] = {
-        exchangeWord: word,
-        types: [...existingTypes, type],
-        typeNames: [...existingTypeNames, typeName],
-      };
-    });
-  });
-
-  console.log('反向索引初始化完成，词条数:', Object.keys(reverseIndex).length);
+  console.log('反向索引数据已加载，词条数:', Object.keys(reverseIndex).length);
 
   return reverseIndex;
 }
@@ -100,13 +65,8 @@ chrome.runtime.onMessage.addListener(async (message, sender, sendResponse) => {
       definition = dict[lookupKey];
     }
 
-    if (!definition) {
       const reverseIndex = await loadReverseIndex();
       variantInfo = reverseIndex[lookupKey];
-      if (variantInfo) {
-        definition = dict[variantInfo.exchangeWord];
-      }
-    }
 
     const root = wordRoots[lookupKey];
 

@@ -49,7 +49,7 @@ s:hellos
 
 **hello** 虽然是感叹词，但也可以当名词用（比如 "say your hellos"），所以有复数形式。
 
-**完整的代码表**
+**完整的变体代码表**
 
 | 代码 | 英文                | 含义         | 示例                    |
 | ---- | ------------------- | ------------ | ----------------------- |
@@ -64,6 +64,38 @@ s:hellos
 | `1`  | lemma variant       | 原型变体     | color → colour, colours |
 
 <a id="priority-test-words"></a>
+
+### 反向索引数据
+
+由变体指向原型的索引
+
+数据文件：[reverse-index.json](./reverse_index.json)
+
+数据示例：
+
+```json
+
+"chapters": {
+    "deals": {
+    "exchangeWord": "deal",
+    "types": [
+      "s",
+      "3"
+    ],
+    "typeNames": [
+      "复数形式",
+      "第三人称单数"
+    ]
+  },
+}
+```
+
+**字段说明**
+| 字段 | 含义 |
+| --- | --- |
+| `exchangeWord` | 原型词 |
+| `types` | 变体类型数组（参考上文变体代码表） |
+| `typeNames` | 变体类型名称数组（与 `types` 字段中的数据一一对应） |
 
 ### 重点测试数据
 
