@@ -1,3 +1,5 @@
+import { EXCHANGES } from './lib/exchanges.js';
+
 let dict = null;
 let wordRoots = null;
 let reverseIndex = null;
@@ -34,6 +36,42 @@ async function loadReverseIndex() {
   return reverseIndex;
 }
 
+function cleanVariantInfo(translation) {
+  const variants = [
+    ...new Set([...Object.values(EXCHANGES).map((x) => x.name), '复数']),
+  ];
+  // 匹配变体信息释义行
+  // 例如释义行："say的过去式和过去分词"
+  const variantLineReg = new RegExp(
+    `^[a-zA-Z]+的(${variants.join('|')})(和(${variants.join('|')}))?$`,
+  );
+  // 匹配变体信息在释义行中的情况
+  // 例如释义行："v. 承认；认出；辨别（recognise的过去分词）"
+  const variantWithBracketReg = new RegExp(
+    `（[a-zA-Z]+的[^）]*[${variants.join('|')}].*?）`,
+  );
+
+  const result = [];
+  translation.split('\n').forEach((line) => {
+    const variant = line.match(variantLineReg)?.[0];
+    const variantWithBracket = line.match(variantWithBracketReg)?.[0];
+    if (variant) {
+      // 滤去变体信息释义行
+      return;
+    }
+
+    let newLine = line;
+
+    if (variantWithBracket) {
+      // 滤去变体信息
+      newLine = line.replace(variantWithBracket, '');
+    }
+
+    result.push(newLine);
+  });
+  return result.join('\n');
+}
+
 // 插件安装或更新时触发
 chrome.runtime.onInstalled.addListener(() => {
   console.log('插件已安装/更新');
@@ -65,8 +103,36 @@ chrome.runtime.onMessage.addListener(async (message, sender, sendResponse) => {
       definition = dict[lookupKey];
     }
 
-      const reverseIndex = await loadReverseIndex();
-      variantInfo = reverseIndex[lookupKey];
+    // 查询变体信息
+    const reverseIndex = await loadReverseIndex();
+    variantInfo = reverseIndex[lookupKey];
+
+    if (definition) {
+      // 清洗`translation` 中可能包含的变体信息（变体信息应只由 `variantInfo` 提供）
+      const { translation } = definition;
+      let newTranslation = cleanVariantInfo(translation);
+      // 如果清洗后，`translation` 为空，则尝试使用原型词的 `translation`
+      if (!newTranslation && variantInfo) {
+        const { exchangeWord } = variantInfo;
+        const exchangeWordDefinition = dict[exchangeWord];
+        if (exchangeWordDefinition) {
+          newTranslation = exchangeWordDefinition.translation;
+        }
+      }
+      // `newTranslation` 不为空，且与原`translation` 不同，则更新`translation`
+      if (newTranslation && newTranslation !== translation) {
+        definition = {
+          ...definition,
+          translation: newTranslation,
+        };
+      }
+    }
+    // 如果没有 `definition`，则尝试使用变体信息查询原型词的 `definition`
+    // 原型词的 `translation` 不用清洗变体信息，因为它不会包含 "xx的复数", "xx的过去式", "xx的过去分词" 等内容
+    else if (variantInfo) {
+      const { exchangeWord } = variantInfo;
+      definition = dict[exchangeWord];
+    }
 
     const root = wordRoots[lookupKey];
 

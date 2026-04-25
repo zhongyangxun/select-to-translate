@@ -1,17 +1,6 @@
 import fs from 'fs';
+import { EXCHANGES } from '../lib/exchanges.js';
 import { WORDS_FILE } from './constans.js';
-
-const EXCHANGES = {
-  0: { name: '原型' },
-  p: { name: '过去式' },
-  d: { name: '过去分词' },
-  i: { name: '现在分词' },
-  3: { name: '第三人称单数' },
-  s: { name: '复数形式' },
-  r: { name: '比较级' },
-  t: { name: '最高级' },
-  1: { name: '拼写变体' },
-};
 
 /** exchange 片段里的 type，与 EXCHANGES 的键一致；含此项表示词条是变体行，反向索引只从原型词条建立 */
 const EXCHANGE_TYPE_LEMMA = '0';
