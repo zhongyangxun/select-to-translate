@@ -1,5 +1,6 @@
 <style>
   :host {
+    --panel-width: 340px;
     --primary: oklch(0.52 0.14 195);
     --muted: oklch(0.94 0.006 240);
     --card: oklch(1 0 0);
@@ -42,7 +43,7 @@
   .panel {
     position: fixed;
     z-index: 2147483647;
-    width: 340px;
+    width: var(--panel-width);
     background-color: var(--card);
     border-radius: 12px;
     box-shadow: 0 8px 20px var(--shadow);

@@ -40,6 +40,7 @@ class Panel {
   #rootSectionEl = null;
   #rootListEl = null;
   #compositionEl = null;
+  #targetRect = null;
 
   constructor(host, shadow) {
     this.#host = host;
@@ -88,11 +89,26 @@ class Panel {
     return this.#host;
   }
 
-  setPosition(x, y) {
-    const viewportWidth = window.innerWidth;
-    const viewportHeight = window.innerHeight;
-    const panelWidth = 280;
-    const panelHeight = 200;
+  setPosition(targetRect) {
+    this.#targetRect = targetRect;
+    return this.updatePosition();
+  }
+
+  updatePosition() {
+    if (!this.#targetRect) {
+      console.warn('targetRect is not set');
+      return this;
+    }
+
+    let x = this.#targetRect.left;
+    let y = this.#targetRect.bottom + 8;
+
+    const viewportWidth = document.documentElement.clientWidth;
+    const viewportHeight = document.documentElement.clientHeight;
+
+    const style = getComputedStyle(this.#panel);
+    const panelWidth = parseInt(style.width) || 340;
+    const panelHeight = parseInt(style.height) || 200;
 
     if (x + panelWidth > viewportWidth) {
       x = viewportWidth - panelWidth - 10;
@@ -101,7 +117,7 @@ class Panel {
 
     if (y < 10) y = 10;
     if (y + panelHeight > viewportHeight) {
-      y = viewportHeight - panelHeight - 10;
+      y = this.#targetRect.top - panelHeight - 8;
     }
 
     this.#panel.style.left = `${x}px`;
@@ -205,6 +221,10 @@ class Panel {
     } else {
       this.#panel.classList.add('not-found');
     }
+
+    // 渲染完内容后，实际高度可能发生变化，需要更新位置
+    this.updatePosition();
+
     return this;
   }
 
@@ -220,6 +240,7 @@ class Panel {
 
   resetPanel() {
     this.#panel.classList.remove('loading', 'not-found', 'no-root');
+    this.#targetRect = null;
 
     this.#wordEl.textContent = '';
     this.#variantInfoEl.textContent = '';
@@ -288,11 +309,7 @@ document.addEventListener('mouseup', async (e) => {
   const range = selection.getRangeAt(0);
   const rect = range.getBoundingClientRect();
 
-  panel
-    .resetPanel()
-    .setLoading()
-    .setPosition(rect.left, rect.bottom + 8)
-    .show();
+  panel.resetPanel().setLoading().setPosition(rect).show();
 
   const response = await chrome.runtime.sendMessage({
     type: 'translate',
