@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>划词翻译测试</title>
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('select-to-translate-test-theme');
+          if (t === 'light' || t === 'dark') {
+            document.documentElement.setAttribute('data-theme', t);
+          }
+        } catch (_) {}
+      })();
+    </script>
     <style>
       :root {
         color-scheme: light dark;
@@ -14,13 +24,30 @@
         --card: #fff;
       }
       @media (prefers-color-scheme: dark) {
-        :root {
+        :root:not([data-theme]) {
           --bg: #1a1d21;
           --text: #e8eaed;
           --muted: #9aa3ad;
           --border: #3d444d;
           --card: #252a31;
+          color-scheme: dark;
         }
+      }
+      :root[data-theme='light'] {
+        color-scheme: light;
+        --bg: #f6f7f9;
+        --text: #1a1d21;
+        --muted: #5c6570;
+        --border: #e2e5ea;
+        --card: #fff;
+      }
+      :root[data-theme='dark'] {
+        color-scheme: dark;
+        --bg: #1a1d21;
+        --text: #e8eaed;
+        --muted: #9aa3ad;
+        --border: #3d444d;
+        --card: #252a31;
       }
       * {
         box-sizing: border-box;
@@ -43,6 +70,37 @@
         margin: 0 auto;
         padding: 2rem 1.25rem 3rem;
       }
+      .page-header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 0.75rem 1rem;
+        margin-bottom: 0;
+      }
+      .page-header__titles {
+        flex: 1 1 12rem;
+        min-width: 0;
+      }
+      .theme-toggle {
+        flex-shrink: 0;
+        margin-top: 0.1rem;
+        padding: 0.4rem 0.75rem;
+        font: inherit;
+        font-size: 0.8125rem;
+        font-weight: 500;
+        color: var(--text);
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      .theme-toggle:hover {
+        background: color-mix(in srgb, var(--card) 88%, var(--text));
+      }
+      .theme-toggle:active {
+        opacity: 0.92;
+      }
       h1 {
         margin: 0 0 0.35rem;
         font-size: 1.35rem;
@@ -52,6 +110,9 @@
         margin: 0 0 1.5rem;
         font-size: 0.875rem;
         color: var(--muted);
+      }
+      .page-header .hint {
+        margin-bottom: 1.5rem;
       }
       section {
         margin-bottom: 1.75rem;
@@ -141,8 +202,20 @@
   </head>
   <body>
     <div class="wrap">
-      <h1>划词翻译测试</h1>
-      <p class="hint">在下方单词或句子中拖选文字，触发扩展的划词翻译。</p>
+      <header class="page-header">
+        <div class="page-header__titles">
+          <h1>划词翻译测试</h1>
+          <p class="hint">在下方单词或句子中拖选文字，触发扩展的划词翻译。</p>
+        </div>
+        <button
+          type="button"
+          id="theme-toggle"
+          class="theme-toggle"
+          aria-pressed="false"
+        >
+          夜间模式
+        </button>
+      </header>
 
       <section>
         <h2>单词</h2>
@@ -187,6 +260,74 @@
         </div>
       </section>
     </div>
+    <script>
+      (function () {
+        var THEME_STORAGE = 'select-to-translate-test-theme';
+        var root = document.documentElement;
+        var themeBtn = document.getElementById('theme-toggle');
+        var mqDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+        function storedTheme() {
+          try {
+            var t = localStorage.getItem(THEME_STORAGE);
+            return t === 'light' || t === 'dark' ? t : null;
+          } catch (_) {
+            return null;
+          }
+        }
+
+        function effectiveTheme() {
+          var s = storedTheme();
+          if (s) return s;
+          return mqDark.matches ? 'dark' : 'light';
+        }
+
+        function applyStoredTheme() {
+          var s = storedTheme();
+          if (s) root.setAttribute('data-theme', s);
+          else root.removeAttribute('data-theme');
+        }
+
+        function setTheme(mode) {
+          if (mode === 'light' || mode === 'dark') {
+            try {
+              localStorage.setItem(THEME_STORAGE, mode);
+            } catch (_) {}
+            root.setAttribute('data-theme', mode);
+          } else {
+            try {
+              localStorage.removeItem(THEME_STORAGE);
+            } catch (_) {}
+            root.removeAttribute('data-theme');
+          }
+          syncThemeButton();
+        }
+
+        function syncThemeButton() {
+          if (!themeBtn) return;
+          var eff = effectiveTheme();
+          var nextIsDark = eff === 'light';
+          themeBtn.textContent = nextIsDark ? '夜间模式' : '日间模式';
+          themeBtn.setAttribute(
+            'aria-label',
+            nextIsDark ? '切换为夜间模式' : '切换为日间模式'
+          );
+          themeBtn.setAttribute('aria-pressed', eff === 'dark' ? 'true' : 'false');
+        }
+
+        if (themeBtn) {
+          applyStoredTheme();
+          syncThemeButton();
+          themeBtn.addEventListener('click', function () {
+            var eff = effectiveTheme();
+            setTheme(eff === 'light' ? 'dark' : 'light');
+          });
+          mqDark.addEventListener('change', function () {
+            if (!storedTheme()) syncThemeButton();
+          });
+        }
+      })();
+    </script>
     <script>
       (function () {
         var STORAGE_KEY = 'select-to-translate-test-custom-words';
