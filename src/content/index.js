@@ -1,4 +1,5 @@
-console.log('content script loaded');
+import panelHtml from '../../content.html';
+console.log('content script load');
 
 // POS tags sourced from ECDICT
 const VALID_POS_TAGS = new Set([
@@ -65,10 +66,12 @@ class Panel {
       .querySelector('.audio-btn')
       .addEventListener('click', () => this.playAudio());
 
+    this.initThemeObserver();
+
     this.hide();
   }
 
-  static async create() {
+  static create() {
     if (Panel.#instance) {
       return Panel.#instance;
     }
@@ -77,9 +80,7 @@ class Panel {
     host.id = 'select-to-translate-host';
     const shadow = host.attachShadow({ mode: 'closed' });
 
-    const url = chrome.runtime.getURL('content.html');
-    const html = await fetch(url).then((r) => r.text());
-    shadow.innerHTML = html;
+    shadow.innerHTML = panelHtml;
 
     document.body.appendChild(host);
 
@@ -297,6 +298,61 @@ class Panel {
 
   contains(target) {
     return this.#host === target || this.#host.contains(target);
+  }
+
+  detectDarkMode() {
+    const isSystemDark = window.matchMedia(
+      '(prefers-color-scheme: dark)',
+    ).matches;
+    const html = document.documentElement;
+    const body = document.body;
+
+    // 1. 检查 color-scheme
+    const cs = getComputedStyle(html).colorScheme;
+    if (cs.includes('dark') && !cs.includes('light')) return true;
+
+    // 2. 检查常见暗色模式标志
+    const darkIndicators = [
+      html.classList.contains('dark'),
+      html.dataset.theme === 'dark',
+      html.dataset.colorMode === 'dark',
+      body?.classList.contains('dark'),
+      body?.dataset.theme === 'dark',
+    ];
+    if (darkIndicators.some(Boolean)) return true;
+
+    // 3. 系统保底
+    return isSystemDark;
+  }
+
+  updateTheme() {
+    const isDark = this.detectDarkMode();
+    this.#host.classList.toggle('dark', isDark);
+  }
+
+  initThemeObserver() {
+    this.updateTheme();
+
+    // 监听系统主题变化
+    window
+      .matchMedia('(prefers-color-scheme: dark)')
+      .addEventListener('change', () => {
+        this.updateTheme();
+      });
+
+    // 监听宿主页面 class/attribute 变化
+    const observer = new MutationObserver(() => this.updateTheme());
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class', 'data-theme', 'data-color-mode'],
+    });
+
+    if (document.body) {
+      observer.observe(document.body, {
+        attributes: true,
+        attributeFilter: ['class', 'data-theme', 'data-color-mode'],
+      });
+    }
   }
 }
 

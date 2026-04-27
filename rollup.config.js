@@ -1,5 +1,16 @@
 import copy from 'rollup-plugin-copy';
 
+function htmlPlugin() {
+  return {
+    name: 'html-string',
+    transform(code, id) {
+      if (id.endsWith('.html')) {
+        return `export default ${JSON.stringify(code)}`;
+      }
+    },
+  };
+}
+
 export default [
   {
     input: 'src/content/index.js',
@@ -7,6 +18,7 @@ export default [
       file: 'dist/content.js',
       format: 'iife',
     },
+    plugins: [htmlPlugin()],
   },
   {
     input: 'src/background/index.js',
@@ -19,10 +31,6 @@ export default [
         targets: [
           {
             src: 'manifest.json',
-            dest: 'dist',
-          },
-          {
-            src: 'content.html',
             dest: 'dist',
           },
           {
