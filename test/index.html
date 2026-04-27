@@ -88,6 +88,55 @@
         text-align: justify;
         hyphens: auto;
       }
+      .add-word {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 0.85rem;
+        padding-top: 0.85rem;
+        border-top: 1px solid var(--border);
+      }
+      .add-word input {
+        flex: 1 1 10rem;
+        min-width: 0;
+        padding: 0.45rem 0.6rem;
+        font: inherit;
+        color: var(--text);
+        background: var(--bg);
+        border: 1px solid var(--border);
+        border-radius: 6px;
+      }
+      .add-word input:focus {
+        outline: 2px solid color-mix(in srgb, var(--text) 25%, transparent);
+        outline-offset: 1px;
+      }
+      .add-word button {
+        padding: 0.45rem 0.85rem;
+        font: inherit;
+        font-weight: 500;
+        color: var(--card);
+        background: var(--text);
+        border: 1px solid var(--text);
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      .add-word button:hover {
+        opacity: 0.92;
+      }
+      .add-word button:active {
+        opacity: 0.88;
+      }
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
     </style>
   </head>
   <body>
@@ -100,6 +149,20 @@
         <div class="card">
           <!-- 记得要测试字母 A -->
           <ul class="words" aria-label="测试用单词"><li>a</li><li>find</li><li>Mr</li><li>mm</li><li>sort</li><li>Mrs</li><li>ground</li><li>bit</li><li>share</li><li>p</li><li>thought</li><li>choice</li><li>basic</li><li>lay</li><li>left</li><li>past</li><li>copy</li><li>born</li><li>beat</li><li>aim</li><li>etc</li><li>mhm</li><li>TV</li><li>Ltd</li><li>PP</li><li>cat</li><li>USA</li><li>shot</li><li>IBM</li><li>MP</li><li>DEC</li><li>BBC</li><li>UNIX</li><li>rose</li><li>crew</li><li>PC</li><li>rent</li><li>DNA</li><li>written</li><li>found</li><li>given</li><li>broken</li><li>lost</li><li>NHS</li><li>PM</li><li>bound</li><li>wound</li><li>AM</li><li>known</li><li>Leicester</li><li>AIDS</li><li>MS</li><li>DC</li><li>GP</li><li>USSR</li><li>drunk</li><li>AC</li><li>pH</li><li>Corbett</li><li>NATO</li><li>FA</li><li>hidden</li><li>stuck</li><li>Edwards</li><li>EEC</li><li>exit</li><li>Lamont</li><li>frozen</li><li>chosen</li><li>Nicholson</li><li>ML</li><li>IMF</li><li>telecom</li><li>wembley</li><li>lb</li><li>Gaulle</li><li>bore</li><li>paid</li><li>stolen</li><li>ITV</li><li>EST</li><li>Leith</li><li>dos</li><li>stove</li><li>spoken</li><li>learned</li><li>Sainsbury</li><li>Coleridge</li><li>Theda</li><li>saw</li><li>Worcester</li><li>halifax</li><li>Downing</li><li>paisley</li><li>SA</li><li>GNP</li><li>Gooch</li><li>Cranston</li><li>GMT</li><li>said</li><li>gilt</li><li>upheld</li><li>PR</li><li>cohen</li><li>Shropshire</li><li>vaughan</li><li>Pearce</li><li>Ramsay</li><li>CIA</li><li>NEC</li><li>Alton</li><li>Devlin</li><li>GATT</li><li>Mellor</li><li>Teesside</li><li>TT</li><li>Modigliani</li><li>proven</li><li>fell</li><li>Falklands</li><li>OP</li><li>DA</li><li>HQ</li><li>bates</li><li>BA</li><li>Forster</li><li>drew</li><li>Harlow</li><li>Benn</li><li>Cowley</li><li>EE</li><li>Fergus</li><li>urgh</li><li>mistaken</li><li>beaten</li><li>blessed</li><li>bitten</li><li>dove</li><li>fallen</li><li>clad</li><li>swollen</li><li>Hampstead</li><li>Granada</li></ul>
+          <div class="add-word">
+            <label class="visually-hidden" for="add-word-input"
+              >新测试单词</label
+            >
+            <input
+              id="add-word-input"
+              type="text"
+              placeholder="输入单词后添加…"
+              maxlength="200"
+              autocomplete="off"
+              enterkeyhint="done"
+            />
+            <button type="button" id="add-word-btn">添加单词</button>
+          </div>
         </div>
       </section>
 
@@ -124,5 +187,85 @@
         </div>
       </section>
     </div>
+    <script>
+      (function () {
+        var STORAGE_KEY = 'select-to-translate-test-custom-words';
+        var list = document.querySelector('.words');
+        var input = document.getElementById('add-word-input');
+        var btn = document.getElementById('add-word-btn');
+        if (!list || !input || !btn) return;
+
+        function existingTexts() {
+          var set = {};
+          var items = list.querySelectorAll('li');
+          for (var i = 0; i < items.length; i++) {
+            set[items[i].textContent.trim()] = true;
+          }
+          return set;
+        }
+
+        function appendWord(text) {
+          var li = document.createElement('li');
+          li.textContent = text;
+          list.appendChild(li);
+        }
+
+        function loadStored() {
+          try {
+            var raw = localStorage.getItem(STORAGE_KEY);
+            if (!raw) return;
+            var arr = JSON.parse(raw);
+            if (!Array.isArray(arr)) return;
+            var seen = existingTexts();
+            for (var i = 0; i < arr.length; i++) {
+              var w = String(arr[i]).trim();
+              if (!w || seen[w]) continue;
+              seen[w] = true;
+              appendWord(w);
+            }
+          } catch (_) {}
+        }
+
+        function saveCustomWords() {
+          var texts = [];
+          var nodes = list.querySelectorAll('li');
+          var baseline = 0;
+          try {
+            baseline = parseInt(list.dataset.baselineCount, 10) || 0;
+          } catch (_) {}
+          for (var i = baseline; i < nodes.length; i++) {
+            texts.push(nodes[i].textContent.trim());
+          }
+          try {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(texts));
+          } catch (_) {}
+        }
+
+        list.dataset.baselineCount = String(list.querySelectorAll('li').length);
+        loadStored();
+
+        function addFromInput() {
+          var w = input.value.trim();
+          if (!w) return;
+          var seen = existingTexts();
+          if (seen[w]) {
+            input.select();
+            return;
+          }
+          appendWord(w);
+          input.value = '';
+          input.focus();
+          saveCustomWords();
+        }
+
+        btn.addEventListener('click', addFromInput);
+        input.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter') {
+            e.preventDefault();
+            addFromInput();
+          }
+        });
+      })();
+    </script>
   </body>
 </html>
