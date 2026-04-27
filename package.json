@@ -4,6 +4,8 @@
   "description": "A Chrome extention for translating selected text.",
   "main": "content.js",
   "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +21,8 @@
   },
   "homepage": "https://github.com/zhongyangxun/select-to-translate#readme",
   "devDependencies": {
-    "csv-parse": "^6.2.1"
+    "csv-parse": "^6.2.1",
+    "rollup": "^4.60.2",
+    "rollup-plugin-copy": "^3.5.0"
   }
 }
