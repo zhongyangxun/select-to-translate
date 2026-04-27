@@ -22,6 +22,8 @@ const VALID_POS_TAGS = new Set([
   'pl.', // plural
 ]);
 
+const ATTR_PRONUNCIATION = 'data-pronunciation';
+
 function isValidPOS(pos) {
   return VALID_POS_TAGS.has(pos);
 }
@@ -126,7 +128,9 @@ class Panel {
   }
 
   playAudio() {
-    const utterance = new SpeechSynthesisUtterance(this.#wordEl.textContent);
+    const utterance = new SpeechSynthesisUtterance(
+      this.#wordEl.getAttribute(ATTR_PRONUNCIATION),
+    );
     utterance.lang = 'en-US';
     speechSynthesis.speak(utterance);
 
@@ -192,7 +196,7 @@ class Panel {
     return this;
   }
 
-  setContent(word, definition, root, variantInfo) {
+  setContent(word, definition, root, variantInfo, pronunciationText) {
     this.#wordEl.textContent = word;
     if (definition) {
       const { phonetic, translation } = definition;
@@ -218,6 +222,13 @@ class Panel {
       } else {
         this.#panel.classList.add('no-root');
       }
+
+      if (pronunciationText) {
+        this.#wordEl.setAttribute(ATTR_PRONUNCIATION, pronunciationText);
+      } else {
+        this.#panel.classList.add('no-pronunciation');
+        this.#wordEl.removeAttribute(ATTR_PRONUNCIATION);
+      }
     } else {
       this.#panel.classList.add('not-found');
     }
@@ -239,7 +250,12 @@ class Panel {
   }
 
   resetPanel() {
-    this.#panel.classList.remove('loading', 'not-found', 'no-root');
+    this.#panel.classList.remove(
+      'loading',
+      'not-found',
+      'no-root',
+      'no-pronunciation',
+    );
     this.#targetRect = null;
 
     this.#wordEl.textContent = '';
@@ -318,9 +334,17 @@ document.addEventListener('mouseup', async (e) => {
 
   console.log('response', response);
 
-  const { lookupKey = text, definition, root, variantInfo } = response || {};
+  const {
+    lookupKey = text,
+    definition,
+    root,
+    variantInfo,
+    pronunciationText,
+  } = response || {};
 
-  panel.stopLoading().setContent(lookupKey, definition, root, variantInfo);
+  panel
+    .stopLoading()
+    .setContent(lookupKey, definition, root, variantInfo, pronunciationText);
 });
 
 document.addEventListener('mousedown', async (e) => {

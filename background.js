@@ -1,4 +1,5 @@
 import { EXCHANGES } from './lib/exchanges.js';
+import { PRONUNCIATION_FIX_MAP } from './lib/pronunciation.js';
 
 let dict = null;
 let wordRoots = null;
@@ -135,6 +136,9 @@ chrome.runtime.onMessage.addListener(async (message, sender, sendResponse) => {
     }
 
     const root = wordRoots[lookupKey];
+    const pronunciationText = PRONUNCIATION_FIX_MAP.has(lookupKey)
+      ? PRONUNCIATION_FIX_MAP.get(lookupKey)
+      : lookupKey;
 
     if (definition) {
       sendResponse({
@@ -142,6 +146,7 @@ chrome.runtime.onMessage.addListener(async (message, sender, sendResponse) => {
         definition,
         root,
         variantInfo,
+        pronunciationText,
       });
     } else {
       // TODO: 请求 API 查词
