@@ -1,7 +1,9 @@
 import fs from 'fs';
 import { PRIORITY_TEST_WORDS_FILE } from './constans.js';
+import { resolve } from 'path';
+import { REPO_ROOT } from './constans.js';
 
-const TEST_HTML_FILE = './test/index.html';
+const TEST_HTML_FILE = resolve(REPO_ROOT, 'test/index.html');
 
 console.log('同步重点测试词到测试页面...');
 

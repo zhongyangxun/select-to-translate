@@ -1,8 +1,10 @@
 import { readFileSync, writeFileSync, readdirSync } from 'fs';
 import { parse } from 'csv-parse/sync';
+import { resolve } from 'path';
+import { REPO_ROOT } from './constans.js';
 
-const CSV_DIR = './data/roots';
-const OUTPUT_FILE = './data/roots.json';
+const CSV_DIR = resolve(REPO_ROOT, 'data/roots');
+const OUTPUT_FILE = resolve(REPO_ROOT, 'data/roots.json');
 
 const entries = {};
 const index = {};
@@ -34,7 +36,12 @@ for (const file of files) {
     const variants = rawRoot
       .replace(/\s*\([^)]*\)\s*/g, '')
       .split(/,\s*/)
-      .map((r) => r.replace(/^-+|-+$/g, '').trim().toLowerCase())
+      .map((r) =>
+        r
+          .replace(/^-+|-+$/g, '')
+          .trim()
+          .toLowerCase(),
+      )
       .filter(Boolean);
 
     const meaning = (row['Meaning in English'] || '').trim();
@@ -62,4 +69,6 @@ const output = { entries, index };
 writeFileSync(OUTPUT_FILE, JSON.stringify(output, null, 2), 'utf-8');
 const entryCount = Object.keys(entries).length;
 const indexCount = Object.keys(index).length;
-console.log(`✅ 合并完成，${entryCount} 条词根，${indexCount} 个变体索引 → ${OUTPUT_FILE}`);
+console.log(
+  `✅ 合并完成，${entryCount} 条词根，${indexCount} 个变体索引 → ${OUTPUT_FILE}`,
+);

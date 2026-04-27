@@ -1,8 +1,10 @@
 // 找出拥有最多词素单词中最长的一个，用来测试翻译面板的词根展示
 
 import fs from 'fs';
+import { resolve } from 'path';
+import { REPO_ROOT } from './constans.js';
 
-const WORD_ROOTS_FILE = './data/word_roots.json';
+const WORD_ROOTS_FILE = resolve(REPO_ROOT, 'data/word_roots.json');
 
 const wordRoots = JSON.parse(fs.readFileSync(WORD_ROOTS_FILE, 'utf8')).words;
 

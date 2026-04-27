@@ -1,6 +1,7 @@
 import fs from 'fs';
-import { EXCHANGES } from '../lib/exchanges.js';
-import { WORDS_FILE } from './constans.js';
+import { EXCHANGES } from '../src/lib/exchanges.js';
+import { WORDS_FILE, REPO_ROOT } from './constans.js';
+import { resolve } from 'path';
 
 /** exchange 片段里的 type，与 EXCHANGES 的键一致；含此项表示词条是变体行，反向索引只从原型词条建立 */
 const EXCHANGE_TYPE_LEMMA = '0';
@@ -61,9 +62,9 @@ console.log(
   `\n反向索引建立完成, 共 ${Object.keys(reverseIndex).length} 条数据`,
 );
 
-console.log('文件：./data/reverse_index.json');
+console.log('文件：data/reverse_index.json');
 
 fs.writeFileSync(
-  './data/reverse_index.json',
+  resolve(REPO_ROOT, 'data/reverse_index.json'),
   JSON.stringify(reverseIndex, null, 2),
 );
