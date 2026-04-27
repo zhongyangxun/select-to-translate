@@ -5,7 +5,7 @@
 **文件一览**（按阅读顺序）
 
 - **常用词** → [`high_freq_words.json`](./high_freq_words.json)（主词典）
-- **重点测试词** → [`priority-test-words.json`](./priority-test-words.json)（由常用词按规则筛出，[说明](#priority-test-words)）
+- **重点测试词** → [`priority_test_words.json`](./priority_test_words.json)（由常用词按规则筛出，[说明](#priority_test_words)）
 - **高频词词根标注** → [`word_roots.json`](./word_roots.json)
 - **词根库** → [`roots/`](./roots/) / [`roots.json`](./roots.json)
 
@@ -63,7 +63,7 @@ s:hellos
 | `0`  | lemma               | 原型词       | running → run           |
 | `1`  | lemma variant       | 原型变体     | color → colour, colours |
 
-<a id="priority-test-words"></a>
+<a id="priority_test_words"></a>
 
 ### 反向索引数据
 
@@ -99,7 +99,7 @@ s:hellos
 
 ### 重点测试数据
 
-数据文件：[priority-test-words.json](./priority-test-words.json)
+数据文件：[priority_test_words.json](./priority_test_words.json)
 
 由上文 [常用词数据](#high-freq-word-data) 中的 `high_freq_words.json` 按规则筛出，用于扩展/手测时优先覆盖的词条子集。
 
@@ -113,7 +113,7 @@ s:hellos
 例如，在项目根目录执行如下命令：
 
 ```bash
-node ./script/extract-priority-test-words.js
+node ./script/extract-priority_test_words.js
 ```
 
 ## 高频词词根词缀标注
