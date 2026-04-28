@@ -25,7 +25,6 @@
         "data/high_freq_words.json",
         "data/word_roots.json",
         "data/reverse_index.json",
-        "data/priority_test_words.json",
         "content.html"
       ],
       "matches": ["<all_urls>"]
