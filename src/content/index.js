@@ -1,4 +1,5 @@
 import Panel from './panel';
+import { getSelectionClientRect } from './selection-rect';
 
 console.log('content script load');
 
@@ -23,8 +24,7 @@ document.addEventListener('mouseup', async (e) => {
     return;
   }
 
-  const range = selection.getRangeAt(0);
-  const rect = range.getBoundingClientRect();
+  const rect = getSelectionClientRect(selection, e);
 
   panel.resetPanel().setLoading().setPosition(rect).show();
 
