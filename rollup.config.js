@@ -1,4 +1,5 @@
 import copy from 'rollup-plugin-copy';
+import { rmSync } from 'fs';
 
 function htmlPlugin() {
   return {
@@ -11,6 +12,20 @@ function htmlPlugin() {
   };
 }
 
+function cleanPlugin(dir) {
+  let cleaned = false;
+  return {
+    name: 'clean',
+    buildStart() {
+      if (!cleaned) {
+        rmSync(dir, { recursive: true, force: true });
+        console.log(`clean-plugin: cleaned ${dir}`);
+        cleaned = true;
+      }
+    },
+  };
+}
+
 export default [
   {
     input: 'src/content/index.js',
@@ -18,7 +33,7 @@ export default [
       file: 'dist/content.js',
       format: 'iife',
     },
-    plugins: [htmlPlugin()],
+    plugins: [htmlPlugin(), cleanPlugin('dist')],
   },
   {
     input: 'src/background/index.js',
@@ -39,7 +54,11 @@ export default [
           },
           // JSON 数据压缩复制（去掉缩进和空白）
           {
-            src: 'data/*.json',
+            src: [
+              'data/high_freq_words.json',
+              'data/reverse_index.json',
+              'data/word_roots.json',
+            ],
             dest: 'dist/data',
             transform: (contents) => JSON.stringify(JSON.parse(contents)),
           },
