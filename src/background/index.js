@@ -130,7 +130,6 @@ function cleanVariantInfo(translation) {
 async function handleQueryDictionary(text) {
   const dict = await loadDict();
   const wordRoots = await loadWordRoots();
-
   let lookupKey = text;
   let definition = dict[lookupKey];
   let variantInfo = null;
@@ -145,6 +144,9 @@ async function handleQueryDictionary(text) {
   const reverseIndex = await loadReverseIndex();
   variantInfo = reverseIndex[lookupKey];
 
+  // 获取原型词
+  const exchangeWord = variantInfo?.exchangeWord ?? lookupKey;
+
   // 三层逐级降级查找（不用 else if，避免中间层失败时跳过后续降级路径）
   // 1. 本地词库直接命中
   // 2. 通过变体信息查原型词（免网络请求）
@@ -156,7 +158,6 @@ async function handleQueryDictionary(text) {
     let newTranslation = cleanVariantInfo(translation);
     // 如果清洗后，`translation` 为空，则尝试使用原型词的 `translation`
     if (!newTranslation && variantInfo) {
-      const { exchangeWord } = variantInfo;
       const exchangeWordDefinition = dict[exchangeWord];
       if (exchangeWordDefinition) {
         newTranslation = exchangeWordDefinition.translation;
@@ -173,7 +174,6 @@ async function handleQueryDictionary(text) {
 
   // 本地词库未命中，尝试通过变体信息查原型词
   if (!definition && variantInfo) {
-    const { exchangeWord } = variantInfo;
     definition = dict[exchangeWord];
   }
 
@@ -239,7 +239,11 @@ async function handleQueryDictionary(text) {
     }
   }
 
-  const root = wordRoots[lookupKey];
+  const root =
+    wordRoots[lookupKey] ||
+    // `wordRoots[lookupKey]` 不存在，则尝试查询原型词的词根
+    wordRoots[exchangeWord];
+
   const pronunciationText = PRONUNCIATION_FIX_MAP.has(lookupKey)
     ? PRONUNCIATION_FIX_MAP.get(lookupKey)
     : lookupKey;
