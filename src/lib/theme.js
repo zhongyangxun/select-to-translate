@@ -1,23 +1,34 @@
+const checkThemeIndicators = (root, body, theme) => {
+  const indicators = [
+    root.classList.contains(theme),
+    root.dataset.theme === theme,
+    root.dataset.colorMode === theme,
+    body?.classList.contains(theme),
+    body?.dataset.theme === theme,
+  ];
+
+  return indicators.some(Boolean);
+};
+
+// 检查页面是否处于暗色模式
+// 优先级：页面 > 系统
 export const detectDarkMode = () => {
   const isSystemDark = window.matchMedia(
     '(prefers-color-scheme: dark)',
   ).matches;
   const html = document.documentElement;
-  const body = document.body;
 
   // 1. 检查 color-scheme
   const cs = getComputedStyle(html).colorScheme;
   if (cs.includes('dark') && !cs.includes('light')) return true;
+  if (cs.includes('light') && !cs.includes('dark')) return false;
 
-  // 2. 检查常见暗色模式标志
-  const darkIndicators = [
-    html.classList.contains('dark'),
-    html.dataset.theme === 'dark',
-    html.dataset.colorMode === 'dark',
-    body?.classList.contains('dark'),
-    body?.dataset.theme === 'dark',
-  ];
-  if (darkIndicators.some(Boolean)) return true;
+  // 2. 检查常见亮色、暗色模式标志
+  const body = document.body;
+  const darkIndicatorsRes = checkThemeIndicators(html, body, 'dark');
+  const lightIndicatorsRes = checkThemeIndicators(html, body, 'light');
+  if (darkIndicatorsRes && !lightIndicatorsRes) return true;
+  if (!darkIndicatorsRes && lightIndicatorsRes) return false;
 
   // 3. 系统保底
   return isSystemDark;
