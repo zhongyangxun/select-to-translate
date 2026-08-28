@@ -1,4 +1,5 @@
 import { REQUEST_SIGNATURE_SECRET } from '../lib/build-env.js';
+import { markTiming } from '../lib/perf.js';
 import {
   buildCanonicalV1,
   generateAbuseGuardSignV1,
@@ -72,13 +73,13 @@ export const postJson = async (
       body: bodyStr,
     });
 
+    markTiming('fetch.start');
     response = await fetch(url, {
       method,
       headers,
       signal: AbortSignal.timeout(timeoutMs),
       body: bodyStr,
     });
-
     return response;
   } catch (error) {
     if (error.name === 'TimeoutError') {
@@ -96,6 +97,8 @@ export const postJson = async (
       message: `请求失败: ${error.message}`,
       data: null,
     };
+  } finally {
+    markTiming('fetch.end');
   }
 };
 

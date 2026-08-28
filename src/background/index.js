@@ -1,4 +1,4 @@
-import { FORCE_API, IS_DEV } from '../lib/build-env.js';
+import { FORCE_API } from '../lib/build-env.js';
 import { QUERY_DICT, TRANSLATE_SENTENCE } from '../lib/message-types.js';
 import { EXCHANGES } from '../lib/exchanges.js';
 import { PRONUNCIATION_FIX_MAP } from '../lib/pronunciation.js';
@@ -9,12 +9,12 @@ import {
   DICT_FAILED_MESSAGE,
   TRANSLATE_FAILED_MESSAGE,
 } from '../lib/result-messages.js';
+import { logMarks, markTiming } from '../lib/perf.js';
 
-// 仅在开发模式下激活远程日志（initLogger 内部会判断 IS_DEV）
-if (IS_DEV) {
-  initLogger();
-  console.log('🚀 Remote Log Client 已激活');
-}
+markTiming('sw-eval');
+
+// 仅在开发模式或性能分析模式下激活远程日志（initLogger 内部会判断 IS_DEV 和 PERF）
+initLogger();
 
 let dict = null;
 let wordRoots = null;
@@ -55,16 +55,23 @@ async function initClientId() {
 }
 
 async function loadDict() {
-  if (FORCE_API) {
-    dict = {};
-    return dict;
-  }
-
   if (dict) return dict;
 
   const url = chrome.runtime.getURL('data/high_freq_words.json');
   const response = await fetch(url);
   dict = await response.json();
+
+  if (FORCE_API) {
+    const proxyDict = new Proxy(dict, {
+      get() {
+        console.warn('FORCE_API is enabled, dict is not available');
+        return null;
+      },
+    });
+    dict = proxyDict;
+  }
+
+  markTiming('dict.ready');
   console.log('高频词库已加载，词条数:', Object.keys(dict).length);
   return dict;
 }
@@ -75,6 +82,7 @@ async function loadWordRoots() {
   const url = chrome.runtime.getURL('data/word_roots.json');
   const response = await fetch(url);
   wordRoots = (await response.json()).words;
+  markTiming('wordRoots.ready');
   console.log('词根库已加载，词条数:', Object.keys(wordRoots).length);
   return wordRoots;
 }
@@ -85,7 +93,7 @@ async function loadReverseIndex() {
   const url = chrome.runtime.getURL('data/reverse_index.json');
   const response = await fetch(url);
   reverseIndex = await response.json();
-
+  markTiming('reverseIndex.ready');
   console.log('反向索引数据已加载，词条数:', Object.keys(reverseIndex).length);
 
   return reverseIndex;
@@ -179,6 +187,7 @@ async function handleQueryDictionary(text) {
 
   // 仍然没有结果，请求 API
   if (!definition) {
+    markTiming('api.dict.start');
     let status = null;
     let message = null;
     let data = null;
@@ -191,6 +200,7 @@ async function handleQueryDictionary(text) {
       message = DICT_FAILED_MESSAGE;
     }
 
+    markTiming('api.dict.end');
     if (status === 200) {
       definition = data;
       const { translation } = data;
@@ -208,6 +218,7 @@ async function handleQueryDictionary(text) {
 
   // 兜底：有道翻译
   if (!definition) {
+    markTiming('api.translate.start');
     let status = null;
     let message = null;
     let data = null;
@@ -223,6 +234,7 @@ async function handleQueryDictionary(text) {
     const translation = data?.translation?.trim();
     const isEchoed = translation?.toLowerCase() === text.trim().toLowerCase();
 
+    markTiming('api.translate.end');
     if (status === 200 && translation && !isEchoed) {
       return {
         isSuccess: true,
@@ -268,8 +280,10 @@ async function handleQueryDictionary(text) {
 }
 
 async function handleTranslateSentence(text) {
+  markTiming('api.translate.start');
   const clientId = await getClientId();
   const { status, message, data } = await translateText(text, { clientId });
+  markTiming('api.translate.end');
   return {
     isSuccess: status === 200,
     message,
@@ -294,15 +308,24 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
 });
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  markTiming('msg.received');
   if (message.type === QUERY_DICT) {
     const { text } = message;
-    handleQueryDictionary(text).then(sendResponse);
+    handleQueryDictionary(text).then((res) => {
+      markTiming('response.sent');
+      logMarks();
+      sendResponse(res);
+    });
     // sendResponse 将异步调用，需同步返回 true 以保持消息通道开放（否则 service worker 唤醒后端口会提前关闭）
     return true;
   }
   if (message.type === TRANSLATE_SENTENCE) {
     const { text } = message;
-    handleTranslateSentence(text).then(sendResponse);
+    handleTranslateSentence(text).then((res) => {
+      markTiming('response.sent');
+      logMarks();
+      sendResponse(res);
+    });
     return true;
   }
 });

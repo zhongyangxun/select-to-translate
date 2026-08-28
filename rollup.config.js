@@ -8,14 +8,16 @@ import { htmlPlugin } from './rollup/html-plugin.js';
 dotenv.config();
 
 const isProd = process.env.NODE_ENV === 'production';
+const isPerf = process.env.PERF === 'true';
 
-const terserPlugin = isProd
-  ? terser({
-      compress: {
-        drop_console: ['log', 'info'],
-      },
-    })
-  : null;
+const terserPlugin =
+  isProd && !isPerf
+    ? terser({
+        compress: {
+          drop_console: ['log', 'info'],
+        },
+      })
+    : null;
 
 function cleanPlugin(dir) {
   let cleaned = false;
@@ -108,6 +110,7 @@ export default [
           ['NODE_ENV'],
           ['REQUEST_SIGNATURE_SECRET'],
           ['FORCE_API'],
+          ['PERF'],
         ]),
         // 防止变量被替换
         preventAssignment: true,
