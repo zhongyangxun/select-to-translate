@@ -13,3 +13,10 @@ if (FORCE_API) {
     'FORCE_API is enabled, all the query will send request to the server',
   );
 }
+
+export const PERF = process.env.PERF === 'true';
+if (PERF) {
+  console.warn(
+    'PERF is enabled, performance metrics will be logged to the console',
+  );
+}

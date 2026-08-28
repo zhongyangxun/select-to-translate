@@ -1,12 +1,14 @@
-import { IS_DEV } from '../lib/build-env.js';
+import { IS_DEV, PERF } from '../lib/build-env.js';
 
 export function initLogger() {
-  if (!IS_DEV) return;
+  if (!IS_DEV && !PERF) return;
   const nativeLog = console.log;
   console.log = (...args) => {
     nativeLog(...args);
     log(...args);
   };
+
+  console.log('🚀 Remote Log Client 已激活');
 }
 
 function log(...args) {
