@@ -11,14 +11,8 @@ import {
   TRANSLATE_SUCCESS_MESSAGE,
 } from '../../lib/result-messages.js';
 import { getTranslateCache, setTranslateCache } from './cache';
-import { IS_DEV, FORCE_API } from '../../lib/build-env.js';
-import {
-  TRANSLATE_DEV_URL,
-  TRANSLATE_PROD_URL,
-  DAILY_QUOTA_EXCEEDED_CODE,
-} from '../../lib/api.js';
-
-const API_URL = IS_DEV ? TRANSLATE_DEV_URL : TRANSLATE_PROD_URL;
+import { FORCE_API } from '../../lib/build-env.js';
+import { DAILY_QUOTA_EXCEEDED_CODE, TRANSLATE_URL } from '../../lib/api.js';
 
 const getMessage = (status, data) => {
   switch (status) {
@@ -56,7 +50,7 @@ export const translateText = async (
   }
 
   const response = await postJson(
-    API_URL,
+    TRANSLATE_URL,
     { text: trimed },
     { clientId, timeoutMs },
   );

@@ -10,10 +10,8 @@ import {
   NOT_FOUND_MESSAGE,
   RATE_LIMIT_MESSAGE,
 } from '../../lib/result-messages.js';
-import { IS_DEV, FORCE_API } from '../../lib/build-env.js';
-import { DICT_DEV_URL, DICT_PROD_URL } from '../../lib/api.js';
-
-const API_URL = IS_DEV ? DICT_DEV_URL : DICT_PROD_URL;
+import { FORCE_API } from '../../lib/build-env.js';
+import { DICT_LOOKUP_URL } from '../../lib/api.js';
 
 export async function queryDictionary(
   text,
@@ -31,7 +29,7 @@ export async function queryDictionary(
   }
 
   const response = await postJson(
-    API_URL,
+    DICT_LOOKUP_URL,
     { lookup_key: text },
     { clientId, timeoutMs },
   );
