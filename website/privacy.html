@@ -36,7 +36,7 @@
   <body>
     <p class="lang">English · <a href="privacy-zh.html">中文</a></p>
     <h1>puzzledict Privacy Policy</h1>
-    <p class="updated">Last updated: June 30, 2026</p>
+    <p class="updated">Last updated: August 29, 2026</p>
 
     <p>
       puzzledict ("we", "the extension") is a browser extension that helps you
@@ -94,6 +94,14 @@
       Data is used solely to provide dictionary lookup and translation features,
       cache results locally, and prevent API abuse. We do not sell your data.
     </p>
+    <p>
+      When you select text that may trigger a lookup, the extension may send a
+      lightweight request with no query content to the API hosts above (for
+      example <code>/health</code>), solely to establish a connection early and
+      reduce first-lookup latency. That request does not include the selected
+      text or the client ID, and is rate-limited so repeated selections do not
+      spam the hosts.
+    </p>
 
     <h2>Data retention</h2>
     <ul>
@@ -113,7 +121,8 @@
       </li>
       <li>
         <strong>content script on all pages</strong> — detect text you select;
-        no automatic data collection
+        selected text is not uploaded automatically (connection warm-up requests
+        omit query text; see above)
       </li>
     </ul>
 
