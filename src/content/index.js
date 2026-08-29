@@ -1,10 +1,15 @@
-import { QUERY_DICT, TRANSLATE_SENTENCE } from '../lib/message-types';
+import {
+  PRECONNECT,
+  QUERY_DICT,
+  TRANSLATE_SENTENCE,
+} from '../lib/message-types';
 import {
   DICT_FAILED_MESSAGE,
   TRANSLATE_FAILED_MESSAGE,
 } from '../lib/result-messages.js';
 import Panel, { PANEL_MODE } from './panel/index.js';
 import LogoButton from './logo-button/index.js';
+import { throttle } from '../lib/throtte.js';
 
 console.log('content script load');
 
@@ -193,6 +198,16 @@ const logoButtonShow = () => {
   logoButton.setPosition(selectAction).show();
 };
 
+const sendPreconnectMsg = throttle(
+  () => {
+    chrome.runtime.sendMessage({
+      type: PRECONNECT,
+    });
+  },
+  // 30s 冷却：防连续划词刷预热；首次仍立即发送
+  30 * 1000,
+);
+
 document.addEventListener('mouseup', (e) => {
   if (
     // 排除非左键点击
@@ -219,6 +234,9 @@ document.addEventListener('mouseup', (e) => {
     ) {
       return;
     }
+
+    // preconnect to warm up the connection after valid text is selected
+    sendPreconnectMsg();
 
     const mode =
       isSingleWord(trimed) || isPhrase(trimed)
