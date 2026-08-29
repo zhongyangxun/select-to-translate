@@ -1,7 +1,7 @@
 import 'dotenv/config'; // 需要放在最前面，因为后续引入的文件可能依赖环境变量
 import { parseArgs, styleText } from 'node:util';
 import { postJson, REQUEST_TIMEOUT_MS } from '../src/service/api-client.js';
-import { DICT_DEV_URL, DICT_PROD_URL } from '../src/lib/api.js';
+import { DICT_LOCAL_LOOKUP_URL, DICT_PROD_LOOKUP_URL } from '../src/lib/api.js';
 
 if (!process.env.REQUEST_SIGNATURE_SECRET) {
   const message = `
@@ -54,8 +54,6 @@ if (!text) {
   process.exit(1);
 }
 
-const url = prod ? DICT_PROD_URL : DICT_DEV_URL;
-
 const handleRequest = ({ method, url, headers, body }) => {
   const signed = Boolean(headers['X-Signature']);
 
@@ -80,6 +78,8 @@ const handleRequest = ({ method, url, headers, body }) => {
     styleText('yellow', JSON.stringify(headers, null, 2)),
   );
 };
+
+const url = prod ? DICT_PROD_LOOKUP_URL : DICT_LOCAL_LOOKUP_URL;
 
 const response = await postJson(
   url,

@@ -1,5 +1,9 @@
 import { FORCE_API } from '../lib/build-env.js';
-import { QUERY_DICT, TRANSLATE_SENTENCE } from '../lib/message-types.js';
+import {
+  PRECONNECT,
+  QUERY_DICT,
+  TRANSLATE_SENTENCE,
+} from '../lib/message-types.js';
 import { EXCHANGES } from '../lib/exchanges.js';
 import { PRONUNCIATION_FIX_MAP } from '../lib/pronunciation.js';
 import { queryDictionary } from '../service/dict-api/dictionary-api.js';
@@ -10,6 +14,7 @@ import {
   TRANSLATE_FAILED_MESSAGE,
 } from '../lib/result-messages.js';
 import { logMarks, markTiming } from '../lib/perf.js';
+import { preconnect } from '../service/preconnect.js';
 
 markTiming('sw-eval');
 
@@ -308,24 +313,33 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
 });
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-  markTiming('msg.received');
-  if (message.type === QUERY_DICT) {
-    const { text } = message;
-    handleQueryDictionary(text).then((res) => {
-      markTiming('response.sent');
-      logMarks();
-      sendResponse(res);
-    });
-    // sendResponse 将异步调用，需同步返回 true 以保持消息通道开放（否则 service worker 唤醒后端口会提前关闭）
-    return true;
-  }
-  if (message.type === TRANSLATE_SENTENCE) {
-    const { text } = message;
-    handleTranslateSentence(text).then((res) => {
-      markTiming('response.sent');
-      logMarks();
-      sendResponse(res);
-    });
-    return true;
+  markTiming(`msg.received.${message.type}`);
+
+  switch (message.type) {
+    case QUERY_DICT: {
+      const { text } = message;
+      handleQueryDictionary(text).then((res) => {
+        markTiming('response.sent');
+        logMarks();
+        sendResponse(res);
+      });
+      // sendResponse 将异步调用，需同步返回 true 以保持消息通道开放（否则 service worker 唤醒后端口会提前关闭）
+      return true;
+    }
+    case TRANSLATE_SENTENCE: {
+      const { text } = message;
+      handleTranslateSentence(text).then((res) => {
+        markTiming('response.sent');
+        logMarks();
+        sendResponse(res);
+      });
+      return true;
+    }
+    case PRECONNECT: {
+      markTiming('preconnect.select-text.start');
+      preconnect().finally(() => {
+        markTiming('preconnect.select-text.end');
+      });
+    }
   }
 });
