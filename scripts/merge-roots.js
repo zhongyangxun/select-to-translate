@@ -1,6 +1,8 @@
 import { readFileSync, writeFileSync, readdirSync } from 'fs';
-import { parse } from 'csv-parse/sync';
 import { resolve } from 'path';
+
+import { parse } from 'csv-parse/sync';
+
 import { REPO_ROOT } from './constans.js';
 
 const CSV_DIR = resolve(REPO_ROOT, 'data/roots');

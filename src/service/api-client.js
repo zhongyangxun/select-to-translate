@@ -1,9 +1,9 @@
-import { REQUEST_SIGNATURE_SECRET } from '../lib/build-env.js';
-import { markTiming } from '../lib/perf.js';
 import {
   buildCanonicalV1,
   generateAbuseGuardSignV1,
 } from './abuse-guard-sign.js';
+import { REQUEST_SIGNATURE_SECRET } from '../lib/build-env.js';
+import { markTiming } from '../lib/perf.js';
 
 export const REQUEST_TIMEOUT_MS = 5000;
 

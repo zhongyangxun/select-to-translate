@@ -1,9 +1,9 @@
-import globals from 'globals';
 import prettier from 'eslint-config-prettier';
 import { importX } from 'eslint-plugin-import-x';
+import globals from 'globals';
 
 export default [
-  // 通用
+  // 通用 ignores
   {
     ignores: ['dist/**', 'node_modules/**', 'data/**'],
   },
@@ -54,6 +54,26 @@ export default [
   },
 
   importX.flatConfigs.recommended,
+
+  // 通用
+  {
+    rules: {
+      // 相对路径必须带后缀；包名（dotenv、sharp）不要求
+      'import-x/extensions': [
+        'error',
+        'ignorePackages',
+        { js: 'always', html: 'always' },
+      ],
+      'import-x/order': [
+        'error',
+        {
+          groups: ['builtin', 'external', ['parent', 'sibling', 'index']],
+          'newlines-between': 'always',
+          alphabetize: { order: 'asc', caseInsensitive: true },
+        },
+      ],
+    },
+  },
 
   // 关闭与 prettier 冲突的规则
   prettier,

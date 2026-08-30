@@ -2,13 +2,13 @@ import {
   PRECONNECT,
   QUERY_DICT,
   TRANSLATE_SENTENCE,
-} from '../lib/message-types';
+} from '../lib/message-types.js';
 import {
   DICT_FAILED_MESSAGE,
   TRANSLATE_FAILED_MESSAGE,
 } from '../lib/result-messages.js';
-import Panel, { PANEL_MODE } from './panel/index.js';
 import LogoButton from './logo-button/index.js';
+import Panel, { PANEL_MODE } from './panel/index.js';
 import { throttle } from '../lib/throtte.js';
 
 console.log('content script load');

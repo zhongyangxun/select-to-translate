@@ -2,6 +2,7 @@
 
 import fs from 'fs';
 import { resolve } from 'path';
+
 import { REPO_ROOT } from './constans.js';
 
 const WORD_ROOTS_FILE = resolve(REPO_ROOT, 'data/word_roots.json');

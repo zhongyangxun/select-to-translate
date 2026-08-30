@@ -1,4 +1,4 @@
-import { createStorageCache } from '../storage-cache';
+import { createStorageCache } from '../storage-cache.js';
 
 const CACHE_KEY = 'translate-cache';
 const MAX_ENTRIES = 200;

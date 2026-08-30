@@ -1,7 +1,8 @@
 import fs from 'fs';
-import { EXCHANGES } from '../src/lib/exchanges.js';
-import { WORDS_FILE, REPO_ROOT } from './constans.js';
 import { resolve } from 'path';
+
+import { WORDS_FILE, REPO_ROOT } from './constans.js';
+import { EXCHANGES } from '../src/lib/exchanges.js';
 
 /** exchange 片段里的 type，与 EXCHANGES 的键一致；含此项表示词条是变体行，反向索引只从原型词条建立 */
 const EXCHANGE_TYPE_LEMMA = '0';
