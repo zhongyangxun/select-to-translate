@@ -5,11 +5,10 @@ export const markTiming = (name) => {
   performance.mark(name);
 };
 
-export const measureMarks = () => {
+export const measureMarkIntervals = () => {
   if (!PERF) return;
 
   const entries = performance.getEntriesByType('mark');
-  performance.clearMarks();
 
   return entries.map((entry, index) => {
     const markInterval = Math.round(
@@ -23,9 +22,26 @@ export const measureMarks = () => {
   });
 };
 
+export const normalizeMarkEntries = (entries) => {
+  return entries.map((entry) => {
+    const { name, startTime } = entry;
+
+    return {
+      name,
+      at: Math.round(startTime),
+    };
+  });
+};
+
 export const logMarks = () => {
   if (!PERF) return;
 
-  const entries = measureMarks();
-  console.log('mark entries', JSON.stringify(entries, null, 2));
+  const markEntries = performance.getEntriesByType('mark');
+
+  performance.clearMarks();
+
+  console.log(
+    'mark entries',
+    JSON.stringify(normalizeMarkEntries(markEntries), null, 2),
+  );
 };
