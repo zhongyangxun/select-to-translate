@@ -22,8 +22,11 @@ markTiming('sw-eval');
 initLogger();
 
 let dict = null;
+let dictPromise = null;
 let wordRoots = null;
+let wordRootsPromise = null;
 let reverseIndex = null;
+let reverseIndexPromise = null;
 let clientId = null;
 let clientIdPromise = null;
 
@@ -59,9 +62,19 @@ async function initClientId() {
   return clientId;
 }
 
+// * must keep `async` to ensure returning a promise
 async function loadDict() {
   if (dict) return dict;
+  if (!dictPromise) {
+    dictPromise = loadDictImpl().catch((err) => {
+      dictPromise = null;
+      throw err;
+    });
+  }
+  return dictPromise;
+}
 
+async function loadDictImpl() {
   const url = chrome.runtime.getURL('data/high_freq_words.json');
   const response = await fetch(url);
   dict = await response.json();
@@ -83,7 +96,16 @@ async function loadDict() {
 
 async function loadWordRoots() {
   if (wordRoots) return wordRoots;
+  if (!wordRootsPromise) {
+    wordRootsPromise = loadWordRootsImpl().catch((err) => {
+      wordRootsPromise = null;
+      throw err;
+    });
+  }
+  return wordRootsPromise;
+}
 
+async function loadWordRootsImpl() {
   const url = chrome.runtime.getURL('data/word_roots.json');
   const response = await fetch(url);
   wordRoots = (await response.json()).words;
@@ -94,7 +116,16 @@ async function loadWordRoots() {
 
 async function loadReverseIndex() {
   if (reverseIndex) return reverseIndex;
+  if (!reverseIndexPromise) {
+    reverseIndexPromise = loadReverseIndexImpl().catch((err) => {
+      reverseIndexPromise = null;
+      throw err;
+    });
+  }
+  return reverseIndexPromise;
+}
 
+async function loadReverseIndexImpl() {
   const url = chrome.runtime.getURL('data/reverse_index.json');
   const response = await fetch(url);
   reverseIndex = await response.json();
@@ -141,8 +172,16 @@ function cleanVariantInfo(translation) {
 }
 
 async function handleQueryDictionary(text) {
-  const dict = await loadDict();
-  const wordRoots = await loadWordRoots();
+  const [dict, reverseIndex] = await Promise.all([
+    loadDict(),
+    loadReverseIndex(),
+  ]);
+
+  const rootsPromise = loadWordRoots().catch((err) => {
+    console.error('loadWordRoots error', err);
+    return {};
+  });
+
   let lookupKey = text;
   let definition = dict[lookupKey];
   let variantInfo = null;
@@ -154,7 +193,6 @@ async function handleQueryDictionary(text) {
   }
 
   // 查询变体信息
-  const reverseIndex = await loadReverseIndex();
   variantInfo = reverseIndex[lookupKey];
 
   // 获取原型词
@@ -256,10 +294,15 @@ async function handleQueryDictionary(text) {
     }
   }
 
-  const root =
-    wordRoots[lookupKey] ||
-    // `wordRoots[lookupKey]` 不存在，则尝试查询原型词的词根
-    wordRoots[exchangeWord];
+  let root = null;
+  // lookup success, try to get root
+  if (definition) {
+    const wordRoots = await rootsPromise;
+    root =
+      wordRoots[lookupKey] ||
+      // `wordRoots[lookupKey]` 不存在，则尝试查询原型词的词根
+      wordRoots[exchangeWord];
+  }
 
   const pronunciationText = PRONUNCIATION_FIX_MAP.has(lookupKey)
     ? PRONUNCIATION_FIX_MAP.get(lookupKey)
