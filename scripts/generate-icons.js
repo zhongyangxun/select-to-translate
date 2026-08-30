@@ -1,7 +1,8 @@
 import { mkdir, readFile } from 'fs/promises';
 import path from 'path';
-import sharp from 'sharp';
 import { fileURLToPath } from 'url';
+
+import sharp from 'sharp';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, '..');

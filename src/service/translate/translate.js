@@ -1,8 +1,6 @@
-import {
-  parseJsonResponse,
-  postJson,
-  REQUEST_TIMEOUT_MS,
-} from '../api-client.js';
+import { getTranslateCache, setTranslateCache } from './cache.js';
+import { DAILY_QUOTA_EXCEEDED_CODE, TRANSLATE_URL } from '../../lib/api.js';
+import { FORCE_API } from '../../lib/build-env.js';
 import {
   DAILY_QUOTA_EXCEEDED_MESSAGE,
   NOT_FOUND_MESSAGE,
@@ -10,9 +8,11 @@ import {
   TRANSLATE_FAILED_MESSAGE,
   TRANSLATE_SUCCESS_MESSAGE,
 } from '../../lib/result-messages.js';
-import { getTranslateCache, setTranslateCache } from './cache';
-import { FORCE_API } from '../../lib/build-env.js';
-import { DAILY_QUOTA_EXCEEDED_CODE, TRANSLATE_URL } from '../../lib/api.js';
+import {
+  parseJsonResponse,
+  postJson,
+  REQUEST_TIMEOUT_MS,
+} from '../api-client.js';
 
 const getMessage = (status, data) => {
   switch (status) {

@@ -1,7 +1,7 @@
-import { detectDarkMode, initThemeObserver } from '../../lib/theme';
 import logoButtonHtml from './index.html';
-import { calculateShowPosition } from '../selection-rect.js';
 import { createShadowHost } from '../../lib/shadow-host.js';
+import { detectDarkMode, initThemeObserver } from '../../lib/theme.js';
+import { calculateShowPosition } from '../selection-rect.js';
 
 export default class LogoButton {
   static #instance = null;

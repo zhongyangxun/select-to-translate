@@ -3,15 +3,15 @@ import {
   postJson,
   REQUEST_TIMEOUT_MS,
 } from '../api-client.js';
-import { getDictCache, setDictCache } from './cache';
+import { getDictCache, setDictCache } from './cache.js';
+import { DICT_LOOKUP_URL } from '../../lib/api.js';
+import { FORCE_API } from '../../lib/build-env.js';
 import {
   DICT_FAILED_MESSAGE,
   DICT_SUCCESS_MESSAGE,
   NOT_FOUND_MESSAGE,
   RATE_LIMIT_MESSAGE,
 } from '../../lib/result-messages.js';
-import { FORCE_API } from '../../lib/build-env.js';
-import { DICT_LOOKUP_URL } from '../../lib/api.js';
 
 export async function queryDictionary(
   text,

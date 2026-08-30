@@ -1,7 +1,8 @@
 import 'dotenv/config'; // 需要放在最前面，因为后续引入的文件可能依赖环境变量
 import { parseArgs, styleText } from 'node:util';
-import { postJson, REQUEST_TIMEOUT_MS } from '../src/service/api-client.js';
+
 import { DICT_LOCAL_LOOKUP_URL, DICT_PROD_LOOKUP_URL } from '../src/lib/api.js';
+import { postJson, REQUEST_TIMEOUT_MS } from '../src/service/api-client.js';
 
 if (!process.env.REQUEST_SIGNATURE_SECRET) {
   const message = `

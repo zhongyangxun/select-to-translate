@@ -1,8 +1,10 @@
-import copy from 'rollup-plugin-copy';
+import { rmSync } from 'fs';
+
 import replace from '@rollup/plugin-replace';
 import terser from '@rollup/plugin-terser';
-import { rmSync } from 'fs';
 import dotenv from 'dotenv';
+import copy from 'rollup-plugin-copy';
+
 import { htmlPlugin } from './rollup/html-plugin.js';
 
 dotenv.config();

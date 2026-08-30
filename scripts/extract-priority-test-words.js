@@ -2,6 +2,7 @@
 // 筛选标准：释义中不包含词性（即不包含 '.' 或方括号）
 
 import fs from 'fs';
+
 import { WORDS_FILE, PRIORITY_TEST_WORDS_FILE } from './constans.js';
 
 const words = JSON.parse(fs.readFileSync(WORDS_FILE, 'utf8'));

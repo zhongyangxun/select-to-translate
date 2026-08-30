@@ -1,8 +1,8 @@
 import {
   DICT_PROD_PRECONNECT_URL,
   TRANSLATE_PROD_PRECONNECT_URL,
-} from '../lib/api';
-import { IS_DEV } from '../lib/build-env';
+} from '../lib/api.js';
+import { IS_DEV } from '../lib/build-env.js';
 
 // preconnect to the API servers in production to warm up the connection
 export const preconnect = () => {

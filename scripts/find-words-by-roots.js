@@ -1,5 +1,6 @@
 import fs from 'fs';
 import { resolve } from 'path';
+
 import { REPO_ROOT } from './constans.js';
 
 const minRootsCount = process.argv[2];

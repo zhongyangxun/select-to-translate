@@ -1,6 +1,7 @@
 import fs from 'fs';
-import { PRIORITY_TEST_WORDS_FILE, REPO_ROOT } from './constans.js';
 import { resolve } from 'path';
+
+import { PRIORITY_TEST_WORDS_FILE, REPO_ROOT } from './constans.js';
 
 const TEST_HTML_FILE = resolve(REPO_ROOT, 'test/index.html');
 

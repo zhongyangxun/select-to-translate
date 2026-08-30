@@ -1,4 +1,4 @@
-import { createStorageCache } from '../storage-cache';
+import { createStorageCache } from '../storage-cache.js';
 
 const CACHE_KEY = 'dict-api-cache';
 const MAX_ENTRIES = 500;

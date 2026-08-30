@@ -1,20 +1,20 @@
+import { initLogger } from './remote-log-client.js';
 import { FORCE_API } from '../lib/build-env.js';
+import { EXCHANGES } from '../lib/exchanges.js';
 import {
   PRECONNECT,
   QUERY_DICT,
   TRANSLATE_SENTENCE,
 } from '../lib/message-types.js';
-import { EXCHANGES } from '../lib/exchanges.js';
+import { logMarks, markTiming } from '../lib/perf.js';
 import { PRONUNCIATION_FIX_MAP } from '../lib/pronunciation.js';
-import { queryDictionary } from '../service/dict-api/dictionary-api.js';
-import { initLogger } from './remote-log-client.js';
-import { translateText } from '../service/translate/translate.js';
 import {
   DICT_FAILED_MESSAGE,
   TRANSLATE_FAILED_MESSAGE,
 } from '../lib/result-messages.js';
-import { logMarks, markTiming } from '../lib/perf.js';
+import { queryDictionary } from '../service/dict-api/dictionary-api.js';
 import { preconnect } from '../service/preconnect.js';
+import { translateText } from '../service/translate/translate.js';
 
 markTiming('sw-eval');
 
