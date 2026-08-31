@@ -9,6 +9,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!-- Move items here into a new version section when cutting a release. -->
 
+## [1.0.4] - 2026-08-31
+
+### Changed
+
+- Speed up lookup with connection warm-up and parallel local dictionary loads
+
+### Fixed
+
+- Non-lemma lookups lacked word roots even when the lemma had roots
+- Pop-up logo and translate panel followed system theme instead of the page theme when the system was in dark mode
+- Phonetic text sometimes showed extra junk after a semicolon (now only the primary phonetic symbol is shown)
+
 ## [1.0.3] - 2026-08-08
 
 ### Fixed
@@ -40,7 +52,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Show word roots and affixes
 - Pronunciation
 
-[Unreleased]: https://github.com/zhongyangxun/puzzledict/compare/v1.0.3...HEAD
+[Unreleased]: https://github.com/zhongyangxun/puzzledict/compare/v1.0.4...HEAD
+[1.0.4]: https://github.com/zhongyangxun/puzzledict/compare/v1.0.3...v1.0.4
 [1.0.3]: https://github.com/zhongyangxun/puzzledict/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/zhongyangxun/puzzledict/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/zhongyangxun/puzzledict/compare/v1.0.0...v1.0.1
