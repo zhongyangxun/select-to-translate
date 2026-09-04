@@ -16,6 +16,13 @@ A Chrome extension for translating selected text featuring word roots.
 
 See [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md) for license texts.
 
+## License
+
+Source code is licensed under the [MIT License](./LICENSE).
+
+Bundled dictionary and word-root data keep their original licenses;
+see [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md).
+
 ## Pull Requests
 
 `puzzledict` is a personal project. External pull requests are not accepted
